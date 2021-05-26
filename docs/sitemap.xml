@@ -342,11 +342,6 @@
   </url>
   
   <url>
-    <loc>https://blog.datproject.org/tags/announcement/</loc>
-    <lastmod>2021-05-26</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.datproject.org/tags/releases/</loc>
     <lastmod>2021-05-26</lastmod>
   </url>
@@ -357,12 +352,12 @@
   </url>
   
   <url>
-    <loc>https://blog.datproject.org/tags/decentralization/</loc>
+    <loc>https://blog.datproject.org/tags/announcement/</loc>
     <lastmod>2021-05-26</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.datproject.org/tags/conferences/</loc>
+    <loc>https://blog.datproject.org/tags/decentralization/</loc>
     <lastmod>2021-05-26</lastmod>
   </url>
   
@@ -373,6 +368,11 @@
   
   <url>
     <loc>https://blog.datproject.org/tags/press/</loc>
+    <lastmod>2021-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.datproject.org/tags/conferences/</loc>
     <lastmod>2021-05-26</lastmod>
   </url>
   
