@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat in the Lab at UC Davis: A tale of office dogs, watershed sciences, and user feedback.
+</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-10-06">6 October 2017</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Dat in the Lab at UC Davis: A tale of office dogs, watershed sciences, and user feedback.
+</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2018/03/0000405-DSC01580-1.jpg)">
+      </figure>
+
+      <section class="post-full-content"><p>To kick off Dat in the Lab, our collaboration with UC researchers, Max, Stephen, and Danielle traveled to the <a href="https://www.ucdavis.edu/">University of California at Davis</a> to talk to <a href="https://nicksantos.com/">Nick Santos</a> and others at the UC Davis <a href="https://watershed.ucdavis.edu/">Center for Watershed Sciences</a> (CWS).</p>
+<p><img src="/content/images/2017/10/IMG_0054-1-resize.JPG" alt="IMG_0054-1-resize"> Stephen, Max, and Nick pose on the picturesque Davis Campus</p>
+<p>We were impressed with the local flora, the charming and talented office dogs, the hammocks on the quad, resident outdoor cat, and the sheer volume of bikes.</p>
+<p><img src="/content/images/2017/10/IMG_0051-1-resize.JPG" alt="IMG_0051-1-resize"> Bike and hammocks? We will be back.</p>
+<p>We started the day off talking to Nick about his research workflows and the local data infrastructure. After getting the lay of the land at the Center for Watershed Sciences, we visited the <a href="http://dsi.ucdavis.edu/">Data Science Initiative</a> (DSI) at UC Davis.</p>
+<p>UC Davis’s DSI is run by an interdisciplinary team with a mission to “foster, promote, and facilitate” data science through consulting, education, and training. Housed in the beautiful <a href="https://www.library.ucdavis.edu/library/">Shields Library</a>, the DSI supports students in learning new skills and researchers involved in data-driven projects. We met with members of DSI to discuss the Dat in the Lab project at UC Davis. DSI members raised valuable questions around Dat’s current conflict management model.</p>
+<p>How does Dat manage conflicts now? In the current version of Dat, one person creates and shares a Dat. This “one writer” has write-access to the files. Others can download (<code>dat clone</code>) the files and keep up to date with changes (<code>dat sync</code>).  However, these other writers can not push their changes back to the original file. Essentially, Dat is so conflict averse that we do not even allow conflicts to happen. Why this design? Our early use cases were published datasets. “One writer” is effective at getting people access to datasets, or parts of datasets, that are updated by a main data source via cloning and syncing. However, our conversations at UC Davis highlighted an additional set of researcher needs. In order to work with researchers engaged in data generation and analysis, we need to address collaboration.</p>
+<p>To move upstream from publishing in the research process, Dat will need to be optimized for collaboration.  “One writer” design means that one computer controls changes to the dataset. Dat needs to enable “multi-writer” collaboration in order to bring researchers into Dat-based workflows early in their projects. Lucky for us, our team-member Mathias Buus, or <a href="https://twitter.com/mafintosh">mafintosh</a> as he is known to the world, is working on a “multi-writer” feature that will allow one writer to invite multiple collaborators. That feature is now prioritized for deployment!</p>
+<p>After meeting with DSI, we delivered our shiny new hands-on workshop (complete with all the bugs of the first instance of a hands-on workshop).</p>
+<p><img src="/content/images/2017/10/0000405-DSC01576-resize.jpg" alt="0000405-DSC01576-resize"></p>
+<p>We met people in the CWS and beyond and learned about fish genomics, <a href="http://groundwaternitrate.ucdavis.edu/">groundwater nitrates</a>, the <a href="https://pisces.ucdavis.edu/">PISCES</a>, and more. Thank you for being patient with the bugs at the workshop, UC Davis! We also uncovered some unique issues with UC campus wifi, which blocked local peer-to-peer laptop communication. So we had the opportunity to develop some workarounds for that. Nevertheless, workshop participants were able to use Dat command line tools to share, sync, and publish to the web. We learned from the workshop attendees and are looking forward to reconnecting to hear about their ideas for Dat in workflows. Thanks to all for a productive visit!</p>
+<p><img src="/content/images/2017/10/0000405-DSC01583-resize.jpg" alt="0000405-DSC01583-resize"></p>
+<p>Next week we’ll be heading to sunny UC Merced to meet with <a href="http://mnd.ucmerced.edu/">Mike Dawson’s lab</a>! We can’t wait to learn more about their research and discuss data workflows. Stay tuned <a href="https://twitter.com/dat_project">@dat_project</a> and at the <a href="/">Dat Blog</a>.</p>
+<p>We invite you at try Dat at <a href="http://try-dat.com">try-dat.com</a> - and when/if you find bugs, <a href="https://github.com/maxogden/get-dat/issues">let us know</a>.</p>
+<p><img src="/content/images/2017/10/0000105-DSC01589-resize.jpg" alt="0000105-DSC01589-resize"></p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/new-website/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/10/Screen-Shot-2017-10-11-at-9.29.01-AM.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/new-website/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Announcement</span>
+          <h2 class="post-card-title">A Distributed Data Community: Introducing the New Dat Website
+</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Now, more than ever, we must fight together for an open web. With the threat of a privatized web, we strive for a true web of commons — a combination of new technologies and
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-cryptography/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/09/cat-bg.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-cryptography/">
+        <header class="post-card-header">
+          <span class="post-card-tags"></span>
+          <h2 class="post-card-title">An Intro To Dat&#39;s Cryptography</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Dat is a secure peer to peer live syncing file sharing protocol for the web. Here&#39;s an overview of the cryptography used in the project. Even more technical details can be found in
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /dat-in-the-lab-ucdavis-1/ -->
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "title": "Dat Project Blog",
+  "url": "https://blog.datproject.org/",
+  "language": "en",
+  "description": "New developments and ideas from the Dat team.",
+  "feed": {
+    "subtitle": "New developments and ideas from the Dat team.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://blog.datproject.org/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://blog.datproject.org/feed/feed.json"
+  },
+  "author": {
+    "name": "Dat Consortium",
+    "email": "dat-consortium@protonmail.com",
+    "url": "https://dat-ecosystem.org/"
+  }
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Brief History of Dat</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post no-image">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2016-01-19">19 January 2016</time><span class="date-divider">/</span> <a href="/tags/design/" class="post-tag">Design</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">A Brief History of Dat</h1>
+      </header>
+
+      <section class="post-full-content"><p>We have some exciting news to share about Dat: We’re working on a 1.0 release! It’s not out just yet, but you can try what we have so far by checking out <a href="https://github.com/maxogden/dat">the <code>master</code> branch on GitHub</a> or with npm install dat@next -g</p>
+<p>I’d like to explain the history of the project and the design choices over the last 2 years since the project started, as the project has made some pretty substantial changes in direction during that time. We have been in a constant cycle of R&amp;D during this period, and have rewritten the Dat CLI four times.</p>
+<p>Each rewrite incorporates the best modules and approaches from the last iteration and presents what we hope is a more straightforward workflow. We firmly believe this iterative process is the only way we could have arrived at the conclusions that led us to the features we are currently focusing on for our 1.0 release.</p>
+<h3 id="early-dat-prototype">Early Dat Prototype <a class="direct-link" href="#early-dat-prototype">#</a></h3>
+<p>The original use case for Dat centered around tabular datasets that change often. We wanted to make something to simplify the process of updating your copy of the data when the publisher updates the source data. The prototype version of Dat was built over the course of 6 months and was completed in Spring of 2014.</p>
+<p>The prototype <code>dat</code> command-line tool only worked with tabular data and usage looked like this:</p>
+<pre class="language-bash"><code class="language-bash">dat init<br><span class="token builtin class-name">echo</span> <span class="token string">'{"hello": "world"}'</span> <span class="token operator">|</span> dat --json <span class="token comment"># put a JSON object into dat</span><br><span class="token function">cat</span> some_csv.csv <span class="token operator">|</span> dat --csv <span class="token comment"># stream a CSV into dat</span><br><span class="token builtin class-name">echo</span> $<span class="token string">'a,b,c<span class="token entity" title="\n">\n</span>1,2,3'</span> <span class="token operator">|</span> dat --csv --primary<span class="token operator">=</span>a <span class="token comment"># specify a primary key to use</span><br>dat <span class="token function">cat</span> <span class="token comment"># stream the most recent of all rows</span><br>dat push http://mydat.myserver.com:6461</code></pre>
+<p>In addition to <code>dat push</code> there was also <code>dat clone</code> and <code>dat pull</code>.</p>
+<p>An example of the canonical use case we had in mind at the time was an Excel spreadsheet that gets published on an FTP server. We envisioned Dat as a tool that could sit between the user and the Excel spreadsheet and add fast + efficient syncing of new updates as well as version control features, neither of which are supported by Excel files natively.</p>
+<h3 id="dat-alpha">Dat Alpha <a class="direct-link" href="#dat-alpha">#</a></h3>
+<p>The Dat Alpha version was <a href="https://usopendata.org/2014/08/19/dat-alpha/">released in August of 2014</a>. The major feature we worked on was support for syncing large, non-tabular data files. This opened up a new use case: using Dat as a sort of “DropBox for data” to sync a folder on your filesystem.</p>
+<p>The Alpha release was the first release after starting on a new grant that shifted our focus from open civic datasets (which tend to be tabular – e.g. lots of database tables) to the field of data intensive scientific research, which tends to use domain specific flat-file based data formats.</p>
+<p>We worked directly, starting during the time of the Alpha and continuing on through to today, with some amazing research labs in fields like Astrophysics, Bioinformatics and Neuroscience to try and understand their data management problems. The addition of large file support in the Alpha was a direct result of getting feedback from these scientific pilot users.</p>
+<p>With the Alpha CLI we attempted to support both the tabular <em>and</em> file syncing use cases, which increased the API surface area quite a bit:</p>
+<pre><code>dat cat
+dat export
+dat import
+dat init
+dat help
+dat version
+dat pull
+dat push
+dat clean
+dat clone
+dat serve
+dat listen
+dat blobs get
+dat blobs put
+dat rows get
+dat rows delete
+dat rows put
+</code></pre>
+<p>At this point in time we were very excited about the new file (AKA &quot;blobs&quot;) syncing use cases, but unsure about the intuitiveness of the API that we had come up with. User testing during this period revealed that when given a choice between two workflows, new users got very confused and it made getting started more difficult.</p>
+<p>To put your tabular data into version control you first have to know your schema, know your primary key (or come up with a composite primary key or use random unique IDs), and then build an import process that can be repeated when your source tabular data files change. This was a lot of work for users before they got to the gratifying parts like convenient push/pull/sync.</p>
+<p>Also because we presented separate &quot;row-oriented&quot; and &quot;blob-oriented&quot; workflows, users had to be able to understand the tradeoffs of both before making a choice, further complicating the onboarding process and path to a first gratifying experience.</p>
+<h3 id="dat-beta">Dat Beta <a class="direct-link" href="#dat-beta">#</a></h3>
+<p>The Beta version <a href="https://usopendata.org/2015/07/29/dat-beta/">shipped in July of 2015</a>. The major focus was to make collaboration and reproducibility features possible by switching our internal data representation to a <a href="https://github.com/jbenet/random-ideas/issues/20">directed acyclic graph</a>. This means we can model fully decentralized workflows like pull requests on top of Dat, as well as offer versioning with cryptographic accuracy for entire datasets.</p>
+<p>Up until this version Dat acted more like a traditional centralized version control system (CVS) such as Subversion where there is a central repository and all clients must synchronize with the central database before they can send any change they made.</p>
+<p>The new DAG abstraction we developed during this time is called <a href="https://github.com/mafintosh/hyperlog">hyperlog</a>. It provides a graph storage API that supports incremental, streaming replication. We used it in the <code>dat</code> CLI tool as the core database, and added tabular import and file import + synchronization features on top of it.</p>
+<p>In terms of command-line API, the beta didn’t change too dramatically from the alpha. We still supported both tabular and file oriented workflows. We dropped the word “blob” in exchange for “files” and used terms like “read” and “write” instead of “get” and “put”.</p>
+<p>The most notable new concept in the Beta was support for multiple datasets in a single repository. This was added to support datasets with hybrid data types, such as a astronomy full sky scan which might include raw image files from a telescope as well as tabular data created during post-processing of the images. You could model each one as a dataset in dat (sort of like two different sub-folders).</p>
+<pre><code>repository commands:
+  dat init        Create a new dat.
+  dat clone       Copy a dat to the local filesystem via http or ssh.
+  dat push        Push data to a remote dat.
+  dat pull        Pull data from a remote dat.
+  dat checkout    Change view to a given version.
+  dat serve       Start an http server.
+
+descriptive commands:
+  dat status      Show current status.
+  dat log         List of changes.
+  dat files       List all files.
+  dat datasets    List all datasets.
+  dat forks       List current forks.
+  dat diff        See differences between the data in two forks.
+  dat keys        List existing keys in a dataset.
+
+data commands:
+  dat import      Add tabular data to a dataset.
+  dat export      View tabular data from a dataset.
+  dat read        Read a binary file.
+  dat write       Write a binary file.
+  dat delete      Delete a key in a dataset.
+  dat merge       Merge two forks into one.
+</code></pre>
+<p>At the time of the Beta release we were most excited about the new decentralized possibilities. We were still unsure about the intuitiveness of the API, but weren’t sure how to simplify the API without dropping support for use cases we thought were important.</p>
+<h2 id="dat-1.0">Dat 1.0 <a class="direct-link" href="#dat-1.0">#</a></h2>
+<p>We are still working on the official Dat 1.0 release, but you can try out the 1.0 RC (release candidate) today.</p>
+<p>After testing the alpha and beta extensively we realized we had to reduce the scope of Dat in order to make it intuitive to use. One thing we have learned through this process is that the most difficult part of designing software is finding the natural API. Once we know what we want to build actually building it is the easy part.</p>
+<p>In our case we were torn between a tabular data workflow (importing CSVs row by row, re-importing CSVs when individual rows are edited, with key/value database semantics) and a file based workflow (like Dropbox or rsync where we are agnostic to the actual contents and format of the files).</p>
+<p>We decided a &quot;files-first&quot; approach is the way forward. Modeling more complex tabular data workflows on top of Dat is still possible, but we are treating it as an advanced use case. As a result, the new 1.0 command-line API looks like this:</p>
+<pre><code>$ dat link
+# prints share link
+$ dat &lt;share-link&gt;
+# downloads data
+</code></pre>
+<p>We were able to get rid of 90% of our previous API surface area by going lower level (files-first).</p>
+<p>This blog post would be too long if I took the time to list the reasoning behind the removal of all of the commands from the Beta version. <a href="https://vimeo.com/147914258">Thankfully, we did a talk about just this redesign late last year</a>, which you can watch below. The short answer is that we decided to try and focus on making something that was as easy to use as Dropbox (but open source and peer to peer), and that specific focus allowed us to streamline quite a bit. As I said above, the hard part was going through the process of trying different approaches until we could feel confident in committing to one of them.</p>
+<iframe src="https://player.vimeo.com/video/147914258" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/147914258">Designing Dat 1.0</a> from <a href="https://vimeo.com/ropensci">ropensci</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>I hope this was insightful, and please try out the new Dat and let us know what you think!</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-1-0-is-ready/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Releases</span>
+          <h2 class="post-card-title">Dat 1.0 is ready</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>We’ve been working hard on a new implementation of the dat command-line tool. You can try it out now (and remember to let us know if things break):  npm install -g dat
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-goes-beta/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Releases</span>
+          <h2 class="post-card-title">Dat goes beta!</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>After a long year of alpha testing, which started in August of las year, we are excited to announce our launch of a new phase of dat. Beta starts now. Let us know...
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /a-brief-history-of-dat/ -->
+  </body>
+</html>

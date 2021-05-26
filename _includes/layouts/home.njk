@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+<header class="site-header outer " style="background-image: url(/content/images/2017/05/bg-landing-page.png)">
+  <div class="inner">
+    <div class="site-header-content">
+      <h1 class="site-title h3" />
+    </div>
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <div class="post-feed">{{ content | safe }}</div>
+  </div>
+</main>

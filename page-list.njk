@@ -1,0 +1,15 @@
+---
+pagination:
+  data: collections.all
+  size: 20
+  alias: entries
+layout: layouts/simple.njk
+templateName: home
+eleventyComputed:
+  title: Page List {{ pagination.pageNumber + 1 }}/{{ pagination.pages.length }}
+permalink: /page-list/{{ pagination.pageNumber + 1 }}/
+---
+<div class="post-feed">
+  {% set postslist = entries %}
+  {% include "postslist.njk" %}
+</div>

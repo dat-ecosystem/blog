@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Decentralization of Scholarly Data &amp; Resources</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2018-04-19">19 April 2018</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a><span class="date-divider">/</span> <a href="/tags/decentralization/" class="post-tag">Decentralization</a><span class="date-divider">/</span> <a href="/tags/conferences/" class="post-tag">Conferences</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Practical Decentralization of Scholarly Data &amp; Resources</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2018/04/Screen-Shot-2018-04-19-at-4.27.15-PM-2.png)">
+      </figure>
+
+      <section class="post-full-content"><hr>
+<p>The following post is based on my talk at the library and technology conference <a href="https://onlinenorthwest.org/">Online Northwest</a> in March 2018, titled “A vision for decentralized data preservation across a network of libraries and trusted institutions.&quot; Photo credit to <a href="https://twitter.com/saraheseymore">Sarah Seymore</a>. I'll update with the link to the recording when it's available.</p>
+<hr>
+<p>Technology is imbued with the values and biases of its creators (see the work of <a href="https://safiyaunoble.com/">Safiya Noble</a> for more). Today’s online data storage and preservation systems are no exception. They are built on traditional web infrastructure, which was designed with the values of hierarchical and commercial organizations. It’s time for scholars to ask whether today’s data preservation technologies align with open scholarship’s values of access, preservation, privacy, and transparency. Alternative communication tools, such as email and RSS, were built for interoperability and portability but are now largely relegated to (small) uses. Similar approaches built with decentralized technology have recently reached a new level of maturity and publicity.</p>
+<blockquote>
+<p>It’s time for scholars to ask whether today’s data preservation technologies align with open scholarship’s values of access, preservation, privacy, and transparency.</p>
+</blockquote>
+<p>Decentralized tools offer a more robust, open alternative for data management. At a fundamental level, decentralized systems distribute data across a network of linked participants. Beyond scholarly use cases, decentralized models are also changing the way the web is built as artists, activists, and technologists use them to rethink the web. This technology offers new models for community managed information sharing on the web. As decentralization remakes the legacy web, it presents scholarship with an opportunity to rethink who owns scholarly data and the pathways to access that information.</p>
+<p>Today, decentralized approaches like the Dat Project offer foundational tools for integrating isolated data silos, operating at a lower level of web infrastructure to link information in existing systems. (At the end of this post is a plain language <a href="https://datproject.org/">Dat Project</a> explainer.) These modern tools present opportunities for scholars, librarians, and technologists to redesign long-term data preservation in a way that formalizes the shared values of the community within the technology itself.</p>
+<h2 id="the-internet-is-broken-and-we-are-using-it-to-access-and-distribute-all-of-human-knowledge.">The Internet is broken and we are using it to access and distribute all of human knowledge. <a class="direct-link" href="#the-internet-is-broken-and-we-are-using-it-to-access-and-distribute-all-of-human-knowledge.">#</a></h2>
+<p>Today’s web is dominated by centralized, non-interoperable entities that sustain their businesses by enclosing and selling data we provide to them. The model of controlling content via an online platform has been implemented in every industry, from social media to scholarly publishing. We live in an age where data are increasingly collected, analyzed, and repackaged for sale. Across domains, data live online (I mean data in the most inclusive terms): the work of a writer, government data, newspaper archives, your family photos, scientific data, film archives, artist’s creations. These data live on the web with varying degrees of strategy, management, and plans for long-term upkeep.</p>
+<p>The lines drawn around which data have political value, research value, or business value constantly shift. Scholarly data - the majority of which are presented, accessed, and stored online - are not an exception, and can move quickly from niche to politically charged (see <a href="http://www.ppehlab.org/datarefuge/">DataRescue</a>). Although data are valuable, data management and stewardship practices are extremely inconsistent and financially burdensome. Link rot (when links break) and content drift (when the information at a link changes) plague fields from <a href="https://www.cambridge.org/core/journals/legal-information-management/article/perma-scoping-and-addressing-the-problem-of-link-and-reference-rot-in-legal-citations/15A59548BF9882B06D3064DA7E290859">legal judgements and scholarship</a> to <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115253">biomedical research</a>. Together link rot and content drift create “reference rot” — you can read more about the impact of reference rot on scholarship across scholarly disciplines <a href="https://www.nature.com/news/the-trouble-with-reference-rot-1.17465">here</a>, <a href="https://ejournals.bc.edu/ojs/index.php/ital/article/view/9598">here</a>, and <a href="http://blogs.lse.ac.uk/impactofsocialsciences/2015/02/05/reference-rot-in-web-based-scholarly-communication/">here</a>.</p>
+<p>In this landscape, librarians, technologists, and scholars are trying to manage systems that will sustain the preservation of humanity’s growing knowledge base forever.  The web is not designed for long term preservation of information. As <a href="https://stateimpact.npr.org/pennsylvania/2017/01/19/researchers-rush-to-preserve-environmental-data-they-believe-to-be-threatened-by-trump/">Laurie Allen said in 2017</a>: “the internet is a terribly unstable way to keep information available.” As decentralized models to connect people to information are developed, these models present a unique opportunity to rethink how scholarly data are stored and accessed online.</p>
+<h2 id="a-network-approach">A network approach <a class="direct-link" href="#a-network-approach">#</a></h2>
+<p>Centralized data storage systems can only preserve what they hold in their servers. These models require custody to provide access. Data custody becomes increasingly expensive and difficult to manage as data volumes increase. Stephen Abrams asks the question, <a href="https://figshare.com/articles/_/5844369">“can we replace custody with easy access?</a>” In other words, is knowing where data are, and trusting the preservation standards of that location, equivalent to (or better than) custody? Can we reduce the burden on institutions to own everything with a mandate to know where data are and how many verified copies exist?</p>
+<p>The idea of “preservation in place” where libraries bring “preservation services to the content” is <a href="https://www.google.com/url?q=http://www.cdlib.org/services/uc3/docs/Abrams-Cruse-Kunze-Preservation-is-not-a-place-final.pdf&amp;sa=D&amp;ust=1524179362754000&amp;usg=AFQjCNEQgSxzZZfwkxpKrNgzvpEl2Kc7eQ">not new</a>. In a decentralized model, custody is not required for access. By bringing preservation services to content, we replace custody with access and preservation. Data then live in a network of linked institutions that model a commons of trust.</p>
+<p>To create a functional system wherein information is shared across silos between trusted institutions is a utopian idea. What would such a network require beyond technology? The most critical factor is trust. Trust in each participating entity’s standards and processes. Trust between institutions. Trust from the community that a commons can be sustained without tragedy. Today's decentralized models make preservation in place technically feasible, and interoperable with existing data preservation silos. But perhaps the cultural part of modeling a new system will be more challenging than writing the software? ;)</p>
+<h2 id="join-us">Join us <a class="direct-link" href="#join-us">#</a></h2>
+<p>Scholarship today is another form of online content creation. I resisted the idea for years. But the parallels are clear. Scholarly work is used by for-profit entities to drive clicks, bring advertisers and subscribers, and sustain their businesses. We give up custody of — and sometimes rights to — our work. We then must pay for access to our own data and publications, or lose access to those resources. I believe this system is unsustainable because it is not based on the community’s values. Reducing reliance on centralized systems will help to return the control of scholarly assets to the creators and trusted institutions that value access and scholarship. Data preservation and access are fundamentally about trust. Who do you trust to steward human knowledge? I trust libraries, scholars, and public interest technologists over entities with clear business interests.</p>
+<blockquote>
+<p>What’s important to the scholarly community? Are those values are reflected in our technology?</p>
+</blockquote>
+<p>Today’s online scholarly infrastructure values systems of centralized control, people with reliable internet connections, people/institutions with money to pay for access (when there’s no money — it values people/institutions with the technical capacity and time to do the work themselves).  The web is being reimagined today as a network wherein data are freely shared between linked users. For scholars and librarians, it’s a chance to step back and assess what assumptions and values are baked in to today’s open scholarly infrastructure. What’s important to the scholarly community? Are those values are reflected in our technology? Let’s reexamine how scholarship and data live on the web and move into a future where our values are reflected in our technology choices.</p>
+<p>Save the date for our next community call May 31st 11am PST. Join our <a href="https://datproject.us16.list-manage.com/subscribe/post?u=993df3c1e35c9b224b64ccf72&amp;id=128a796b8e">mailing list</a> for a reminder. Follow me us on the tweets, @daniellecrobins, @dat_project, and @codeforsociety.</p>
+<hr>
+<p>Thanks to the <a href="https://onlinenorthwest.org/about/">2018 Online Northwest Program Planning Committee</a> for inviting me to speak and organizing such a fantastic conference! And extra thanks to Joe Hand, Karissa McKelvey, John Chodacki, Robin Champieux, and Stephen Abrams for great discussion and comments on drafts of this work.</p>
+<hr>
+<h2 id="what%E2%80%99s-dat-why-are-we-working-with-this-technology%3F">What’s Dat why are we working with this technology? <a class="direct-link" href="#what%E2%80%99s-dat-why-are-we-working-with-this-technology%3F">#</a></h2>
+<p>Dat is an open source, non-profit backed peer-to-peer file sharing protocol originally developed to distribute large datasets. It’s not blockchain based, and instead uses an append only log to track changes and a private key to allow an author to make changes.</p>
+<p>When a folder is tracked with Dat, it creates a unique persistent identifier for that package of data (whatever is in the folder). This unique identifier is not based on location or the folder’s content. In this system, a folder of data can change location or contain dynamic content while keeping the same identifier. Dat then tracks changes to the contents of the folder with a transparent change log. Any reader can view the change log, early versions of the dataset, or keep the folder synced to always have the latest version.</p>
+<p>The Dat identifier can be used to track that package of data across a network. Using the identifier, anyone can see how many verified copies exist, download copies, and re-share it from another computer. A Dat package can contain any file type and tracking with Dat does not change the contents of the package. It’s a lightweight and flexible system that prioritizes user control of data sharing across a decentralized network. For more on how Dat works, check out the <a href="https://github.com/datproject/docs/blob/master/papers/dat-paper.pdf">whitepaper</a>.</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/data-sharing-at-institutions-and-beyond-with-dat/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/04/0003811-DSC01725-resize.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/data-sharing-at-institutions-and-beyond-with-dat/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Data sharing between institutions</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Interested in beta testing secure data sharing software? Try out the new Dat install and data sharing workflow with a friend and let us know how it went.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-governance-updates/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Announcement</span>
+          <h2 class="post-card-title">Dat Project Updates: Focusing Our Goals &amp; Community Structure
+</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Over the last few years, Dat Project has grown from a tool for data transfer to a wider community building peer-to-peer applications. We are continually impressed and excited about the work being done
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /practical-decentralization/ -->
+  </body>
+</html>

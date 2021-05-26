@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcing The Dat Anacapa Container</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2018-09-18">18 September 2018</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Announcing The Dat Anacapa Container</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2018/09/Sky-copy.jpg)">
+      </figure>
+
+      <section class="post-full-content"><p>Today we are releasing <a href="http://github.com/datproject/anacapa-container">Anacapa Container</a>, which enables reproducibility of research environment and data across campuses.</p>
+<p>If you've been following our work over the last year you'll be aware of the Dat in the Lab project, funded by the Gordon and Betty Moore foundation (read our previous writeups on <a href="/uc-merced-1/">a lab visit</a>, <a href="/draft-pipelines-edna-and-more/">eDNA</a>, and <a href="/challenges-of-decentralized-hpc-containerization/">containerization challenges</a>). As this project comes to a close, we are excited to release this final piece of work. A final project wrap-up will be released later this fall.</p>
+<p>The Anacapa Container project has been a collaboration between the Code for Science &amp; Society team and researchers at five different University of California campuses: UCLA, UC Merced, UC Davis, UC Riverside and UC Santa Cruz. Our goal was to take the <a href="https://github.com/limey-bean/Anacapa">Anacapa pipeline</a> from UCLA and use a combination of Dat plus containerization technologies to replicate the pipeline across the various University of California research cluster environments.</p>
+<p>The Anacapa pipeline itself is a collection of software written in Bash, Python, R and Perl that takes eDNA sequences and performs computationally expensive and complex analysis on the data to do things such as detect which species were in the sample. Anacapa is the core analysis tool for the CALeDNA consortium, and there are a number of collaborating institutions within California that wish to use the pipeline. Additionally, there are now a growing number of research groups world-wide who are interested in re-using the Anacapa pipeline for their own local eDNA research.</p>
+<h4 id="problem%3A-complex-software-installation">Problem: Complex Software Installation <a class="direct-link" href="#problem%3A-complex-software-installation">#</a></h4>
+<p>One of the most challenging parts of using any complex scientific pipeline is installing all of the necessary software dependencies to run it. This may not seem challenging at first, but scientific software is usually poorly documented, and rarely tested on research servers beyond the ones at the originating institution. A growing number of researchers now are using modern software development practices, such as writing user friendly documentation and putting their projects on GitHub, but it can still be weeks or months of effort to replicate the dependencies from the originating institution at a new software environment.</p>
+<p>In our case, the CALeDNA consortium includes members of 6 universities. This means for a researcher at UC Merced that wants to run Anacapa, they would have to request that the UC Merced Research Cluster install a long list of specific versions of the R, Python, Perl and Shell bioinformatics utilities that UCLA's Hoffman cluster provides. The UCLA-based authors of Anacapa may have never had to do this for certain software packages, as many of them may have already been installed via requests from other researchers who also use the Hoffman cluster. UC Merced has a different independently maintained research cluster. This means a completely different set of pre-installed packages, and a different Linux distribution. All of this results in a lot of back and forth between researchers and research cluster administrators at both campuses to try and debug the many differences that pop up when trying to replicate the exact environment that is composed of dozens of independent software packages.</p>
+<p>When we started working on this project, one particular researcher had already spent two months working on getting the necessary packages installed locally, but had not yet finished them all. We realized we needed a way to simplify the installation of the Anacapa environment so that every new research group could avoid months of setup work.</p>
+<h4 id="anacapa-container">Anacapa Container <a class="direct-link" href="#anacapa-container">#</a></h4>
+<p>We decided to use the <a href="http://github.com/singularityware">Singularity</a> containerization software as the main dependency for Dat Container. Singularity is an open source software container developed by folks from Lawrence Berkeley National Laboratory, learn more <a href="https://www.sylabs.io/">here</a>. It has a security model that works well for university compute cluster users. While looking into the other options, we learned that the approach taken by the popular container software Docker requires sudo access. Unfortunately, most universities are unable to offer Docker containers to researchers as university compute clusters can not offer that to individual users. Singularity, on the other hand, uses a different technique to load the containerized environment without requiring sudo privileges. Docker is much more popular in the general tech industry, but this issue eliminated it as an option for us. Singularity is a young project that is developing quite rapidly and it has worked well for this application.</p>
+<p>The <a href="https://github.com/datproject/anacapa-container">Anacapa Container</a> itself is a singularity image that we developed to include all of the software dependencies needed to run the Anacapa Toolkit from UCLA. We have a script called a Containerfile that step-by-step installs each software package into a Ubuntu Linux server operating system disk image file. At the end of the process, a single 2GB disk image file can be distributed. Instead of requiring that the numerous dependencies get installed onto new systems, the only dependency is the Singularity runtime. This simplifies the request a researcher has to maketo their system administrator.</p>
+<p>To make it easy for people on other UC campuses to run Anacapa, we have been involved in getting Singularity installed at five UC campuses. Even though Singularity is a relatively straightforward package, we encounted numerous install errors that had to be corrected with tedious back and forth remote technical support with sysadmins. Even with our streamlined approach that only required one new package get installed (singularity), it was still painful at times. This issue is faced by anyone looking to share resources between institutions. We are hoping that we can improve this process for others who wish to share analysis environments. Singularity is now up and running at five UC campuses, and any future projects that use Singularity images as a distribution format will require zero new software package requests, as they already have everything they need.</p>
+<p>Dat sits in the Anacapa software container and is used to replicate the details of the original Anacapa compute environment.This means that the as the container is replicated and reused, folks can use Dat to version and share their new versions of the container environment.</p>
+<p>To work with the Anacapa Container, users only need to download the Anacapa Container file, run a singularity command, and they are in a shell prompt that has all of the Anacapa software pre-installed. Due to the containerization approach that Singularity takes, the heavy compute resources on the host machines are available as native resources in the container, meaning there is no loss in performance (as is the case with virtualization based approaches like VirtualBox).</p>
+<h4 id="software-as-data">Software as data <a class="direct-link" href="#software-as-data">#</a></h4>
+<p>We often think as data as separate from analysis scripts, software, and compute environments. In reality, these are different types of digital information that can be handled by Dat. By treating the software as data, we can approach preservation, versioning, and sharing differently.  We like the simplicity of the single file disk images that Singularity uses, as it fits well with the Dat ethos of sharing your research as one folder that includes your manuscript, your datasets, your papers website, and now your entire research software environment.</p>
+<p>This another step towards easy software reproducibility. The image ensures all of the exact software versions required are being used at runtime. The traditional problem of a system wide update of a Python package breaking everyones existing scripts that depended on the old version is no longer an issue. Researchers can simply load the environment they want by grabbing a specific Singularity image.</p>
+<p>By representing the software environment as a file that can get archived along with the dataset, we can ensure future researchers can always quickly get up and running in their quest to reproduce or modify the Anacapa pipeline. One of our partners on this project is the California Digital Library, who are a group inside the University of California that (among other things) are developing tools to ensure research datasets can get archived and made accessible forever. The challenge at hand is building a system that can coordinate dataset archiving across the giant distributed system that is the University of California and all of the external research groups that depend on UC data.</p>
+<p>We have made this work <a href="https://dash.ucmerced.edu/stash/dataset/doi:10.6071/M31H29">available through DASH</a>, which is a data repository hosted by California Digital Library. Any UC researcher has access to publish datasets through DASH, and we are hoping Anacapa Container can serve as a model for how to distribute reproducible software as part of the research dataset.</p>
+<h4 id="dat-and-singularity">Dat and Singularity <a class="direct-link" href="#dat-and-singularity">#</a></h4>
+<p>Distributing the research container as a single file means that it can be used in conjunction with Dat as the distribution tool. We have only scratched the surface of the possibilities here, but we are looking forward to more partnerships with data repository providers like California Digital Library and the Internet Archive to build a distributed data archive that includes executable software containers. This would ensure data does not simply go to a data repository never to get used again, as the container would allow for the dataset to become interactive and available instantly.</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/prereview-joins-cs-s-sponsored-project-program/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/10/marcos-prereview-1.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/prereview-joins-cs-s-sponsored-project-program/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Community</span>
+          <h2 class="post-card-title">PREreview joins CS&amp;S Sponsored Project Program!</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>We are thrilled to announce that Code for Science &amp; Society is welcoming PREreview to our Sponsored Projects Program! 
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/moss-grant-announcement/">
+      <div class="post-card-image" style="background-image: url(https://images.unsplash.com/photo-1519852218644-6b124b63c123?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=c5bd7f21cb1f1e7854f7cd7669597de0)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/moss-grant-announcement/">
+        <header class="post-card-header">
+          <span class="post-card-tags"></span>
+          <h2 class="post-card-title">Dat Receives Mozilla Open Source Support Grant</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>We are excited to announce that Dat Project received a $34,000 grant to support Community Building, Protocol Documentation, and Tooling through the Mozilla Open Source Support (MOSS) program.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /announcing-the-dat-anacapa-container/ -->
+  </body>
+</html>

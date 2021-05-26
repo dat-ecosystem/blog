@@ -1,0 +1,22 @@
+{% for post in postslist | reverse %}
+  <article class="post-card post {% if not post.data.banner %}no-image{% endif %}">
+    {%- if post.data.banner %}
+    <a class="post-card-image-link" href="{{ post.url | url }}">
+      <div class="post-card-image" style="background-image: url({{ post.data.banner }})"></div>
+    </a>
+    {%- endif %}
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="{{ post.url | url }}">
+        <header class="post-card-header">
+          {%- if post.data.tags and post.data.tags.length > 0 %}
+          <span class="post-card-tags">{{ post.data.tags | postTag }}</span>
+          {%- endif %}
+          <h2 class="post-card-title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>{{ post.data.excerpt }}</p>
+        </section>
+      </a>
+    </div>
+  </article>
+{% endfor %}

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat in the Lab at UC Merced: Reproducible bioinformatics pipelines in marine ecology
+</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-10-12">12 October 2017</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Dat in the Lab at UC Merced: Reproducible bioinformatics pipelines in marine ecology
+</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2017/10/0003810-DSC01685.jpg)">
+      </figure>
+
+      <section class="post-full-content"><p>This week the <a href="https://github.com/codeforscience/Dat-in-the-Lab">Dat in the Lab</a> team was hosted by the <a href="http://library.ucmerced.edu/digital-curation-and-scholarship">UC Merced Library</a> for a visit to <a href="http://mnd.ucmerced.edu/">Mike Dawson’s</a> lab. We learned about jellyfish in Palau’s marine lakes (more <a href="https://www.youtube.com/watch?v=RoBIgoAxlMQ">here</a>), <a href="http://news.nationalgeographic.com/2016/05/160524-starfish-baby-boom-surprises-biologists/">sea star wasting disease</a>, and an exciting environmental DNA (eDNA) project (part of <a href="http://www.ucedna.com/">CALeDNA</a>).</p>
+<p><img src="/content/images/2017/10/49tXn.jpeg" alt="49tXn"> <em>Mike Dawson describes differences in fish found in Palau's marine lakes</em>.</p>
+<p>Researchers in Dawson’s lab manage a collection of physical specimens (such as preserved jellyfish collected on research trips), extracted DNA and other raw material from samples, as well as genomic data in various stages of processing and annotation.</p>
+<p><img src="/content/images/2017/10/Palau-Dawson.jpg" alt="Palau-Dawson"> <em>The Dawson Lab collects samples in the field with the <a href="http://coralreefpalau.org/research/marine-lakes/marine-lakes-research/">Coral Reef Research Foundation</a> and our collaborators Herwig Stibor, Philippe Pondaven, and Stephan Behl from Munich (Germany) &amp; Brest (France). For more pictures from the Dawson Lab, check out <a href="http://mnd.ucmerced.edu/Gallery/Gallery.html">their photo gallery</a>.</em></p>
+<p>The samples come back to the lab, where DNA can be extracted and processed to generate raw DNA sequences that are used in barcoding, population genomics, and the basis of an annotated genome (samples are stored in some impressively organized -20 C freezers).</p>
+<p><img src="/content/images/2017/10/0003810-DSC01663-1.jpg" alt="0003810-DSC01663-1"> <em>Impressive freezers!</em></p>
+<p>The raw sequence data are then input into analysis pipelines to investigate phylogenomics, community ecology, and population genomics in marine species. In the Dawson lab, a researcher may participate in all of these processes through their time in the lab - seeing a dataset from specimen collection to annotated genome. In other words, a single researcher may manage both physical collections and diverse data types representing all points of the research lifecycle.</p>
+<p><img src="/content/images/2017/10/tVrJy.jpeg" alt="tVrJy"> <em>Rare plastic Orca sighting in the Dawson Lab.</em></p>
+<p>We met with lab members to discuss their research processes and uncover obstacles and concerns relating to data publishing and data management. Through these conversations, reproducible research computing environments emerged as a challenge for many of the researchers. A research computing environment refers to the operating system, software versions, packages, and other dependencies that are specific to the analysis environment on a specific computer or cluster. A pipeline is a series of data transformation or analysis tools linked together. In genomic research, pipelines are used to take raw data and produce an annotated sequence through a series of (theoretically) reproducible steps.</p>
+<p>While details of a computing environment may be published with an analysis pipeline or publication, running another group's pipeline or incorporating parts of a published pipeline is not always straightforward. Researchers in the Dawson lab want to run pipelines from other groups easily, and they want to package up their pipeline for data transformation, analysis, and annotation so that it can be easily run by other groups. The analysis pipelines themselves are research outputs.  Any improvement in documentation and reusability of these resources will enhance the impact of the research by improving the ability of others to use the pipeline.</p>
+<p><img src="/content/images/2017/10/BFoH4.jpeg" alt="BFoH4"> <em><a href="https://scholar.google.com/citations?user=Zgwjck8AAAAJ&amp;hl=en">Dannise V. Ruiz-Ramos</a> described the pipeline she is working with to annotate the sea star genome.</em></p>
+<p>In our meeting with Mike Dawson, he raised the issue of continuity in a research group. How does a group leader handle it when several students or postdocs all get amazing jobs within the same year? Running a group that supports PhD and postdoctoral training positions means that people will move on. When a person leaves one research group, the institutional knowledge they have accrued goes with them.</p>
+<p><img src="/content/images/2017/10/0003810-DSC01697.jpg" alt="0003810-DSC01697"></p>
+<p>From the perspective of the group leader, it is important to capture as much of that knowledge as possible and use it to smoothly onboard new group members. Data management is critical in this process, but capturing the research computing environment (and other aspects of workflow not typically thought of as data) are just as critical as the raw datasets and physical specimens. Well documented, reproducible pipelines will save the group time effort and provide training for new group members.</p>
+<p><img src="/content/images/2017/10/0003810-DSC01670.jpg" alt="0003810-DSC01670"> <em>Unlovable samples will be dealt with.</em></p>
+<p>What can Dat do to make bioinformatics pipelines more reproducible? Dat enables data version control. All the information that describes a research computing environment is data, but giving a researcher a text file detailing the software and operating system does not guarantee that the researcher will be able to reproduce the environment. Can Dat take some of the work out of this? Can we leverage this Dat’s data version control to create containerized virtual environments, building on our <a href="https://github.com/mafintosh/dat-container">dat-container</a> prototype? While a full solution of the reproducible research environment issue may not be possible in the term of this project, we are actively pursuing this problem and will see where it takes us.</p>
+<p><img src="/content/images/2017/10/0003810-DSC01702.jpg" alt="0003810-DSC01702"> <em>After meeting with research group members, we took in the sights of Merced.</em></p>
+<p><img src="/content/images/2017/10/0003811-DSC01719.jpg" alt="0003811-DSC01719"> <em>Library staff joined the Dawson lab for the Dat tutorial.</em></p>
+<p>The next morning, the UC Merced Library hosted a workshop on Dat (<a href="https://try-dat.com">try it at home</a>). The goal of the workshop is to take participants through basic Dat functionality and spark discussion on potential features. Thanks to our UC Davis beta-testers, the UC Merced workshop was a bug-free experience.  Like the group at <a href="/dat-in-the-lab-ucdavis-1/">UC Davis</a>, researchers expressed an interest in multi-writer functionality to allow multiple people to author a datset. We also discussed archiving the lab’s data, the point at which a lab may not reasonably be able to store all versions of all datasets, and how to make data versioning decisions when working analysis pipelines.</p>
+<p><img src="/content/images/2017/10/0003811-DSC01725.jpg" alt="0003811-DSC01725"> <em>Emily Lin, Head of <a href="http://library.ucmerced.edu/digital-curation-and-scholarship">Digital Curation and Scholarship</a>, toured the Dat team around the UC Merced Library, including a stop in the spectacular McFadden-Willis Reading Room.</em></p>
+<p>This visit underscored for us that focusing on researcher workflows and feedback is critical for us. We have learned so much from the visits to UC Davis and Merced. The feedback from researchers has already influenced our priorities. What will we learn over the next year as we continue to work with these researchers? Stay tuned for more detailed posts on the initial projects that we are pursuing at each institution over the next few weeks. Thanks to everyone at UC Merced for a productive visit!</p>
+<p><img src="/content/images/2017/10/0003811-DSC01713.jpg" alt="0003811-DSC01713"> <em>UC Merced campus visible in the distance across the fields.</em></p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/using-dat-for-automatic-file-backups/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Using Dat for automatic file backups</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Here&#39;s a short tutorial about how to use the dat command line tool, plus a couple other fun utilities we have written, to automate the backup of files in real time from your
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/new-website/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/10/Screen-Shot-2017-10-11-at-9.29.01-AM.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/new-website/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Announcement</span>
+          <h2 class="post-card-title">A Distributed Data Community: Introducing the New Dat Website
+</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Now, more than ever, we must fight together for an open web. With the threat of a privatized web, we strive for a true web of commons — a combination of new technologies and
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /uc-merced-1/ -->
+  </body>
+</html>

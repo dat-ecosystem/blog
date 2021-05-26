@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualizing environments for eDNA analysis</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-11-28">28 November 2017</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Virtualizing environments for eDNA analysis</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2017/11/LA-arial-view-resize.jpeg)">
+      </figure>
+
+      <section class="post-full-content"><p>Last month we introduced on this blog the research groups at <a href="/dat-in-the-lab-ucdavis-1/">UC Davis</a> and <a href="/uc-merced-1/">UC Merced</a> that we'll be working with for the <a href="/dat-in-the-lab/">Dat in the Lab project</a>. Read on to hear where this project is taking us (hint in the header photo).</p>
+<p>Discussions with these research groups have highlighted the need for easy reproducible research environments.  Researchers often need to run another group's analysis pipeline, but software dependencies can turn this seemingly simple task into a long process. Every university has a different computing environment on their local clusters. Another side of this issue is that research groups need to archive pipelines so that future group members can use and learn from them. To address this issue, we've been developing Dat Container to create customizable versioned environments.</p>
+<p>Through the Dawson Lab at UC Merced, we were introduced to the exciting <a href="http://www.ucedna.com/">CALeDNA program</a> run by the University of California Conservation Genomics Consortium. This initiative seeks mobilize citizen scientists to collect eDNA samples to monitor California's biodiversity.</p>
+<p>What's eDNA? eDNA stands for environmental DNA and it refers to DNA collected from soil, sand, water, or other material that will reflect organisms that have been through the place where the sample was taken. Every organism sheds cells and every cell contains DNA, DNA can be collected in from the cells an organism leaves behind in the environment.</p>
+<p>For most traditional genetic or genomic analysis, DNA samples are collected directly from an organism's saliva, hair, skin, or other cells. We can use eDNA to scale up genetic analysis from individuals to entire communities by non-invasively collecting environmental samples. These environmental samples should contain eDNA from all of the organisms that pass through an environment. This allows us to monitor the diversity of animals, plants, fungi, and prokaryotes without the need to individually sample each organism. This works particularly well for monitoring hard to capture, endangered, and cryptic species. For more on eDNA, start <a href="http://www.ucedna.com/what-is-environmental-dna/">here</a>.</p>
+<p><img src="/content/images/2017/11/cal-eDNA.jpg" alt="cal-eDNA"> <em>CALeDNA citizen science sample collection.</em></p>
+<p>Are you based in California? You can take part - learn more about the CALeDNA citizen science program <a href="http://newsroom.ucla.edu/releases/be-a-citizen-scientist-and-help-preserve-californias-biodiversity">here</a>. Volunteers get training, a sample collection kit, a phone app to guide their documentation of California's rich biodiversity, and bragging rights.</p>
+<p>Our use-case for this pilot is UC Merced postdoctoral researcher Dannise V. Ruiz-Ramos, who wants to use an eDNA pipeline developed at UCLA on the UC Merced cluster to analyze DNA from soil samples. She is interested in estimating biodiversity and detecting threatened or endangered species in vernal pools in UC Merced grassland reserve. At UCLA, postdoctoral researcher <a href="https://www.ioes.ucla.edu/person/emily-curd/">Emily Curd</a> (along with a all-star team including graduate students Gaurav Kandlikar, Zack Gold, and Rachel Turba, post-doc Baochen Shi, Executive Director of the UC Conservation Genomics Consortium Rachel Meyer, and software engineer Jesse Gomer) developed a software pipeline to process and assign taxonomy to genetic material collected in eDNA samples for the CALeDNA program.</p>
+<p><img src="/content/images/2017/11/UCLA-campus-selfiestick-resize.jpeg" alt="UCLA-campus-selfiestick-resize"> <em>Janns Steps and Royce Hall on the beautiful UCLA campus.</em></p>
+<p>This pipeline runs on the <a href="https://idre.ucla.edu/hoffman2">Hoffman2</a> computing cluster. The pipeline developed by Dr. Curd and her team calls on the local versions R, Perl, Python, and Anaconda and many other software packages installed on Hoffman2. When Dr. Ruiz-Ramos attempts to run the pipeline on the UC Merced cluster, she needs to run it in an environment with the exact same versions of the each software package. Getting this sorted out usually takes cluster teams and research teams at both institutions working together and generally takes weeks to months.</p>
+<p>Our approach is to develop an container-based emulation of the Hoffman2 cluster that can run on any machine. By creating a container that includes the complete software environment of Hoffman2, researchers across the UC system and beyond can quickly get Hoffman2-based analysis pipelines up and running.</p>
+<p>To do this, we are working with <a href="https://github.com/mafintosh">Mathias Buus</a> to develop <a href="https://github.com/mafintosh/dat-container">Dat Container</a>, which will version control containerized research environments along with data and code. Researchers will be able to visit <a href="https://datbase.org/">Datbase</a> to download a containerized computing environment specific to [the pipeline they want to run]. Researchers can then run [pipeline of interest] on their local computing cluster, in the cloud, or on a laptop without the hassle of installing multiple software packages. By emulating the Hoffman2 environment, we'll help researchers save time and effort. To facilitate archiving the work, a Dat Container can be stored along with data and code. Our goal is to create an reproducible research environment that can be archived, accessed when needed without hassle, and shared with collaborators. This pilot will lay the foundation for us to build out Dat Container as a solution for researchers looking to share and archive research environments.</p>
+<p>Moving forward, making it easier to replicate bioinfomatic analysis will help the CALeDNA project become accessible to citizen science groups and other collaborators outside the UC system. Over here in Dat land, we are big fans of the CALeDNA program. We hope that our work on Dat Container will allow people outside universities to play with real scientific analysis pipelines and data!</p>
+<p><em>Magical header photo of downtown LA with a marine layer by Max Ogden, from a plane, <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a>.</em></p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dont-ship/">
+      <div class="post-card-image" style="background-image: url(https://images.unsplash.com/photo-1489024091080-de8bc07232d4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=f034f4644ad124f918c9ea170ff5ba07)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dont-ship/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Business</span>
+          <h2 class="post-card-title">Do Not Ship It</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Between us &amp; our community, we think of lots of useful things that could be built on Dat. But we do not ship many of them. Why not? Because good decisions are hard!
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/oct-recently/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/10/tower-pic-1.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/oct-recently/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Recently</span>
+          <h2 class="post-card-title">Recently @ Dat Project</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Since we launched a new website, folks in the Dat community have produced some truly inspiring work. Check out a three-year-old bug fix and a new decentralized social network.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /draft-pipelines-edna-and-more/ -->
+  </body>
+</html>

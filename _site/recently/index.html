@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recently @ Dat Project</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-08-04">4 August 2017</time><span class="date-divider">/</span> <a href="/tags/recently/" class="post-tag">Recently</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Recently @ Dat Project</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2017/08/banner-04.png)">
+      </figure>
+
+      <section class="post-full-content"><p>A lot is going on in Dat world! It can be nice to take a step back and see what's we've been building recently. In this post series, we will highlight new Dat-related work and interesting things from our community. There are a few other pieces we've had our head down working on that we're looking forward to showing soon!</p>
+<p>Recently, we've shipped these things:</p>
+<ul>
+<li>Selective Sync in CLI &amp; a <a href="https://github.com/datproject/dat/releases/tag/v13.8.0">new releaase</a></li>
+<li><a href="https://github.com/datproject/dat-http">Dat HTTP Storage</a></li>
+<li><a href="https://github.com/node-on-mobile/node-on-android">Node on android</a></li>
+<li><a href="http://chat.datproject.org">Dat Chat</a> via hyperirc</li>
+<li>Updated blog &amp; style</li>
+</ul>
+<h3 id="selective-sync">Selective Sync <a class="direct-link" href="#selective-sync">#</a></h3>
+<p>Dat's design means each user only downloads the data they request but it was not possible to do this in the CLI, until now. This powerful feature allows users to download only the files they want, even from a massive Dat.</p>
+<p>The new <a href="https://github.com/datproject/dat/releases/tag/v13.8.0">Dat CLI release</a> adds selective sync along with key backup and importing. Selective sync allows you to specify which files you want to download either with an argument or using the <code>.datdownload</code> file. <code>dat sync</code> will download and keep updated on the selected files. This means you can put large datasets into Dat but have control over what files you download where.</p>
+<h3 id="dat-http-storage">Dat HTTP Storage <a class="direct-link" href="#dat-http-storage">#</a></h3>
+<p>We are very excited about leverging Dat's agnostic storage capabilities. This means you can store your files where ever and retrieve them with whatever protocol you want.*</p>
+<p>With <a href="https://github.com/datproject/dat-http">Dat HTTP Storage</a>, files can be stored on regular http servers and downloaded via Dat. We're only starting to consider the feature possibilities of this, but it means we can start hosting Dats on any static file server, such as S3. Next up is integrating this into our dat-node library.</p>
+<p>*<em>As long it supports random access</em></p>
+<h3 id="node-on-android">Node on Android <a class="direct-link" href="#node-on-android">#</a></h3>
+<p>We get asked a lot if Dat can run on mobile and always thought it'd be a long road of implementation in Java or Objective-C. When some community members showed us they could run Dat on <a href="http://termux.com">Termux</a>, a terminal emulator for Android, @mafintosh realized the possibilities and started coding!</p>
+<p><a href="https://github.com/node-on-mobile/node-on-android">node-on-android</a> provides a simple way to create and build Javascript applications that run as Android apps. The approach is similar to that of Github's <a href="https://github.com/electron/electron">Electron</a>. We still have some work to do to get Dat integrated into an app but it is much closer than we thought.</p>
+<h3 id="dat-chat-via-hyperirc">Dat Chat via hyperirc <a class="direct-link" href="#dat-chat-via-hyperirc">#</a></h3>
+<p>Hypercore, the foundational technology for Dat provides easy distributed streaming tools that can move data anywhere. In this case, we have a single server logging our IRC chat. Then the logs can be viewed anywhere via <a href="https://github.com/mafintosh/hyperirc">hyperirc</a> or even downloaded as a regular file via <a href="https://github.com/mafintosh/hyperpipe">hyperpipe</a>.</p>
+<p><a href="http://chat.datproject.org/">chat.datproject.org</a> shows how you can integrate hypercore into user facing web applications, by leveraging streaming websockets. In the future we hope to also connect users peer-to-peer over WebRTC and allow users to join and send message on that page.</p>
+<h3 id="updated-blog">Updated Blog <a class="direct-link" href="#updated-blog">#</a></h3>
+<p>Shoutout to <a href="http://ghost.org">Ghost</a> for making the 1.0 upgrade process seamless &amp; well documented. We also took the opportunity to also add some custom Dat style to the default Casper theme. Of course, we <a href="https://datproject.org/dat://5796f6dfde2364adaea41a5f7974627f69f5a2f18f16400b0f008156c632075e/contents/">used Dat</a> to transfer the theme to our server. Let us know what you think.</p>
+<h2 id="interesting-happenings-in-the-community">Interesting Happenings in the Community <a class="direct-link" href="#interesting-happenings-in-the-community">#</a></h2>
+<ul>
+<li><a href="https://macwright.org/2017/07/20/decentralize-your-website.html">So you want to decentralize your website</a> by Tom MacWright</li>
+<li>And a response from the Beaker Browser team: <a href="https://medium.com/blue-link-labs/so-you-want-your-decentralized-browser-to-work-correctly-c06c4038ab12">So you want your decentralized browser to work correctly</a></li>
+<li><a href="https://beakerbrowser.com/releases/0-7-5/">Beaker Browser 0.7.5 released</a>, with a continued effort to improve dat connections and network debugging!</li>
+</ul>
+<p>Also, thanks to <a href="https://macwright.org/2017/08/01/recently.html">Tom MacWright</a> for the idea of recently posts.</p>
+<h2 id="random-cool-things">Random Cool Things <a class="direct-link" href="#random-cool-things">#</a></h2>
+<ul>
+<li><a href="https://opencollective.com/beaker">Beaker Browser on OpenCollective</a> - Support our friends building a peer to peer browsering using Dat!</li>
+<li><a href="https://gist.github.com/mafintosh/460904e61a09269d619f720233e57e48"><strong>Prototype</strong>: Remote debugging via hypercore</a> - @mafintosh had a great idea that we can stream logs using hypercore. Our command line logging module, <a href="https://github.com/joehand/neat-log">neat-log</a>, is especially great because we can use the state to reconstruct more detailed debugging information in a separate UI from the user. Coming soon to a Dat CLI near you!</li>
+<li><a href="https://github.com/joehand/trimet-live-archive"><strong>Prototype</strong>: live bus data over dat</a> - Live streaming bus GPS locations into Dat with a map UI coming soon. The map will use websockets to display bus locations via Dat.</li>
+</ul>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-in-the-lab/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/10/0003810-DSC01665.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-in-the-lab/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Moore Foundation supports new collaboration with California Digital Library (and a new team member!)</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>We are excited to announce a new project called Dat in the Lab. The project is a collaboration between the us and the California Digital Library (CDL) with support from the Gordon and Betty Moore Foundation. 
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/locking-science-open/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/06/14499185038_cdd258ef1e_z-1.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/locking-science-open/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Locking Science Open with Decentralized Scientific Archives</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Last year, we spoke at Internet Archive&#39;s Decentralized Web Summit and demonstrated Dat as a way to lock open scientific articles, data, and code together in one decentralized archive.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /recently/ -->
+  </body>
+</html>

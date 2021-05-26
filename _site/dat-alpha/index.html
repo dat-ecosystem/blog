@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcing the Dat Alpha</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post no-image">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2014-08-19">19 August 2014</time>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Announcing the Dat Alpha</h1>
+      </header>
+
+      <section class="post-full-content"><p>The first code went into dat one year ago, <a href="https://github.com/maxogden/dat/commit/e5eda57b53f60b05c0c3d97da90c10cd17dcbe19">on August 17th 2013</a>. Today, after a year of work, we are really excited to release the first major version of dat along with a <a href="http://datproject.org">new website</a>.</p>
+<p>Our overall goal with dat is to make a set of tools for creating and sharing streaming data pipelines, a sort of <a href="http://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</a> style system but designed from the ground up to be developer friendly, open source and streaming. We are aligned with the goals of the <a href="http://blog.okfn.org/2013/04/24/frictionless-data-making-it-radically-easier-to-get-stuff-done-with-data/">frictionless data</a> initiative and see dat as an important tool for sharing data wrangling, munging and clean-up code so that data consumers can simply <code>dat clone</code> to get good data.</p>
+<p>The first six months of dat development were spent making a prototype (thanks to the <a href="http://www.knightfoundation.org/grants/201346305/">Knight foundation Prototype Fund</a>). In April of this year we were able to expand the team working on dat from 1 person to 3 persons, thanks to <a href="http://usodi.org/2014/04/02/dat">support from the Sloan foundation</a>. At that time dat also became an official <a href="http://usopendata.org/">US Open Data Institute</a> project, to ensure that open data remains a top priority going forward.</p>
+<p>Sloan’s proposition was that they like the initial dat prototype but wanted to see scientific data use cases be treated as top priority. As a result we expanded the scope of the project from its tabular-data-specific beginnings and have focused on adding features that will help us work with larger scientific datasets.</p>
+<p>Up until this point, the dat API has been in flux, as we were constantly iterating on it. From this point forward we will be taking backwards compatibility much more seriously, so that third party developers can feel confident building on top of dat.</p>
+<h2 id="how-to-get-involved">How to get involved <a class="direct-link" href="#how-to-get-involved">#</a></h2>
+<h3 id="try-it-out">Try it out <a class="direct-link" href="#try-it-out">#</a></h3>
+<p>You can <a href="https://github.com/maxogden/dat#install">install dat today</a> and play around with it by importing or cloning a dataset.</p>
+<p>You can also click this button to deploy a dat to Heroku for testing purposes for free (but be aware of the <a href="https://github.com/maxogden/dat/blob/master/readme.md#deploy-to-heroku">Heroku ephemeral filesystem limitations</a>):</p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/bmpvieira/heroku-dat-template.git"><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy"></a></p>
+<p>The dat REST API comes bundled with the <a href="https://github.com/maxogden/dat-editor#readme">dat-editor</a> web application.</p>
+<a href="https://github.com/maxogden/dat-editor">
+  <img height="200" title="dat editor" alt="dat editor" src="https://raw.githubusercontent.com/maxogden/dat-editor/master/screenshot.png"/>
+</a>
+<p>To start learning about how to use dat please read our <a href="https://github.com/maxogden/dat/blob/master/docs/getting-started.md">getting started guide</a>.</p>
+<p>To help you choose an approach to loading data into dat we have created a <a href="https://github.com/maxogden/dat/blob/master/docs/importing.md">data importing guide</a>.</p>
+<h3 id="write-a-module-or-5">Write a module or 5 <a class="direct-link" href="#write-a-module-or-5">#</a></h3>
+<p>The benefit of dat isn’t in the dat module, but rather in the ecosystem that it enables to be built around it.</p>
+<p>There are a lot of modules that we think would be really awesome to have, and <a href="https://github.com/datproject/discussions/issues/5">we started a wishlist here</a>. If you see something you are interested in building, please leave a comment on that thread stating your intent. Similarly, if there is a format or storage backend that you would like to see dat support, leave it in the comments.</p>
+<h2 id="pilot-users">Pilot users <a class="direct-link" href="#pilot-users">#</a></h2>
+<p>This release of dat represents our efforts to get it to a point where we can start working with scientists on modeling their data workflows with dat. We will now be starting concrete work on these pilot use cases.</p>
+<p>If you have a use case in mind and you want to bounce it off of us please open at issue on the maxogden/dat repository with a detailed description.</p>
+<p>While we don’t have many details to share today about these pilots, we hope to change that over the new few months.</p>
+<h3 id="bionode-(bioinformatics----dna)">Bionode (Bioinformatics -- DNA) <a class="direct-link" href="#bionode-(bioinformatics----dna)">#</a></h3>
+<a href="http://bionode.io">
+  <img height="100" width="100" title="bionode" alt="bionode logo" src="https://rawgithub.com/bionode/bionode/master/docs/bionode-logo.min.svg"/>
+</a>
+<p>Dat core team member <a href="https://github.com/bmpvieira/">@bmpvieira</a>, a Bioinformatics PhD student at Queen Mary University in London, is working on applying dat to the domain of working with various DNA analysis related datasets.</p>
+<p>Bruno runs the <a href="https://github.com/bionode">Bionode</a> project. We will be working on integrating Bionode with dat workflows to solve common problems in DNA bioinformatics research.</p>
+<h3 id="rna-seq-(bioinformatics----rna)">RNA-Seq (Bioinformatics -- RNA) <a class="direct-link" href="#rna-seq-(bioinformatics----rna)">#</a></h3>
+<p>Two researchers from UC-San Diego reached out to us recently and have started explaining their use case <a href="https://github.com/maxogden/dat/issues/129">here</a> and <a href="https://github.com/maxogden/dat/issues/135">here</a>. We hope to use dat to make their data management problems go away.</p>
+<h3 id="sloan-digital-sky-survey-(astronomy)">Sloan Digital Sky Survey (Astronomy) <a class="direct-link" href="#sloan-digital-sky-survey-(astronomy)">#</a></h3>
+<a href="http://sdss.org">
+  <img height="100" title="sdss" alt="sdss" src="https://raw.githubusercontent.com/maxogden/dat/master/img/sdss.png"/>
+</a>
+<p>We will be working with the <a href="http://www.sdss.org/">SDSS</a> project to share large their scans of the visible universe, and eventually connect their data with other sky survey data from other organizations.</p>
+<h2 id="the-future-of-dat">The future of dat <a class="direct-link" href="#the-future-of-dat">#</a></h2>
+<p>This release is the first step towards our goal of creating a streaming interface between every database or file storage backend in the world. We are trying to solve hard problems the right way. This is a process that takes a lot of time.</p>
+<p>In the future we would also like to work on a way to easily host and share datasets online. We envision a sort of data package registry, similar to <a href="http://npmjs.org">npmjs.org</a>, but designed with datasets in mind. This kind of project could also eventually turn into a sort of &quot;GitHub for data&quot;.</p>
+<p>We also want to hook dat up to P2P networks, so that we can make downloads faster but also so that datasets become more permanent. Dat advisor Juan Benet is now working on <a href="http://ipfs.io/">IPFS</a>, which we are excited to hook up to dat when it is ready.</p>
+<p>Certain datasets are simply too large to share, so we also expect to work on a distributed computation layer on top of dat in the future (similar to the <a href="http://esgf.org/">ESGF</a> project).</p>
+<p>You can help us discuss these high level future ideas on <a href="https://github.com/datproject/discussions/issues/1">this issue</a>.</p>
+<p><em>To keep up to date with the dat project you can follow <a href="https://twitter.com/dat_project">@dat_project</a> on Twitter or <a href="https://github.com/maxogden/dat">watch the repo</a> on GitHub.</em></p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-goes-beta/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Releases</span>
+          <h2 class="post-card-title">Dat goes beta!</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>After a long year of alpha testing, which started in August of las year, we are excited to announce our launch of a new phase of dat. Beta starts now. Let us know...
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/sloan-funding/">
+        <header class="post-card-header">
+          <span class="post-card-tags"></span>
+          <h2 class="post-card-title">Sloan funding Dat development</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>We’ve got two happy pieces of news!  The first is that board member Max Ogden is transitioning to being an employee, as we start to house and support Dat, Max’s data
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /dat-alpha/ -->
+  </body>
+</html>

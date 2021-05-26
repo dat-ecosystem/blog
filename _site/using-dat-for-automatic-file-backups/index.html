@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Dat for automatic file backups</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post no-image">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-10-13">13 October 2017</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a><span class="date-divider">/</span> <a href="/tags/decentralization/" class="post-tag">Decentralization</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Using Dat for automatic file backups</h1>
+      </header>
+
+      <section class="post-full-content"><p>Here's a short tutorial about how to use the <code>dat</code> command line tool, plus a couple other fun utilities we have written, to automate the backup of files in real time from your local machine to a remote computer over an encrypted Dat connection.</p>
+<p>In this example I'll be configuring Dat to automatically upload any screen shots I take on my Mac by monitoring my Desktop for images with 'Screen Shot' in the name. But you can easily tweak this workflow to backup any set of files or folders you want.</p>
+<p>Note: This is written from the perspective of a Mac OS user, so if you're on Windows some of these steps might not make much sense, but it <em>should</em> all work.</p>
+<ol>
+<li>Install Dat and Monu</li>
+</ol>
+<p>You'll need to install <a href="http://nodejs.org/">Node.js</a>, we recommend the LTS version. Once that's done, you should be able to open up Terminal.app and run <code>npm install dat -g</code>. You might need to put <code>sudo</code> in front if you get a permissions error. To check that you have <code>dat</code> installed, simply type <code>dat</code> and you should see something like this:.</p>
+<p><img src="/content/images/2017/10/Screen-Shot-2017-10-13-at-4.07.40-PM.png" alt="Screen-Shot-2017-10-13-at-4.07.40-PM"></p>
+<p>Next you'll need a copy of the <a href="https://github.com/maxogden/monu/releases">Monu menubar application</a>. This is a program I wrote that runs a set of processes for you in the background. Unzip it and put it in your <code>/Applications</code> folder, then right click &gt; Open it to launch it. When running, it should look like a pair of glasses in your Menubar. You can add it to your Login Items in System Preferences if you want it to boot all your processes on boot.</p>
+<ol start="2">
+<li>Configure Dat and Monu</li>
+</ol>
+<p>In Terminal, <code>cd</code> into your Desktop and run <code>pwd</code> to print the current path. It should be something like <code>/Users/max/Desktop</code>. Then run this command, but replace the path with your path:</p>
+<pre><code>dat share /Users/max/Desktop --ignore='!**/Screen Shot*.png' --ignore='**/**'
+</code></pre>
+<p>This creates a <code>.dat</code> folder on your Desktop, and starts to monitor your Desktop for any Screen Shots. You can tweak the first <code>--ignore</code> as well as the path to select which files to match. If you take off both the <code>--ignore</code> arguments it will simply upload everything. The ignore commands are currently a little confusing, but we're working on making this kind of workflow easier.</p>
+<p><img src="/content/images/2017/10/Screen-Shot-2017-10-13-at-4.19.37-PM.png" alt="Screen-Shot-2017-10-13-at-4.19.37-PM"></p>
+<p>Above is this command running on my computer (I have a lot of Screen Shots on my Desktop). Note I have removed my secret Dat link, to make sure nobody can download my Screen Shots except me :)</p>
+<p>Once you have it working in the Terminal, hit <code>CTRL+C</code> to exit the share process, and let's move on to getting it set it up to run automatically using Monu. Open Monu and click on 'Open Config Folder', and then open the <code>config.json</code> file in a text editor and add an entry like this:</p>
+<pre><code>{
+  &quot;logs&quot;: &quot;./logs&quot;,
+  &quot;pids&quot;: &quot;./pids&quot;,
+  &quot;processes&quot;: {
+    &quot;dat-desktop-png&quot;: &quot;dat share /Users/max/Desktop --ignore='!**/Screen Shot*.png' --ignore='**/**'&quot;
+  }
+}
+</code></pre>
+<p>You can name the process anything you want, I just happened to call mine <code>dat-desktop-png</code>. On the right side, make sure you paste the exact command you had working correctly from the Terminal (Don't use <code>/max/</code> in your path if you are copy pasting!).</p>
+<p>As soon as you save the <code>config.json</code> you can open Monu again and you should see this:</p>
+<p><img src="/content/images/2017/10/Screen-Shot-2017-10-13-at-4.24.42-PM.png" alt="Screen-Shot-2017-10-13-at-4.24.42-PM"></p>
+<p>If you click on it, and click <code>Start</code>, and then go back, It should show up as green and say <code>Running</code>. This means the same Dat process you were running a minute ago in the Terminal is now running in the background, managed by Monu. The logs for this are stored in the same Config folder in case you want to see what output the process has produced.</p>
+<ol start="3">
+<li>Sync your data somewhere!</li>
+</ol>
+<p>On another computer, take the Dat link that was printed out in your Terminal when you first ran <code>dat share</code> (you can <code>cd ~/Desktop</code> and run <code>dat link</code> if you need it again) and run: <code>dat clone &lt;your-link-here&gt;</code>. If you just wanna try it out on one machine, you can clone your Dat into a different folder.</p>
+<p>To back up in real-time run <code>dat sync</code> in the remote location after the initial clone. As long as you are running <code>dat sync</code> and <code>dat share</code> in two places, any new Screen Shots will be synced in real time and backed up. You can test this by monitoring the two folders, and then taking a screen shot with <code>CMD+SHIFT+4</code>. It should show up on your Desktop first, then shortly in the remote folder.</p>
+<p>To stop syncing, simply open Monu and stop the Dat process. Later, to resume syncing where it left off, start it again.</p>
+<ol start="4">
+<li>Store all previous versions</li>
+</ol>
+<p>Instead of using <code>dat sync</code> on the remote end, consider setting up an instance of <a href="https://github.com/mafintosh/hypercore-archiver-bot">hypercore-archiver-bot</a>, an IRC bot that you can tell to automatically sync and seed a Dat repository. The advantage of the bot is that it stores all old versions of data as well, not just the latest files (which is how the Dat CLI currently works). We have a bot set up to join our Slack via IRC, so that anyone in our Slack can mirror their Dats on a server with lots of storage.</p>
+<p>We're still working on making this stuff easier. Let us know if you have improvements we can make to this use case!</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/oct-recently/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/10/tower-pic-1.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/oct-recently/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Recently</span>
+          <h2 class="post-card-title">Recently @ Dat Project</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Since we launched a new website, folks in the Dat community have produced some truly inspiring work. Check out a three-year-old bug fix and a new decentralized social network.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/uc-merced-1/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/10/0003810-DSC01685.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/uc-merced-1/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Dat in the Lab at UC Merced: Reproducible bioinformatics pipelines in marine ecology
+</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>This week the Dat in the Lab team visited Mike Dawson’s lab at UC Merced. We learned about jellyfish in Palau’s marine lakes, sea star wasting disease, and environmental DNA.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /using-dat-for-automatic-file-backups/ -->
+  </body>
+</html>

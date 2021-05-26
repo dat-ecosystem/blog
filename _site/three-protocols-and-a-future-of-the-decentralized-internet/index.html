@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three protocols and a future of the decentralized internet</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post no-image">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2019-03-22">22 March 2019</time><span class="date-divider">/</span> <a href="/tags/community/" class="post-tag">Community</a><span class="date-divider">/</span> <a href="/tags/decentralization/" class="post-tag">Decentralization</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Three protocols and a future of the decentralized internet</h1>
+      </header>
+
+      <section class="post-full-content"><p>Hi, I'm Darius Kazemi and I'm Code for Science &amp; Society's <a href="https://blog.mozilla.org/blog/2018/08/21/mozilla-announces-25-new-fellows-in-openness-science-and-tech-policy/">Mozilla Fellow</a>. I'm halfway through my fellowship and we thought now would be a good time for me to share some of the things that I've been researching, building, and planning.</p>
+<p>I knew coming into this fellowship that I wanted my work to be about the decentralized web as a whole, and not just Dat. CS&amp;S was totally receptive to that and so I've been spending time learning about Dat, but also about <a href="https://www.scuttlebutt.nz/">Secure ScuttleButt</a> and <a href="https://activitypub.rocks/">ActivityPub</a>.</p>
+<p>If what we broadly want is for power to be redistributed from the hands of large centralized corporate interests and back into the hands of individual people and small groups, then we already have the technical protocols to do this. No one protocol will enable this shift in power; each protocol has its strengths and weaknesses. What is needed is software that utilizes these protocols for their strengths, which is to say what is needed is developers and designers who are willing to act as bridges between the communities of practice surrounding the protocols.</p>
+<h2 id="complementary-protocols%2C-working-together">Complementary protocols, working together <a class="direct-link" href="#complementary-protocols%2C-working-together">#</a></h2>
+<p>I recently attended ScuttleCamp outside of Wellington, New Zealand. A bunch of Secure ScuttleButt community members met up in order to talk about what works and what doesn't with SSB, and where the community would like it to go in the future. It was a great event that I would estimate consisted of equal parts core SSB project team, active users of SSB, and interested outsiders (like me). It was in &quot;unconference&quot; format, so the attendees came up with the schedule on the fly. I was pleasantly surprised to see two Dat sessions pop up, including one on &quot;Bridging Dat and SSB&quot;. There seemed to be a lot of understanding from the SSB team and even users that SSB has its strengths and weaknesses, and it would make sense to use multiple decentralized/distributed protocols to provide great, useful, people-powered software.</p>
+<p>In addition to working with and meeting people from the Dat and SSB community, I've been <a href="https://github.com/dariusk/express-activitypub">developing</a> <a href="https://github.com/dariusk/rss-to-activitypub/">software</a> that uses ActivityPub. ActivityPub is yet another protocol that tries to reduce our reliance on tech giants to do the kind of things we want to do with the internet. I <a href="https://hacks.mozilla.org/2018/11/decentralizing-social-interactions-with-activitypub/">wrote an introduction to ActivityPub for the Mozilla Hacks blog</a> that might be a helpful read.</p>
+<p>In the course of learning about these three protocols and being inspired by conversations with the people that use them, I've come to see them as fulfilling different, complementary roles.</p>
+<p>I'll try and sketch them out here <em>extremely</em> briefly and broadly, and conclude with my thoughts on how we can design better software by bridging these technologies. (I know there are more technologies out there than these three, but these are the three that I know best.)</p>
+<h3 id="dat">Dat <a class="direct-link" href="#dat">#</a></h3>
+<p>If you're reading this blog, chances are you already know about Dat. Dat was invented to allow researchers to share very large data sets with each other. It's a protocol that powers software like <a href="https://beakerbrowser.com/">Beaker Browser</a>, a web browser that lets you create and publish your own websites without needing a web hosting service.</p>
+<p>My basic bullet points:</p>
+<ul>
+<li>Peer to peer protocol, can share data via your laptop or phone without connecting to some company's server, no out-of-the-box web browser support</li>
+<li>All your content is its own hidden island until its URL is sent to someone else; that person can share the URL or even post it somewhere public and now your island is on the map</li>
+<li>Good for sharing large files, your friends can consent to re-sharing them if they want</li>
+<li>Sends blobs of unstructured data around (you can add your own structure)</li>
+<li>Discovering new stuff requires manually sharing links</li>
+</ul>
+<h3 id="secure-scuttlebutt">Secure ScuttleButt <a class="direct-link" href="#secure-scuttlebutt">#</a></h3>
+<p>Secure ScuttleButt (SSB) was invented, at least in part, to remove distinctions between frontend and backend software, enabling the &quot;backend&quot; to be carried around by a user, who then owns their own data. SSB is a protocol that, like Dat, powers <a href="https://www.scuttlebutt.nz/applications">a bunch of different decentralized applications</a>. Chief among them is <a href="https://www.scuttlebutt.nz/getting-started">Patchwork</a>, which is a kind of decentralized forum software that lets people have and follow conversations about different topics. SSB is also used for things like <a href="https://github.com/Happy0/ssb-chess-mithril/blob/master/README.md">decentralized chess</a> and <a href="https://github.com/noffle/git-ssb-intro">decentralized GitHub-style code collaboration</a>.</p>
+<p>My basic bullet points:</p>
+<ul>
+<li>Peer to peer protocol, can share data via your laptop or phone without connecting to some company's server, no out-of-the-box web browser support</li>
+<li>Automatic publication of content to your friends</li>
+<li>Bad for sharing large files; among other things you don't want to force all your friends to store all your large files</li>
+<li>Sends blobs of unstructured data around (you can add your own structure)</li>
+<li>Discovering new stuff is somewhat automatic; once you are initially connected to a network then you can find friends-of-friends and keep connecting to more people</li>
+</ul>
+<h3 id="activitypub">ActivityPub <a class="direct-link" href="#activitypub">#</a></h3>
+<p>ActivityPub was designed to solve the problem of &quot;walled gardens&quot; on the internet by providing a common language for websites and apps to speak to each other. Quoting <a href="https://hacks.mozilla.org/2018/11/decentralizing-social-interactions-with-activitypub/">my previous writing on the topic</a>, ActivityPub is a protocol that &quot;enables a decentralized social web, where a network of servers interact with each other on behalf of individual users/clients, very much like email operates at a macro level.&quot; It enables Twitter-style services like <a href="https://joinmastodon.org">Mastodon</a> to talk to Instagram-style services like <a href="https://pixelfed.social/">PixelFed</a> and YouTube-style services like <a href="https://joinpeertube.org/en/">PeerTube</a>. (Brief nerd note: I am referring to the server-to-server portion of the protocol here.)</p>
+<p>My basic bullet points:</p>
+<ul>
+<li>Web protocol, so it works in all desktop and mobile web browsers without special software</li>
+<li>Not peer to peer, relies on special network nodes (servers) and an expert class of systems administrators to operate</li>
+<li>Since content is &quot;federated&quot; (replicated) between known servers, large files can fill up server hard drives pretty fast</li>
+<li>Designed around sending highly structured data</li>
+<li>Discovering new stuff can be pretty easy, it's not too different from existing centralized services that way</li>
+</ul>
+<h2 id="what-this-means">What this means <a class="direct-link" href="#what-this-means">#</a></h2>
+<p>I've started thinking of these three protocols as each solving certain problems in the universe of software design, and when we understand where the protocols fit into the design space, we can start to think of solutions to seemingly intractable problems.</p>
+<ul>
+<li>
+<p>Dat is great for sharing big files (or bundles of small files).</p>
+</li>
+<li>
+<p>Secure ScuttleButt is great for spreading messages organically between connected networks of people or computers.</p>
+</li>
+<li>
+<p>ActivityPub is great for coordinating messages between networks of always-on servers that are actively maintained by specialist systems administrators.</p>
+</li>
+</ul>
+<p>Looking at the software this way gives us a framework to design complex decentralized services.</p>
+<p>For example: how can we have a Google Drive style system where a bunch of people can just connect to each other's computers and share files that way, removing the giant tech company in the middle? Maybe we serve the files over Dat, we have a small network of always-on Dat pinning servers that coordinate with each other over ActivityPub to share file serving responsibilities, and perhaps discovery of what files my friends have been posting happens over Secure ScuttleButt. Maybe every pinning server is also a SSB pub, and <em>these</em> coordinate over ActivityPub so there is robust delivery of social data to every user too. That's a very rough example and of course there are lots of problems that would need to be solved but it gives us a starting point for thinking about how to make this thing happen.</p>
+<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion">#</a></h2>
+<p>All of this points to two major recommendations that I can make.</p>
+<p>First, that software developers should not be afraid to mix, match, and layer protocols. There is no rule that says you can't do this, yet I've noticed people picking one protocol and sticking to it out of some kind of loyalty. When really, as a developer, your loyalty should be to your values of an open, decentralized internet, whatever those are. If we view these protocols as tools in a toolbox rather than monolithic solutions or ecosystems, we can build decentralized software that rivals and surpasses in utility anything the big centralized tech giants have to offer.</p>
+<p>Second, communities that build and support these protocols need to keep their specific strengths and weaknesses in mind. Instead of trying to make a &quot;kitchen sink&quot; protocol that solves a wide variety of problems, we should acknowledge the limitations of our protocols (and our own resources) and instead support and foster interoperability and collaboration between our communities.</p>
+<p>The internet has always been built on a bunch of different technologies filling in the gaps for each other. For example, while web browsers mainly use the TCP protocol for loading web pages, they switch to using UDP when it's convenient for things like video chat. Decentralized web protocols should be no exception to this pattern. The only way we're going to make the internet better is by working together to help each other.</p>
+<p><em>Thanks to Joe Hand and <a href="http://eight45.net/">noffle</a> for feedback, and to <a href="https://coolguy.website/">Zach Mandeville</a> and <a href="https://www.cameralibre.cc/">Sam Muirhead</a> for getting me thinking about this in the first place.</em></p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/getting-dat-to-work-in-new-environments/">
+        <header class="post-card-header">
+          <span class="post-card-tags"></span>
+          <h2 class="post-card-title">Getting Dat to work in new environments</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>A look at some of the work I&#39;ve been doing for Dat  Dat is an awesome mashup of a bunch of useful modules, for peer discovery and for data replication, that work together
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/comm-comm-what/">
+      <div class="post-card-image" style="background-image: url(/content/images/2019/03/adam-jang-260876-unsplash.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/comm-comm-what/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Community</span>
+          <h2 class="post-card-title">comm-comm what?</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>This article quickly introduces you into the history and purpose of comm-comm and maybe it helps you understand this a little better.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /three-protocols-and-a-future-of-the-decentralized-internet/ -->
+  </body>
+</html>

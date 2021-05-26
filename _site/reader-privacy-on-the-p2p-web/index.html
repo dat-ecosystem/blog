@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader Privacy On The P2P Web</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post no-image">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2016-12-12">12 December 2016</time><span class="date-divider">/</span> <a href="/tags/decentralization/" class="post-tag">Decentralization</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Reader Privacy On The P2P Web</h1>
+      </header>
+
+      <section class="post-full-content"><h3 id="vendor-lock-in">Vendor Lock-In <a class="direct-link" href="#vendor-lock-in">#</a></h3>
+<p>The Peer-to-peer Web is a way of thinking about distributing web content over the internet that doesn’t rely on a central point of failure. Failure sometimes means the service disappears (like the Dropbox Public folder this week). Another type of failure is failure to scale due to a bottleneck. A good example of this is data infrastructure like Amazon S3 and Google Drive. By storing all your data in one place they create a bandwidth bottleneck that they then make you pay for. For a primer on the P2P web principles I recommend the post <a href="http://pfrazee.github.io/blog/what-is-the-p2p-web">What is the P2P Web?</a> To quote that article, &quot;Once integrated into a browser, these principles enable users to publish independently of services, and move between applications freely&quot;.</p>
+<p>To me the P2P web distinguishes itself from the web today by putting the user in control of their data. The web has long been about open standards for building cross platform applications like HTML, CSS and JavaScript, but falls short of providing a standard way for a user to control their online presence and data, e.g. being able to export their account from one application to another or use services like GMail without letting Google read their emails. Instead the web we have today becomes more and more siloed as large advertising based companies like Facebook and Google are incentivized to get us to give them more and more of our data. They have no incentive to let users easily export their data to or cohabitate their account with other competing services, so such mechanisms for putting the user in control of where their data lives never get built.</p>
+<p>Users should be able choose where their data lives and who has access to it. Ultimately the P2P web is about giving users a choice based on their level of trust. On the web today the choice is binary, basically &quot;their way way or the highway&quot;. If you sign up for and use a service like Facebook, you are trusting Facebook as the steward of your data. Your only other choice is to never sign up. They don’t provide you with a way to happily sync your Facebook account with all its data in realtime into other competing services over an open protocol, so if Facebook decides one day that they are going to stop hosting your old Instagram photos (like Twitter is currently doing with Vine), it becomes a scramble for users to back up their data before it gets deleted forever.</p>
+<h3 id="user-privacy-and-trust">User Privacy and Trust <a class="direct-link" href="#user-privacy-and-trust">#</a></h3>
+<p>Today’s advertising based services have these incentives:</p>
+<ul>
+<li>1: Acquire more user data (for advertising)</li>
+<li>2: Keep users data and privacy protected, as long as it doesn’t hinder #1</li>
+</ul>
+<p>Having all our data stored in one physical location is obviously bad if the service disappears or is hacked into and leaked online or secretly subpoenaed by the government. For this post let’s set the issue of long term storage privacy aside and instead focus on on reader privacy.</p>
+<p>Reader privacy means protecting the privacy of what a user is looking at. For example, if you walk into a library and ask the librarian to help you find a certain book, most librarians are morally obligated to keep what book you asked for a secret. Similarly, therapists and lawyers also protect the privacy of conversations with their clients. If someone were to follow you, they could figure out that you’re visiting a library or a lawyers office, but they wouldn’t know what you are talking about.</p>
+<p>Reader privacy is possible online thanks to HTTPS. When you go to sites like <a href="http://facebook.com">facebook.com</a> or <a href="http://wikipedia.org">wikipedia.org</a>, people who hack into your traffic can see that you’re visiting those domains but that’s it. They can’t tell which Facebook profiles or Wikipedia pages you are reading, because the traffic between you and those sites is encrypted. For sites like <a href="http://Archive.org">Archive.org</a>, which is an online digital library run by librarians, reader privacy is a deeply held value.</p>
+<p>Thanks to HTTPS most centralized services on the web can do a pretty good job at ensuring that adversaries like man-in-the-middle hackers or the NSA can’t easily perform mass surveillance and figure out what we’re all doing online (at least at the time we are browsing).</p>
+<p>The nice feature of the model where users trust a single centralized service with all their data is that it is very simple to understand from the users perspective. They only have to connect to and trust one entity online. As long as they don’t get phished, they just have to look for the green lock icon next to '<a href="http://facebook.com">facebook.com</a>' and they can be sure their connection cannot be monitored by anyone other than <a href="http://facebook.com">facebook.com</a>.</p>
+<h3 id="decentralization-vs.-reader-privacy">Decentralization vs. Reader Privacy <a class="direct-link" href="#decentralization-vs.-reader-privacy">#</a></h3>
+<p>In most P2P systems you trust not one centralized remote server but a set of remote &quot;peers&quot;. The idea being that any peer that speaks a compatible P2P protocol can be discovered and act as a server if they have information you want. It’s possible you’ll search for and discover many peers when using a P2P service.</p>
+<p>BitTorrent clients for example search a single global network (the BitTorrent DHT) to find IP addresses of peers who claim to have data that the client is searching for. For this reason BitTorrent has <strong>very poor</strong> reader privacy, almost none at all. If you want to perform mass surveillance to find out what IP addresses are searching for and downloading torrents, you simple run a honeypot server on the DHT that advertises that it has every torrent from popular torrent tracker sites. Soon you will be inundated with requests for the data you claim to advertise, but you can simply log all the IPs you see and ignore their requests for data.</p>
+<p>In this way BitTorrent trades bandwidth for reader privacy, which is an inherent tradeoff in P2P systems. In order to create the largest swarms possible and use as much bandwidth as possible, BitTorrent does not include a mechanism for protecting the privacy of what a BitTorrent client is looking for. If we were to naively host public websites using BitTorrent it would be difficult to protect for example what Wikipedia pages are being read by a certain IP.</p>
+<h3 id="p2p-web-privacy-modes">P2P Web Privacy Modes <a class="direct-link" href="#p2p-web-privacy-modes">#</a></h3>
+<p>You can break down privacy/trust tradeoffs on the P2P web into three categories:</p>
+<ul>
+<li>Trust everyone - Bad reader privacy. Ask anyone in the world, trust that none of them will use the information in your query against you.</li>
+<li>Trust a single source - Good reader privacy. You only trust one entity online. How the web mostly works today, you trust whoever owns the SSL certificate.</li>
+<li>Web of Trust - You trust a set (e.g. whitelist) of entities to keep your query private. Could work in e.g. academic settings where you have services hosted by reputable public institutions.</li>
+</ul>
+<p>In the context of Dat, a file sharing tool that wants to support good reader privacy but also take advantage of bandwidth and redundancy gains from decentralization, the Web of Trust model is very interesting. For example we could have clients trust any verified academic data library (e.g. ones hosted at verified public Universities) to preserve reader privacy. That way Dat clients could still connect to many fast sources around the world and get fast and cheap bandwidth for their data transfers, without having to expose what they are searching for to any random unverified IP address like how BitTorrent works.</p>
+<p>In a Web of Trust model you are trusting a set of entities. One entity could still turn evil later and start logging or leaking your search queries, but this is part of the unavoidable tradeoff of trust vs. decentralization. Our goal with Dat is to provide a way to curate, distribute and revoke entities from secure &quot;Web of Trust&quot; manifests, so that if a bad actor needs to be removed it can be done so in a way that clients can automatically subscribe to a feed of revocations and additions. SSL certificates have a similar issue, which is being addressed by projects like Certificate Transparency.</p>
+<p>This will allow us to build a dataset registry that can help connect users wanting to privately search for datasets and the sources online that have those datasets. As long as you trust the registry, and the registry trusts all of the sources to maintain reader privacy, a client can use the registry as a sort of anonymous proxy to find trusted data mirrors and then privately and securely introduce them such that an outside mass surveiller wouldn’t be able to deduce what dataset is being searched for or downloaded.</p>
+<h3 id="in-summary">In Summary <a class="direct-link" href="#in-summary">#</a></h3>
+<p>P2P systems can address issues around data silos and vendor lock in that prevent users from being in control of their data and putting user data at risk of large data hacks and leaks, but they can also be a double edged sword that sacrifices reader privacy if trust models around peer discovery are not carefully considered.</p>
+<p>Do you have another approach to reader privacy in P2P systems? Share a link we can read to @dat_project on Twitter</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/preview-the-new-dat-cli/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Releases</span>
+          <h2 class="post-card-title">Preview the New Dat CLI</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Over the last few months we have been optimizing and improving the Dat command line tool as well as underlying dependencies, such as Hyperdrive, to prepare for publishing datasets on our Dat registry.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/reflections-from-international-data-week-2016/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Conferences</span>
+          <h2 class="post-card-title">Reflections from International Data Week 2016</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>International Data Week in September 2016 brought together three events, SciDataCon, the International Data Forum, and the Research Data Alliance 8th plenary. Joe Hand from the Dat team attended the conference.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /reader-privacy-on-the-p2p-web/ -->
+  </body>
+</html>

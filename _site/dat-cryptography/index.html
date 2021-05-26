@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Intro To Dat&#39;s Cryptography</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-09-21">21 September 2017</time>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">An Intro To Dat&#39;s Cryptography</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2017/09/cat-bg.png)">
+      </figure>
+
+      <section class="post-full-content"><p>Dat is a secure peer to peer live syncing file sharing protocol for the web. Here's an overview of the cryptography used in the project. Even more technical details can be found in the <a href="https://datproject.org/paper">Dat Paper</a>.</p>
+<p><em>This post is adapted from Tim Caswell's excellent presentation for Utah.js called <a href="https://twitter.com/creationix/status/909873163906908160">100 Weird Applications Of Public Key Cryptography</a>. Tim is the Director of Engineering at <a href="https://daplie.com/">Daplie</a>.</em></p>
+<h2 id="sodium">Sodium <a class="direct-link" href="#sodium">#</a></h2>
+<p>Dat uses <a href="https://github.com/jedisct1/libsodium">Sodium (aka libsodium)</a> for cryptography. Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more. It is a portable, cross-compilable, installable, packageable fork of <a href="https://nacl.cr.yp.to/">NaCl</a>, with a compatible API, and an extended API to improve usability even further. Its goal is to provide all of the core operations needed to <strong>build higher-level cryptographic tools</strong>.</p>
+<p>Sodium is cross-platforms and cross-languages. It runs on a variety of compilers and operating systems, including Windows (with MinGW or Visual Studio, x86 and x86_64), iOS and Android. <strong>Javascript and WebAssembly versions are also available and are fully supported</strong>. Bindings for all common programming languages are available and well-supported.</p>
+<p>The design choices emphasize security and ease of use. But despite the <strong>emphasis on high security</strong>, primitives are <strong>faster across-the-board</strong> than most implementations of the NIST standards.</p>
+<h2 id="application-001%3A-sealed-boxes">Application 001: Sealed Boxes <a class="direct-link" href="#application-001%3A-sealed-boxes">#</a></h2>
+<div class="image-div" style="width: 400px;"><img src="/content/images/2017/09/Screen-Shot-2017-09-18-at-3.01.29-PM.png"></img></div>
+<h4 id="sealed-boxes-analogy">Sealed Boxes Analogy <a class="direct-link" href="#sealed-boxes-analogy">#</a></h4>
+<ul>
+<li>Bob wants to send a message to alice</li>
+<li>He wants to ensure that only Alice can read the message</li>
+<li>He doesn't want or need Alice to know it came from him</li>
+<li>Alice gives away open padlocks, but not the key</li>
+<li>Bob uses one to send a sealed box to Alice</li>
+</ul>
+<h4 id="sealed-boxes---sodium">Sealed Boxes - Sodium <a class="direct-link" href="#sealed-boxes---sodium">#</a></h4>
+<p>Sealed boxes are designed to <strong>anonymously</strong> send messages to a recipient given their <strong>public</strong> key.</p>
+<p>Only the recipient can decrypt these messages, using their <strong>private</strong> key. While the recipient can verify the <strong>integrity</strong> of the message, they cannot verify the <strong>identity</strong> of the sender.</p>
+<p>A messge is <strong>encrypted</strong> using an ephemeral key pair, meaning the secret key is destroyed right after the encryption process.</p>
+<p>Without knowing the secret key used for a given message, the sender cannot <strong>decrypt</strong> their own message later. And without additional data, a message cannot be <strong>correlated</strong> with the identity of its sender.</p>
+<h4 id="sending-a-sealed-box-in-javascript">Sending a sealed box in JavaScript <a class="direct-link" href="#sending-a-sealed-box-in-javascript">#</a></h4>
+<pre class="language-js"><code class="language-js"><span class="token comment">// Alice generates a key pair and publisher her public key</span><br><span class="token keyword">let</span> <span class="token punctuation">{</span> publicKey<span class="token punctuation">,</span> privateKey <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">crypto_box_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><br><span class="token comment">// Bob composes an important message.</span><br><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">'Alice, there is a package on your doorstep'</span><br><br><span class="token comment">// And seals it up tight in an anoymous box</span><br><span class="token keyword">let</span> cipher <span class="token operator">=</span> <span class="token function">crypto_box_seal</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> publicKey<span class="token punctuation">)</span><br><br><span class="token comment">// Alice opens the sealed box using her private key.</span><br><span class="token keyword">let</span> decrypted <span class="token operator">=</span> <span class="token function">crypto_box_seal_open</span><span class="token punctuation">(</span>cipher<span class="token punctuation">,</span> publicKey<span class="token punctuation">,</span> privateKey<span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token punctuation">)</span><br><br><span class="token comment">// She prints the message for us to see.</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>decrypted<span class="token punctuation">)</span></code></pre>
+<h2 id="application-010%3A-public-key-signatures">Application 010: Public-Key Signatures <a class="direct-link" href="#application-010%3A-public-key-signatures">#</a></h2>
+<div class="image-div" style="width: 400px;"><img src="/content/images/2017/09/Untitled-1.png"></img></div>
+<h4 id="public-key-signatures-analogy">Public-Key Signatures Analogy <a class="direct-link" href="#public-key-signatures-analogy">#</a></h4>
+<ul>
+<li>Bob wants to send a message to Alice</li>
+<li>He wants Alice to know it came from him</li>
+<li>The message contents can be read by others</li>
+<li>Bob gives away copies of his seal and signature</li>
+<li>Bob signs and seals messages before sending to Alice</li>
+</ul>
+<h4 id="public-key-signatures---sodium">Public-Key Signatures  - Sodium <a class="direct-link" href="#public-key-signatures---sodium">#</a></h4>
+<p>In this sytem, a signer generates a key pair:</p>
+<ul>
+<li>A <strong>secret</strong> key, that will be used to append a signature to any number of messages.</li>
+<li>A <strong>public</strong> key, that anybody can use to <strong>verify</strong> that the signature appended to a message was actually issued by the creator of the public key.</li>
+</ul>
+<p>Verifiers need to already know and ultimately <strong>trust</strong> a public key before messages signed using it can be verified.</p>
+<h4 id="signing-and-verifying-in-javascript">Signing and verifying in JavaScript <a class="direct-link" href="#signing-and-verifying-in-javascript">#</a></h4>
+<pre class="language-js"><code class="language-js"><span class="token comment">// Bob generates a key pair and publishes his public key</span><br><span class="token keyword">let</span> <span class="token punctuation">{</span> publicKey<span class="token punctuation">,</span> privateKey <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">crypto_sign_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><br><span class="token comment">// Bob composes an important message</span><br><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">'Tonight is the meetup at 7pm'</span><br><br><span class="token comment">// And signs it using his private key</span><br><span class="token keyword">let</span> signature <span class="token operator">=</span> <span class="token function">crypto_sign_detached</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> privateKey<span class="token punctuation">)</span><br><br><span class="token comment">// Alice gets the signed message and wants to verify it</span><br><span class="token keyword">let</span> isVerified <span class="token operator">=</span> <span class="token function">crypto_sign_verify_detached</span><span class="token punctuation">(</span>signature<span class="token punctuation">,</span> message<span class="token punctuation">,</span> publicKey<span class="token punctuation">)</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">{</span>message<span class="token operator">:</span> message<span class="token punctuation">,</span> isVerified<span class="token operator">:</span> isVerified<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<h4 id="signing-and-verifying---detect-tampering">Signing and verifying - Detect Tampering <a class="direct-link" href="#signing-and-verifying---detect-tampering">#</a></h4>
+<pre class="language-js"><code class="language-js"><span class="token comment">// Bob generates a key pair and publishes his public key</span><br><span class="token keyword">let</span> <span class="token punctuation">{</span> publicKey<span class="token punctuation">,</span> privateKey <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">crypto_sign_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><br><span class="token comment">// And signs it using his private key</span><br><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">'Tonight is the meetup at 7pm'</span><br><span class="token keyword">let</span> signature <span class="token operator">=</span> <span class="token function">crypto_sign_detached</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> privateKey<span class="token punctuation">)</span><br><br><span class="token comment">// The message is tampered with</span><br>message <span class="token operator">=</span> message<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'7pm'</span><span class="token punctuation">,</span> <span class="token string">'midnight'</span><span class="token punctuation">)</span><br><br><span class="token comment">// Alice gets the signed message and wants to verify it</span><br><span class="token keyword">let</span> isVerified <span class="token operator">=</span> <span class="token function">crypto_sign_verify_detached</span><span class="token punctuation">(</span>signature<span class="token punctuation">,</span> message<span class="token punctuation">,</span> publicKey<span class="token punctuation">)</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">{</span>message<span class="token operator">:</span> message<span class="token punctuation">,</span> isVerified<span class="token operator">:</span> isVerified<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<h2 id="application-011%3A-authenticated-encryption">Application 011: Authenticated Encryption <a class="direct-link" href="#application-011%3A-authenticated-encryption">#</a></h2>
+<div class="image-div" style="width: 400px;"><img src="/content/images/2017/09/Screen-Shot-2017-09-18-at-3.19.53-PM.png"></img></div>
+<h4 id="public-key-authenticated-encryption---sodium">Public-Key Authenticated Encryption - Sodium <a class="direct-link" href="#public-key-authenticated-encryption---sodium">#</a></h4>
+<p>Using public-key authenticated encryption, Bob can encrypt a <strong>confidential</strong> message specifically for Alice, using Alice's <strong>public</strong> key.</p>
+<p>Using Bob's <strong>public</strong> key, Alice can <strong>verify</strong> that the encrypted message was actually created by Bob and was not tampered with, before eventually decrypting it.</p>
+<p>Alice only needs Bob's public key, the nonce and the <strong>ciphertext</strong>. Bob should never ever share his <strong>secret</strong> key, even with Alice.</p>
+<p>And in order to send message to Alice, Bob only needs Alice's public key. Alice should never ever share her <strong>secret</strong> key either, even with Bob.</p>
+<p>Alice can reply to Bob using the <strong>same system</strong>, without having to generate a distinct key pair.</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// Bob and Alice generate key pairs.</span><br><span class="token keyword">let</span> bob <span class="token operator">=</span> <span class="token function">crypto_box_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><span class="token keyword">let</span> alice <span class="token operator">=</span> <span class="token function">crypto_box_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><br><span class="token comment">// Bob composes a sensitive message.</span><br><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">'Meet me by the blue lagoon on the next full moon.'</span><br><br><span class="token comment">// Bob encrypts the message with a random nonce and authentication.</span><br><span class="token comment">// Uses his private key and her public key.</span><br><span class="token keyword">let</span> nonce <span class="token operator">=</span> <span class="token function">randombytes_buf</span><span class="token punctuation">(</span>crypto_box_NONCEBYTES<span class="token punctuation">)</span><br><span class="token keyword">let</span> cipher <span class="token operator">=</span> <span class="token function">crypto_box_easy</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> nonce<span class="token punctuation">,</span> alice<span class="token punctuation">.</span>publicKey<span class="token punctuation">,</span> bob<span class="token punctuation">.</span>privateKey<span class="token punctuation">)</span><br><br><span class="token comment">// Alice decrypts and verifies the message using nonce,</span><br><span class="token comment">// her private key and his public key</span><br><span class="token keyword">let</span> original <span class="token operator">=</span> <span class="token function">crypto_box_open_easy</span><span class="token punctuation">(</span><br>  cipher<span class="token punctuation">,</span> nonce<span class="token punctuation">,</span> bob<span class="token punctuation">.</span>publicKey<span class="token punctuation">,</span> alice<span class="token punctuation">.</span>privateKey<span class="token punctuation">,</span> <span class="token string">'text'</span><br><span class="token punctuation">)</span></code></pre>
+<h2 id="application-100%3A-key-exchange">Application 100: Key Exchange <a class="direct-link" href="#application-100%3A-key-exchange">#</a></h2>
+<div class="image-div" style="width: 400px;"><img src="/content/images/2017/09/Screen-Shot-2017-09-18-at-3.25.58-PM.png"></img></div>
+<blockquote>
+<p>Using the key exchange API, two parties can securely compute a set of shared keys using their peer's public key and their own secret key.</p>
+</blockquote>
+<p><em>- libsodium 1.0.12</em></p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> server <span class="token operator">=</span> <span class="token function">crypto_kx_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><span class="token keyword">let</span> client <span class="token operator">=</span> <span class="token function">crypto_kx_kepair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><br><span class="token comment">// From client's point of view generate shared keys</span><br><span class="token keyword">let</span> clientKeys <span class="token operator">=</span> <span class="token function">crypto_kx_client_session_keys</span><span class="token punctuation">(</span><br>  client<span class="token punctuation">.</span>publicKey<span class="token punctuation">,</span> client<span class="token punctuation">.</span>privateKey<span class="token punctuation">,</span> server<span class="token punctuation">.</span>publicKey<br><span class="token punctuation">)</span><br><br><span class="token comment">// Sasme thing from server's point of view</span><br><span class="token keyword">let</span> serverKeys <span class="token operator">=</span> <span class="token function">crypto_kx_server_session_keys</span><span class="token punctuation">(</span><br>  server<span class="token punctuation">.</span>publicKey<span class="token punctuation">,</span> server<span class="token punctuation">.</span>privateKey<span class="token punctuation">,</span> client<span class="token punctuation">.</span>publicKey<br><span class="token punctuation">)</span><br><br><span class="token comment">// The keys should match on both sides</span><br><span class="token function">assert</span><span class="token punctuation">(</span><span class="token function">memcmp</span><span class="token punctuation">(</span>client<span class="token punctuation">.</span>sharedRx<span class="token punctuation">,</span> serverKeys<span class="token punctuation">.</span>sharedTx<span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token function">assert</span><span class="token punctuation">(</span><span class="token function">memcmp</span><span class="token punctuation">(</span>clientKeys<span class="token punctuation">.</span>sharedTx<span class="token punctuation">,</span> serverKeys<span class="token punctuation">.</span>sharedRx<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<h2 id="supporting-tech-001%3A-content-addressable-storage">Supporting Tech 001: Content Addressable Storage <a class="direct-link" href="#supporting-tech-001%3A-content-addressable-storage">#</a></h2>
+<p>&quot;Content Addressable' is a storage system where keys are derived from values.</p>
+<ul>
+<li>Changing the value changes the key.</li>
+<li>The value for any given key is immutable.</li>
+<li>You can only point to keys that exist already.</li>
+<li>Links/pointers are one way. It's &quot;directed&quot;.</li>
+<li>Cycles are impossible. It's &quot;acyclic&quot;.</li>
+<li>Only the top hash is needed to traverse and verify the whole graph.</li>
+</ul>
+<h4 id="content-addressable-storage---git-internals">Content Addressable Storage - Git Internals <a class="direct-link" href="#content-addressable-storage---git-internals">#</a></h4>
+<div class="image-div" style="width: 600px;"><img src="/content/images/2017/09/Screen-Shot-2017-09-18-at-3.31.37-PM.png"></img></div>
+<ul>
+<li>Blobs hold files.</li>
+<li>Trees point to blobs, trees, and commits (submodules).</li>
+<li>Commits point to trees and parent commits (history, merges).</li>
+<li>Annotated Tags point to any object.</li>
+<li>Tags can be signed using PGP Keys.</li>
+</ul>
+<h4 id="content-addressable-storage---signed-storage">Content Addressable Storage - Signed Storage <a class="direct-link" href="#content-addressable-storage---signed-storage">#</a></h4>
+<pre class="language-js"><code class="language-js"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">store</span> <span class="token punctuation">(</span><span class="token parameter">value<span class="token punctuation">,</span> privateKey</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token function">serialize</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>privateKey<span class="token punctuation">)</span> body <span class="token operator">=</span> <span class="token function">crypto_sign</span><span class="token punctuation">(</span>body<span class="token punctuation">,</span> privateKey<span class="token punctuation">)</span><br>  <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token function">crypto_genericHash</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> body<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'hex'</span><span class="token punctuation">)</span><br>  <span class="token keyword">return</span> <span class="token function">set</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> body<span class="token punctuation">)</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">retrieve</span> <span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> publicKey</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><br>  <span class="token function">assert</span><span class="token punctuation">(</span>key <span class="token operator">==</span> <span class="token function">crypto_generichash</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> body<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'hex'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>publicKey<span class="token punctuation">)</span> body <span class="token operator">=</span> <span class="token function">crypto_sign_open</span><span class="token punctuation">(</span>body<span class="token punctuation">,</span> publicKey<span class="token punctuation">)</span><br>  <span class="token keyword">return</span> <span class="token function">deserialize</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">let</span> <span class="token punctuation">{</span> publicKey<span class="token punctuation">,</span> privateKey <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">crypto_sign_keypair</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><br><span class="token keyword">let</span> teamKey <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">store</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>  tim<span class="token operator">:</span> <span class="token keyword">await</span> <span class="token function">store</span><span class="token punctuation">(</span><span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'Tim'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span> isMaker<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><br>  jack<span class="token operator">:</span> <span class="token keyword">await</span> <span class="token function">store</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'Jack'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span> isMaker<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><br><span class="token punctuation">}</span><span class="token punctuation">,</span> privateKey<span class="token punctuation">)</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Team Key'</span><span class="token punctuation">,</span> teamKey<span class="token punctuation">)</span><br><br><span class="token keyword">let</span> team <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">retrieve</span><span class="token punctuation">(</span>teamKey<span class="token punctuation">,</span> publicKey<span class="token punctuation">)</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Team'</span><span class="token punctuation">,</span> team<span class="token punctuation">)</span><br><br><span class="token keyword">let</span> jack <span class="token operator">=</span> <span class="token keyword">await</span><span class="token punctuation">.</span><span class="token function">retrieve</span><span class="token punctuation">(</span>team<span class="token punctuation">.</span>jack<span class="token punctuation">)</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Jack'</span><span class="token punctuation">,</span> jack<span class="token punctuation">)</span></code></pre>
+<h4 id="content-addressable-storage-with-signed-roots">Content Addressable Storage With Signed Roots <a class="direct-link" href="#content-addressable-storage-with-signed-roots">#</a></h4>
+<ul>
+<li>Hash links are great for pointing to existing data</li>
+<li>Public keys are great for verifying new hashes created after the key</li>
+<li>Distribute your public key to consumers once</li>
+<li>Public signed hashes as new data appears</li>
+<li>Clients can verify the new content without a new public key</li>
+</ul>
+<h2 id="supporting-tech-010%3A-signed-merkle-tree">Supporting Tech 010: Signed Merkle Tree <a class="direct-link" href="#supporting-tech-010%3A-signed-merkle-tree">#</a></h2>
+<h4 id="merkle-tree">Merkle Tree <a class="direct-link" href="#merkle-tree">#</a></h4>
+<div class="image-div" style="width: 600px;"><img src="/content/images/2017/09/Screen-Shot-2017-09-18-at-3.38.29-PM.png"></img></div>
+<ul>
+<li>Every leaf node contains a piece of data</li>
+<li>Non-leaf nodes contain the hash of their two child nodes</li>
+<li>Allows efficient verification of partial trees</li>
+<li>Root nodes can be signed using public key cryptography</li>
+</ul>
+<h4 id="signed-merkle-tree---append-only-event-registers">Signed Merkle Tree - Append Only Event Registers <a class="direct-link" href="#signed-merkle-tree---append-only-event-registers">#</a></h4>
+<ul>
+<li>Multiple peers can replicate a growing Merkle tree</li>
+<li>The roots are signed by the owner with each publish</li>
+<li>The owner must give the same event history to all consumers</li>
+<li>A file tree can be stored in the log using change events. Read from end first.
+<ul>
+<li><code>SET indexes path value</code></li>
+<li><code>DEL indexes path</code></li>
+</ul>
+</li>
+<li>The <strong>indexes</strong> can really bloat the tree if it's too wide or too deep</li>
+</ul>
+<h4 id="signed-merle-tree---path-based-event-log">Signed Merle Tree - Path Based Event Log <a class="direct-link" href="#signed-merle-tree---path-based-event-log">#</a></h4>
+<ul>
+<li><code>PUT src/answer.js' 'export let answer = 42\n'</code></li>
+<li><code>PUT 'src/index.js' 'import { answer } from &quot;./answer&quot;\n'</code></li>
+<li><code>PUT 'README.md' 'This *is* the README\n'</code></li>
+<li><code>put 'src/more.js' 'export let more = false\n'</code></li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> log <span class="token operator">=</span> <span class="token punctuation">[</span><br>  <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'src'</span><span class="token punctuation">,</span> <span class="token string">'answer.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'export let answer = 42\n'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'src'</span><span class="token punctuation">,</span> <span class="token string">'index.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'import  { answer } from ...'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'README.md'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'This *is* the README\n'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'src'</span><span class="token punctuation">,</span> <span class="token string">'more.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'export let more = ...'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">]</span></code></pre>
+<h2 id="supporting-tech-011%3A-hash-array-mapped-trie-(hamt)">Supporting Tech 011: Hash Array Mapped Trie (HAMT) <a class="direct-link" href="#supporting-tech-011%3A-hash-array-mapped-trie-(hamt)">#</a></h2>
+<div class="image-div" style="width: 600px;"><img src="/content/images/2017/09/03-HashMappedArrayTrie.gif"></img></div>
+<p><a href="http://code.hootsuite.com/super-charging-react-with-immutablejs/">(Gif source)</a></p>
+<ul>
+<li>Keys are hashed to a string of bits</li>
+<li>The trie is walked using the bit prefixes</li>
+<li>This helps distribute the indexes for the log format in the Merkle tree</li>
+<li>We now have a fast key/value store</li>
+<li><a href="https://github.com/mafintosh/hyperdb">HyperDB</a> in Dat is an implementation of this (Using siphash from libsodium)</li>
+</ul>
+<h2 id="supporting-tech-100%3A-secure-p2p-services">Supporting tech 100: Secure P2P Services <a class="direct-link" href="#supporting-tech-100%3A-secure-p2p-services">#</a></h2>
+<h4 id="distributed-hash-table">Distributed Hash Table <a class="direct-link" href="#distributed-hash-table">#</a></h4>
+<div class="image-div" style="width: 400px;"><img src="/content/images/2017/09/Screen-Shot-2017-09-18-at-3.50.43-PM.png"></img></div>
+<ul>
+<li>DHT (Distributed Hash Table) is a P2P system for mapping keys to machines that know the value.</li>
+<li>Think of it at distributed DNS.</li>
+<li>Key is the hash of the services.</li>
+<li>Value is the address of a peer that provides that service.</li>
+</ul>
+<h3 id="public-key-as-address">Public Key As Address <a class="direct-link" href="#public-key-as-address">#</a></h3>
+<p>The main problem with typical DHT systems is lots of untrusted peers know what you're searching for (For example BitTorrent)</p>
+<p>Client can have a secure socket with the server knowing only it's public key and providing a transient public key of it's own.</p>
+<p>This authenticates the server and prevents eavesdroppers from listening in.</p>
+<p>But we don't have to use the public key directly as the discovery key. We can hash the public key and use that in the DHT to find the server. This is how Dat addresses work.</p>
+<h2 id="references">References <a class="direct-link" href="#references">#</a></h2>
+<p>Thank you again to <a href="https://twitter.com/creationix">Tim Caswell</a> for creating such a great overview of the cryptography used in Dat. We have created and maintain a number of modules that make Sodium easy to use in all JavaScript environment (even WebAssembly). Check them out at <a href="https://github.com/sodium-friends">Sodium Friends</a>.</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-in-the-lab-ucdavis-1/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/03/0000405-DSC01580-1.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-in-the-lab-ucdavis-1/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Dat in the Lab at UC Davis: A tale of office dogs, watershed sciences, and user feedback.
+</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>To kick off Dat in the Lab, our collaboration with UC researchers, Max, Stephen, and Danielle traveled to the University of California at Davis to talk to Nick Santos and others at the UC Davis Center for Watershed Sciences (CWS).
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-commons/">
+      <div class="post-card-image" style="background-image: url(https://images.unsplash.com/photo-1476725376606-78bd56004997?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=00ac9806539fa5c086a5b77908e0e8e1)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-commons/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Decentralization</span>
+          <h2 class="post-card-title">The Web of Commons</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Decentralization is not just a technological problem, it is also a human one. With a commons approach to the decentralized web, the most ideal approach is guided from where we came. New protocols should be optimizing for science and mutual collaboration rather than optimizing for profit.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /dat-cryptography/ -->
+  </body>
+</html>

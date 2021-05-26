@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locking Science Open with Decentralized Scientific Archives</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2017-06-21">21 June 2017</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Locking Science Open with Decentralized Scientific Archives</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2017/06/14499185038_cdd258ef1e_z-1.jpg)">
+      </figure>
+
+      <section class="post-full-content"><p>Last year, we spoke at Internet Archive's <a href="https://www.decentralizedweb.net/">Decentralized Web Summit</a> and demonstrated Dat as a way to lock open scientific articles, data, and code together in one decentralized archive.  The Internet Archive has been publicly calling for decentralized and distributed technology as a way to improve the health of the overall Internet, by <a href="http://brewster.kahle.org/2015/08/11/locking-the-web-open-a-call-for-a-distributed-web-2/">locking data open</a>.</p>
+<p>But what do we mean by 'locking data open' in the context of scientific archives?</p>
+<blockquote>
+<p>&quot;While different websites are located all over<br>
+the world, in most cases, any particular website has only one physical location. Therefore, if the hardware in that particular location is down then no one can see that website. In this way, the Web is centralized: if someone controls the hardware of a website or the communication line to a website, then they control all the uses of that website.&quot; - <em>Brewster Kahle</em></p>
+</blockquote>
+<p>Standard practice now for scientific archives is to use HTTP links to datasets stored on centralized servers, which can cause dead links  -- <a href="/mention-in-the-new-york-times/">one that librarians and thousands of volunteers are desperate to solve</a>.</p>
+<h4 id="the-proposal">The proposal <a class="direct-link" href="#the-proposal">#</a></h4>
+<p>What we're offering with decentralized infrastructure is a slightly more complicated approach to storing and distributing data, with great benefits. This approach <strong>does not</strong> remove DOI or DNS or HTTP -- it's simply a way to reference data in a unified way so that it can be downloaded from many servers at once. In a decentralized architecture, anyone has the ability to download and re-host data without changing it's permanent identifier.</p>
+<p>The scholarly archiving infrastructure can be upgraded to incorporate more decentralized components without changing the 'UX' for the researcher. The archives can mask the links to raw data the same way they do today by using friendly naming systems like DNS or DOI. In Dat's case, which is different than IPFS, a public key is your address, not the hash -- which means that data can even be updated over time with history intact, without losing future-proof benefits.</p>
+<p>For us, peer-to-peer is about user control, resiliency, and distribution efficiency. A peer-to-peer system would scale with the amount of data and link rot we see in the future, while the current infrastructure is already beginning to crumble in the face of a serious reproducibility crisis.</p>
+<h4 id="on-'future-proofing'-and-hash-collisions">On 'future-proofing' and hash collisions <a class="direct-link" href="#on-'future-proofing'-and-hash-collisions">#</a></h4>
+<p>Max Ogden pointed me to David Rosenthal's <a href="http://blog.dshr.org/2017/05/blockchain-as-infrastructure-for-science.html"><em>Blockchain as an Infrastructure for Science</em></a> which talks about how peer-to-peer tools like Dat and IPFS would not work for scientific archives. David said that decentralized infrastructure that uses cryptographic hashes would not work as a future-proof method because &quot;<em>Hashes are not persistent over the timescales needed because, as technology improves over time, it becomes possible to create 'hash collisions', as we have seen recently with SHA1.</em>&quot;</p>
+<p>The hash collision problem that David brings up is a huge stretch, and not applicable to the popular decentralized web technologies such as Dat.</p>
+<p>We asked <a href="https://github.com/blahah">Richard Smith-Unna</a>, a researcher and former Mozilla Science fellow about this:</p>
+<blockquote>
+<p>Right now, there is one known full SHA1 collision and exploiting it to attack the BitTorrent protocol requires poisoning the original data and the spoof data with the two known clashing files. It was a huge effort to generate the collision. The stronger hashing algorithms present in most modern applications pushes this problem so far into the future that the entire cryptographic infrastructure of the world would be at risk before it caused a problem for scientific archives. If hash collision attacks were to be on the horizon, you release a new version of the protocol that prefers the stronger hash. Announce it and stable nodes upgrade, over time corresponding to the adoption of the upgrade the stronger hash dominates until it completely replaces the old one. This is already happening with bittorrent moving to sha256. - <em>Richard Smith-Unna</em></p>
+</blockquote>
+<p>We're very confident in the impressive theoretical and practical work of hundreds of cryptographers that are endorsing the use of SHA256 and elliptic curve cryptography. There are reasons why an organization may not want to use a decentralized data infrastructure -- but hash collisions are not one of them.</p>
+<h5 id="sustaining-the-archive">Sustaining the Archive <a class="direct-link" href="#sustaining-the-archive">#</a></h5>
+<p>Currently, large institutions that run scientific archives sustain themselves by charging libraries and researchers to access data. The theory goes that this centralized control of data therefore helps their business model, and giving away scientific archives for free would destroy the market, and thus the archives themselves.</p>
+<p>In actuality, these large institutions already commit to long-term funding of data storage and availability with no user-facing cost. With a decentralized architecture, it would be the same -- but the load on those systems would be lower. The burden is on libraries and scientific publishers to keep at least one server available with the data, like they currently do -- but everyone benefits from lower bandwidth cost as more data is decentralized.</p>
+<h4 id="what's-next">What's next <a class="direct-link" href="#what's-next">#</a></h4>
+<p>Since then, we've been working hard to build partnerships with libraries and universities to use Dat to store these scientific bundles and lock them open forever. We're excited about decentralizing more data beyond our current work with <a href="https://www.datarefuge.org/">Data Refuge</a> to partner with research labs, universities, and libraries to reduce their costs while advancing openness. It seems like whether large institutions like it or not, decentralized data tools like Dat are starting to be a viable distribution mechanism amongst the most advanced scientists today.</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/recently/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/08/banner-04.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/recently/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Recently</span>
+          <h2 class="post-card-title">Recently @ Dat Project</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>New adventures in Dat land: building an Electron-like tool for Android, downloading Dats over HTTP, &amp; adding one of Dat&#39;s best features to the command line.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-sleep-release/">
+      <div class="post-card-image" style="background-image: url(/content/images/2017/08/Screen-Shot-2017-08-03-at-10.51.25-PM.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-sleep-release/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Releases</span>
+          <h2 class="post-card-title">Dat 2.0 - White paper &amp; New App Releases</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>A few weeks ago, after being charmed by the comma llama (an alpaca), the Dat team put our final touches on the Dat protocol white paper. Today, we are releasing Dat Desktop, dat
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /locking-science-open/ -->
+  </body>
+</html>

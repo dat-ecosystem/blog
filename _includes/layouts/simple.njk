@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-simple
+---
+<header class="site-header outer no-cover">
+  <div class="inner">
+    <div class="site-header-content">
+      <h1 class="site-title">{{ title }}</h1>
+      {%- if description %}
+      <h2 class="site-description">{{ description }}</h2>
+      {%- endif %}
+    </div>
+  </div>
+</header>
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+      {{ content | safe }}
+  </div>
+</main>

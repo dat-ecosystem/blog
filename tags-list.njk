@@ -1,0 +1,16 @@
+---
+permalink: /tags/
+layout: layouts/simple.njk
+templateName: tags
+title: Tags
+---
+<div class="post-feed">
+  {% for tag in collections.tagList | filterTagList %}
+    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    <article class="post-card post {% if not post.data.banner %}no-image{% endif %}">
+      <div class="post-card-content">
+        <a class="post-card-content-link" href="{{ tagUrl | url }}"><h2>{{ tag }}</h2></a>
+      </div>
+    </article>
+  {% endfor %}
+</div>

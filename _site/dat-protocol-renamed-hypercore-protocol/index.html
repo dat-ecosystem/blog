@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat Protocol renamed Hypercore Protocol</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post no-image">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2020-05-15">15 May 2020</time><span class="date-divider">/</span> <a href="/tags/community/" class="post-tag">Community</a><span class="date-divider">/</span> <a href="/tags/announcement/" class="post-tag">Announcement</a><span class="date-divider">/</span> <a href="/tags/releases/" class="post-tag">Releases</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Dat Protocol renamed Hypercore Protocol</h1>
+      </header>
+
+      <section class="post-full-content"><p>The &quot;Dat Protocol&quot; has been renamed to the &quot;Hypercore Protocol&quot; and there is a <a href="https://github.com/hypercore-protocol">new organization for governing its tech</a>. The &quot;Dat community&quot; will continue as the collective of teams and projects that have evolved from the original Dat CLI project.</p>
+<h3 id="background">Background <a class="direct-link" href="#background">#</a></h3>
+<p>Since 2013, grant funding for research into scientific data sharing use cases drove the design and development of dat. This user research drove the creation of the &quot;dat&quot; command line tool as well as the &quot;dat protocol,&quot; a peer-to-peer protocol for building decentralized applications.</p>
+<p>There are a wide variety of core mission partners that are developing applications that use this protocol, including a web browser for developing peer-to-peer websites (<a href="https://beakerbrowser.com">Beaker Browser</a>), a community-based mapping and monitoring application (<a href="https://www.digital-democracy.org/mapeo/">Mapeo</a>), a cooperatively-owned data infrastructure (<a href="https://cobox.cloud/">Cobox</a>), a privacy-oriented chat application (<a href="https://cabal.chat/">Cabal</a>), a decentralized operating system (<a href="https://github.com/dxos/">DxOS</a>), a paid content distribution platform (<a href="https://ara.one/">Ara</a>), an offline-friendly alternative to commercial map providers (<a href="https://peermaps.org">Peermaps</a>), a distributed hosting network (<a href="https://playproject.io/datdot-substrate/">DatDot</a>), an application utilizing the <a href="https://github.com/p2pcommons/sdk-js/">p2pcommons</a> for as-you-go research communication (<a href="https://github.com/hypergraph-xyz/desktop">Hypergraph</a>) and <a href="https://dat.foundation/explore/projects/">the list goes on</a>.</p>
+<p>The breadth of these applications show the power and flexibility of the protocol for building the next-generation Web.</p>
+<h3 id="challenges">Challenges <a class="direct-link" href="#challenges">#</a></h3>
+<p>As grant money has become thin over the past few years, the development of the dat commandline tool has been very slow. It has become increasingly difficult to find volunteers and grant funding to maintain the dat commandline tool.</p>
+<p>Meanwhile, <strong>development of the applications listed above (and others) has become stronger than ever</strong>. As the protocol has matured over the past 3 years, the core maintainers have put in significant effort into ensuring the stability and security of the protocol that directly affects the success of these applications.</p>
+<p>As the commandline tool is no longer a driving force for the development of the protocol, it is becoming increasingly clear that more fine-grained control and modularity is needed. Thus, the core maintainers of the protocol have decided to retire the 'dat' protocol and rename it to reflect it's underlying component called 'hypercore'.</p>
+<p>This change from 'dat protocol' to 'hypercore protocol' largely reflects existing core technologies that the dat protocol was dependent upon, and those technologies will be grouped under a single GitHub organization with it's own decision making process, rather than on a variety of personal accounts.</p>
+<p>Enter <a href="https://hypercore-protocol.org">Hypercore Protocol</a>.</p>
+<h3 id="what's-changing">What's changing <a class="direct-link" href="#what's-changing">#</a></h3>
+<p>There is now a new <a href="https://github.com/hypercore-protocol">Hypercore Protocol GitHub organization</a> comprised of active maintainers, whereas the <a href="https://github.com/datproject">Dat Project GitHub organization</a> will continue to house the commandline tool and other higher-level software development toolkits that utilize the hypercore-protocol. There is also a new <a href="https://hypercore-protocol.org">Hypercore Protocol website</a> that contains architectural documentation and specifications.</p>
+<p>Hypercore Protocol is a collection of modules and protocol extensions which can be used together or individually. It includes a connectivity layer (Hyperswarm), a secure append-only log with efficient replication (Hypercore), and a POSIX-compatible filesystem (Hyperdrive).</p>
+<p>Hypercore also includes a new URL scheme, <code>hyper://</code>, for referencing any Hypercore-based data structure. As Hypercores declare their data structure, this URL scheme can be used for a wide variety of use-cases. This URL scheme can improve interoperability among applications by providing flexible and modular access to hypercore directly.</p>
+<p>As a decentralized and open-source protocol, it's important to have an open RFC process for making proposals to update the Hypercore protocol. This process is being developed in the <a href="https://github.com/hypercore-protocol">Hypercore Protocol org</a>.</p>
+<h3 id="the-future-of-dat">The future of dat <a class="direct-link" href="#the-future-of-dat">#</a></h3>
+<p>&quot;Dat&quot; will continue to exist as a community. It is the collective of projects that have emerged over the years from the original Dat CLI. When we talk about the Dat community, we're often referring to that collective: <a href="https://cabal.chat/">Cabal</a>, <a href="https://peermaps.org">Peermaps</a>, <a href="https://cobox.cloud/">Cobox</a>, <a href="https://beakerbrowser.com">Beaker Browser</a>, <a href="https://www.digital-democracy.org/mapeo/">Mapeo</a>, <a href="https://ara.one/">Ara</a>, and even the Hypercore Protocol.</p>
+<p>The datproject GitHub organization will continue as an open community rather than a guarded open source project. This will allow new maintainers to get started more easily, have impact over the development of the dat commandline tool and the surrounding ecosystem of projects that depend upon the hypercore-protocol, such as the <a href="https://github.com/datproject/sdk">software development toolkit</a>.</p>
+<p>The <code>dat</code> commandline tool is a community-run project comprised of volunteers. If you're currently using it as a key part of your organization or business, or are generally interested in participating in its maintenance, please get involved in the <a href="https://github.com/datproject/dat/">dat cli repo</a>.</p>
+<p>If you would like to become a part of the community, please feel free to attend the <a href="https://github.com/datproject/comm-comm">datproject public comm-comm</a> that happens every week!</p>
+<p>There will be some larger website changes to the <a href="https://dat.foundation">https://dat.foundation</a> website to reflect this new shift over the coming month. We will also be depreciating the datprotocol GitHub organization and moving any active repositories to the datproject GitHub organization.</p>
+<p>As inertia is real, it might take some time for people, including users, to adopt 'hypercore protocol' rather than 'dat protocol' in their language as part of technical communication, but our aim is that with time this will become more clear.</p>
+<p>For comments and questions, please feel free to join us in our community chat channel on <a href="https://webchat.freenode.net/#dat">IRC</a> or <a href="https://gitter.im/datproject/discussions">Gitter</a> or on the <a href="https://dat.discourse.group/">discourse forum</a>.</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-community-ecosystem-conf-2020/">
+      <div class="post-card-image" style="background-image: url(/content/images/2020/07/dat-event-cropped-green.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-community-ecosystem-conf-2020/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Community</span>
+          <h2 class="post-card-title">Dat Community Ecosystem Conference 2020</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>July 30th and 31st will be the dates for the first Dat conference. Whilst we will miss the chance to see each others faces, we think this will open up numerous opportunities for others to come by and have a full look at what has been cooking in the Dat Universe recently. Don’t miss the opportunity!
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post no-image">
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/moss-2019-summary/">
+        <header class="post-card-header">
+          <span class="post-card-tags"></span>
+          <h2 class="post-card-title">Recapping Dat&#39;s Mozilla Open Source Support Award</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>In our application for the Mozilla Open Source Support award, we wrote:  Over the last four years, Dat has grown from a data sharing tool to a wider community supporting the Dat Protocol.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /dat-protocol-renamed-hypercore-protocol/ -->
+  </body>
+</html>

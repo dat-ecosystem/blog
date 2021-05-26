@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post {% if not banner %}no-image{% endif %}">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          {%- for tag in tags | filterTagList -%}
+          {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+          <span class="date-divider">/</span> <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+          {%- endfor %}
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">{{ title }}</h1>
+      </header>
+    {%- if banner %}
+      <figure class="post-full-image" style="background-image: url({{ banner }})">
+      </figure>
+    {%- endif %}
+
+      <section class="post-full-content">{{ content | safe }}</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+      {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+      {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+      {%- if nextPost %}
+        {%- if previousPost %}
+          {% set postslist = [previousPost, nextPost] %}
+        {%- else %}
+          {% set postslist = [nextPost] %}
+        {%- endif %}
+      {%- else %}
+        {% set postslist = [previousPost] %}
+      {%- endif %}
+      {% include "postslist.njk" %}
+    </div>
+  </div>
+</aside>

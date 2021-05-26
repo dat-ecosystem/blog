@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo: A Collaborative Shopping List Built On Dat
+</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2018-05-14">14 May 2018</time><span class="date-divider">/</span> <a href="/tags/announcement/" class="post-tag">Announcement</a><span class="date-divider">/</span> <a href="/tags/recently/" class="post-tag">Recently</a><span class="date-divider">/</span> <a href="/tags/decentralization/" class="post-tag">Decentralization</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Demo: A Collaborative Shopping List Built On Dat
+</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2018/05/tartine-manufactory-sf.jpg)">
+      </figure>
+
+      <section class="post-full-content"><p>Over the last year, we've been developing <a href="https://github.com/mafintosh/hyperdb">HyperDB</a>, a distributed scalable database for peer-to-peer collaboration. To demonstrate HyperDB, I built Dat Shopping List — an application that makes grocery shopping fun again!* Along with being a powerful decentralized key-value database, HyperDB will be integrated in Hyperdrive to allow for multi-user collaboration with Dat archives. We are really excited about the potential of this and working on integration over the coming months. Read more to learn about the most decentralized shopping list ever built!*</p>
+<p><small>*<em>wild claims may not be accurate</em></small></p>
+<p><img src="/content/images/2018/05/decentralised-dog.png" alt="decentralised-dog"> <small>Dat works without centralized servers. (Credit: @mafintosh)</small></p>
+<p>Dat is a purpose-built tool to allow sharing of research data in a way that enables effective collaboration and reproducibility. Out-of-the-box, it gives you a distributed network, data history, and security. With the development of HyperDB, we are excited to see Dat growing to the foundation for other community collaboration tools.</p>
+<h2 id="dat-is-growing-and-evolving">Dat is growing and evolving <a class="direct-link" href="#dat-is-growing-and-evolving">#</a></h2>
+<p>Since its initial release, Dat has attracted an enthusiastic developer community with ideas and use cases that extend beyond its original mission. Dat has evolved into a whole ecosystem of related open source tools, libraries, and services. Some examples:</p>
+<ul>
+<li>the <code>dat</code> <a href="https://docs.datproject.org/install#in-the-terminal">command line tool</a> for sharing data (<a href="https://try-dat.com/">online tutorial</a>)</li>
+<li>the <a href="https://github.com/dat-land/dat-desktop">Dat Desktop</a> app for sharing files over the internet</li>
+<li>a full ecosystem of open source libraries in <a href="https://docs.datproject.org/ecosystem">JavaScript</a> (plus a new <a href="https://datrs.yoshuawuyts.com/">Rust</a> project is growing fast)</li>
+<li>commercial services such as <a href="https://hashbase.io/">Hashbase</a> are providing hosted solutions</li>
+<li><a href="https://beakerbrowser.com/">Beaker Browser</a> is a powerful vision of a web browser that gives all people the power to publish their work to the web without servers</li>
+<li>the community has even organized grassroots <a href="https://peer-to-peer-web.com/">Peer-to-Peer Web</a> conferences in Los Angeles and Berlin, and soon New York</li>
+</ul>
+<p><img src="/content/images/2018/05/peer-to-peer-web-la-tara.jpg" alt="peer-to-peer-web-la-tara"><br>
+<small>Tara Vancil giving a talk at Peer-to-Peer Web L.A. (Credit: @jimpick)</small></p>
+<p>Dat is designed to evolve. The initial version of Dat was designed to allow a single researcher to publish a set of files to the world, and to be able to update the files over time ... all while preserving history for reproducibility. But quickly, Dat caught on with other use in a variety of communities.</p>
+<h2 id="hyperdb%3A-dat-multiwriter">HyperDB: Dat Multiwriter <a class="direct-link" href="#hyperdb%3A-dat-multiwriter">#</a></h2>
+<p>One of the most desired features for Dat is collaboration between multiple users, known as <em>multiwriter</em> (as opposed to <em>singlewriter</em>, which Dat is currently). We especially heard this need in the <a href="/dat-in-the-lab-ucdavis-1/">feedback from the research community</a>. Led by Mathias Buus (<a href="https://github.com/mafintosh">@mafintosh</a>), we have spent more than a year developing HyperDB, a distributed key-value database. Alongside this, we are upgrading the core internal libraries of Dat to use HyperDB and support improved collaboration. HyperDB is working today, but we are continuing to test and integrate into hyperdrive and other Dat tools.</p>
+<p>Multiwriter support is a major change. To ensure a smooth roll out, we are working with the <a href="http://github.com/datprotocol/">Dat Protocol Working Group</a> to define backwards compatibility requirements. This process, and work on integration will be a priority in the coming months.</p>
+<h2 id="dat-shopping-list-demo"><em>Dat Shopping List</em> Demo <a class="direct-link" href="#dat-shopping-list-demo">#</a></h2>
+<p>The <em>Dat Shopping List</em> application demonstrates how to use HyperDB to collaborate with other users on a single database. We built this to showcase multiwriter support and guide others on its use. <a href="https://codeforscience.org/">Code for Science &amp; Society</a>, the non-profit organization sponsoring Dat, contracted me (<a href="https://jimpick.com/">Jim Pick</a>) to demonstrate how HyperDB works, improve any API peculiarities, and surface any remaining bugs.</p>
+<p>You can launch the demo in any web browser:</p>
+<ul>
+<li><a href="https://dat-shopping-list.glitch.me/">https://dat-shopping-list.glitch.me/</a></li>
+</ul>
+<p><img src="/content/images/2018/05/dat-shopping-list-basic.gif" alt="dat-shopping-list-basic"><br>
+<small>A quick preview of what you can do with the app</small></p>
+<p>The demo is a simple to do list app, in the spirit of the <a href="http://todomvc.com/">TodoMVC</a> project.</p>
+<h3 id="video-walkthrough">Video Walkthrough <a class="direct-link" href="#video-walkthrough">#</a></h3>
+<p>Here is a short (2.5 minute) walkthrough of the demo.</p>
+<p><video src="https://dat-shopping-list-video-jimpick.hashbase.io/dat-shopping-list-1.mp4" controls></video></p>
+<h3 id="mobile-phone-support">Mobile phone support <a class="direct-link" href="#mobile-phone-support">#</a></h3>
+<p>Where the demo really shines is on your mobile phone. The demo is built using some <a href="https://developers.google.com/web/progressive-web-apps/">cutting-edge</a> web browser features, so you can use <em>Add to Home Screen</em> on your phone, and you can use it just like you would use any other app.</p>
+<p><img src="/content/images/2018/05/dat-shopping-list-pwa.jpg" alt="dat-shopping-list-pwa"></p>
+<h3 id="offline-support">Offline support <a class="direct-link" href="#offline-support">#</a></h3>
+<p>When you create a shopping list, under the covers, you are actually creating a multiwriter Dat archive. Each shopping list is a separate Dat archive, and each shopping list item is just a tiny little file inside a directory.</p>
+<p><img src="/content/images/2018/05/dat-next-under-the-covers.png" alt="dat-next-under-the-covers"></p>
+<p>The master copy is stored in the storage of your web browser, along with the secret key which ensures that you are the only one that can modify it.</p>
+<p>Having the master copy inside your web browser is great, because that lets you make changes to the document, even when you aren't connected to the internet. So you can put your phone in airplane mode, and still use the app.</p>
+<p><img src="/content/images/2018/05/online-offline.gif" alt="online-offline"><br>
+<small>Making changes anytime is okay, even when offline. Changes sync when going back online.</small></p>
+<h3 id="synchronizing-and-keys">Synchronizing and Keys <a class="direct-link" href="#synchronizing-and-keys">#</a></h3>
+<p>Of course, a multiwriter demo would be boring if it only ran on one device. Dat has always had great support for replicating data across the internet.</p>
+<p>Dat has been single writer up until now, and it's identity model was essentially a single <em>key pair</em>, a set of keys — one public key and one private key. With the new support for multiple writers, each writer will have its own key pair, and users exchange keys to grant access to new writers.</p>
+<p>In this demo, the user shares their keys to the shopping list owners to get authorized.</p>
+<p><img src="/content/images/2018/05/authorization-1.png" alt="authorization-1"><br>
+<small>We authorize new writers by copying and pasting their keys into the owners shopping list.</small></p>
+<p><img src="/content/images/2018/05/authorization-2.png" alt="authorization-2"><br>
+<small>Once authorized, other users can update the shopping list.</small></p>
+<p>A truly user-friendly application might hide the keys and key exchange details from the end users by incorporating some sort of identity-based account and login system. But, for this demo, we wanted to illustrate the core authorization mechanism that multiwriter Dat uses. Asking people to understand and do the key exchange manually is not very friendly, but it is flexible and powerful.</p>
+<h3 id="node.js-gateway">Node.js Gateway <a class="direct-link" href="#node.js-gateway">#</a></h3>
+<p>This demo works in any modern browser. It has been tested in Chrome, Firefox, Safari and Microsoft Edge, as well as Mobile Safari and Chrome on Android.</p>
+<p>If the demo had been written for <a href="https://beakerbrowser.com/">Beaker Browser</a>, which speaks the Dat protocol natively to the internet, there would be no need for a gateway. But in order to allow the demo to work across many browsers, the app replicates the shopping list data across a websocket connection to the server from which it was loaded. The Node.js server will then talk to the rest of the peer-to-peer swarm on behalf of the client.</p>
+<p>By necessity, the data is shared with the gateway, so if you want to share data privately, you will need to run your own private gateway. It is not as scary as it sounds though... all the code is on <a href="https://github.com/jimpick/dat-shopping-list">GitHub</a>, and you can <a href="https://glitch.com/edit/#!/remix/dat-shopping-list">remix</a> the demo on Glitch with a single click.</p>
+<h3 id="podcast-interview-with-mathias-buus">Podcast Interview with Mathias Buus <a class="direct-link" href="#podcast-interview-with-mathias-buus">#</a></h3>
+<p>If you would like to learn a bit more, Mathias was a recent guest on the <a href="https://dat-cast.hashbase.io/">DatCast podcast</a> and talked a bit about the origins of the Dat project and how multiwriter and hyperdb came to be.</p>
+<h2 id="support-the-dat-project!!!">Support the Dat Project!!! <a class="direct-link" href="#support-the-dat-project!!!">#</a></h2>
+<p>Thank you to <a href="https://codeforscience.org/">Code for Science &amp; Society</a> for hiring me to build the demo. They are a non-profit and depend on contributions to continue running. <a href="https://donate.datproject.org/">Donations</a> are greatly appreciated.</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/collaboration-czi/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/05/IMG_1121.JPG)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/collaboration-czi/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Community</span>
+          <h2 class="post-card-title">Collaborative Communities at CZI Human Cell Atlas Meeting</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>At the end of April we joined scientists working on Chan Zuckerberg Science&#39;s (CZI) Human Cell Atlas (HCA) project to facilitate a session on collaboration for scientists. Improving communities ability to collaborate is
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/data-sharing-at-institutions-and-beyond-with-dat/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/04/0003811-DSC01725-resize.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/data-sharing-at-institutions-and-beyond-with-dat/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Data sharing between institutions</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Interested in beta testing secure data sharing software? Try out the new Dat install and data sharing workflow with a friend and let us know how it went.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /dat-shopping-list/ -->
+  </body>
+</html>

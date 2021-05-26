@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data sharing between institutions</title>
+    <meta name="description" content="New developments and ideas from the Dat team.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Project Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Project Blog">
+    
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2017/08/dat-hexagon.png" class="dat-icon dib w2 h2" alt="Dat Project"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat<span class="ml1 dat-neutral-60">Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://docs.datproject.org" title="Dat Project Documentation">Docs</a>
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://datproject.org" title="datproject.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2018-04-24">24 April 2018</time><span class="date-divider">/</span> <a href="/tags/science/" class="post-tag">Science</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Data sharing between institutions</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2018/04/0003811-DSC01725-resize.jpg)">
+      </figure>
+
+      <section class="post-full-content"><p>Data intensive research depends increasingly on the sharing and reuse of datasets. Unfortunately, collaboration can be stalled by technical roadblocks around sharing large datasets between institutions. Today, sharing files between institutions remains challenging without extensive technical infrastructure or external services.</p>
+<p>As a part of the <a href="/tags/science/">Dat in the Lab</a> project — a project done in partnership with <a href="https://www.cdlib.org/">California Digital Library</a> and funded by the <a href="https://www.moore.org/">Gordon and Betty Moore Foundation</a>  — we have worked with University of California researchers to better understand barriers in their work. This is part of our participant-driven design process and our goal is to identify where we can remove blockers for people in data intensive fields with Dat-based workflows. What have we learned? Read on!</p>
+<p>At the start of the project, one issue came up immediately — researchers still struggle to share large datasets between institutions. Why is this? Many commercial or open platforms exist for transferring files. But many of these tools require file transfer through a centralized server. By adding a third party, the act of transferring a file becomes more complex, more expensive, and reduces security. Dat works by linking the two people directly, without needing a third-party server. However, as anyone who's worked in institutional computing knows, connecting two institutional networks is not always straightforward. As we learned, institutional network security does not always mix well with peer-to-peer protocols.</p>
+<p>We want make Dat great for researchers, but many researchers lack access to install software globally on their systems. With that in mind, we also created a new simplified install process and improved the feedback in the Dat command line tool to make it more intuitive. Our new installation method makes it easy to install Dat without <code>sudo</code> or <code>npm</code>, in just one step!</p>
+<p>We've always aimed to make Dat great at data transfer. But sitting down with researchers and walking through each step showed us where we needed to improve. Dat in the Lab has provided new chances to try Dat out in new contexts, with folks at various levels of experience. From these experiences, we have made improvement that will make Dat easier for everyone to use.</p>
+<h2 id="case-study%3A-uc-davis-to-washington-state-university-data-transfer">Case Study: UC Davis to Washington State University Data Transfer <a class="direct-link" href="#case-study%3A-uc-davis-to-washington-state-university-data-transfer">#</a></h2>
+<p>Here’s a short summary of a recent data sharing use case we facilitated. We've designed a workflow to enable researchers to share data across institutions, from easy installation to direct data transfer.</p>
+<p>For Dat in the Lab, we helped a researcher from UC Davis securely share pre-publication genomic data with an external collaborator based in Washington State. At UC Davis, PhD student Ryan Peek is sequencing Sierra yellow-legged frogs (endangered species, Rana Sierrae) and Meghan Parsley, a PhD student at Washington State University (WSU) wants to collaborate on Ryan’s data.</p>
+<p>In the end, we successfully helped Ryan and Meghan to send the data from Ryan’s server at Davis to Meghan's laptop at WSU. Ryan’s genomics group at Davis had a server that we installed Dat onto using the new standalone installer method. Ryan used the <code>dat share</code> command (in the folder where his data was located) to start sharing his research data and sent the Dat link to Meghan.</p>
+<p>Initially, we tried to transfer the data onto a server on the internal network at WSU. We immediately ran into connection problems, where Dat was unable to connect to external networks. To troubleshoot this, we ran <code>dat doctor</code> on both ends. Dat doctor tests general connectivity and provides a command to test peer-to-peer connectivity. The Dat doctor determined that the server at WSU was not able to connect directly to Davis, most likely due to institutional firewall settings. We are always try to make the doctor better at spotting networking issues that may prevent Dat from working!</p>
+<p>To get away from the institutional firewall, we instead transfered the data to a researcher's laptop. It worked! Ryan and Meghan were able to exchange data directly between their computers. This transfer did not require any external infrastructure or costly platforms. Additionally, Meghan was able to close her laptop and have the data transfer automatically resume when she was back online. Dat provides researchers with flexibility for quick file transfers with powerful features underneath for users that need more advanced features.</p>
+<h2 id="work-flow-%E2%80%94-dat-for-data-transfer">Work Flow — Dat For Data Transfer <a class="direct-link" href="#work-flow-%E2%80%94-dat-for-data-transfer">#</a></h2>
+<p>Interested in beta testing Dat for secure data sharing? Try out the data sharing workflow with a friend and let us know how it went!<br>
+Follow this workflow and share your experience at <a href="mailto:hi@datproject.org">hi@datproject.org</a>, especially if you work as a researcher. We want to know if you succeed, or get stuck, or have an thoughts or feedback. We're interested in hearing from you, so don't hesitate!</p>
+<ol>
+<li><a href="https://github.com/datproject/dat/#installation">Install the Dat command line tool</a> on two separate computers that you want to share data between (can be both yours, or it's more fun with a friend).</li>
+<li>With Dat, one person shares a folder and the other downloads. On the sharing side, <code>cd</code> into the folder of data you'd like to share and run the command <code>dat share</code>. It will print out a long link that starts with <code>dat://...</code>. If you want to cancel the share at any time, type CTRL+C. Your data is also private, so nobody can discover or access your data without giving the Dat link to that person.</li>
+<li>On the downloading side, run the command <code>dat clone dat://…</code> with the link you received. This will create a new folder where the data will be downloaded.</li>
+<li>During the transfer, you should see connection statistics and progress bars on both computers.</li>
+<li>If the transfer fails or never starts, send a screenshot of the output of the command line to <a href="mailto:hi@datproject.org">hi@datproject.org</a> so we can understand where users are getting stuck.</li>
+<li>If the transfer succeeds, you successfully distributed your data over a secure peer-to-peer network!</li>
+</ol>
+<p>Ok — how’d it go? We'd love to hear what you think, email and tell us about it. We're also interested to chat about potential use cases for Dat in your research workflow!</p>
+<p>Want to play around some more? Try some more advanced topics over at <a href="https://try-dat.com">try-dat.com</a>. (<em>Note this tutorial starts with the <code>npm</code> installation, you can <code>npm</code> install or <a href="https://github.com/datproject/dat/#installation">one line install</a>.</em>)</p>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+          
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-shopping-list/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/05/tartine-manufactory-sf.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-shopping-list/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Announcement</span>
+          <h2 class="post-card-title">Demo: A Collaborative Shopping List Built On Dat
+</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>We&#39;ve been busy developing HyperDB, a distributed scalable database for peer-to-peer collaboration. Dat Shopping List is an application that makes grocery shopping fun again! HyperDB will be integrated in Hyperdrive to allow for multi-user collaboration with Dat archives.
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/practical-decentralization/">
+      <div class="post-card-image" style="background-image: url(/content/images/2018/04/Screen-Shot-2018-04-19-at-4.27.15-PM-2.png)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/practical-decentralization/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Science</span>
+          <h2 class="post-card-title">Practical Decentralization of Scholarly Data &amp; Resources</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>It’s time for scholars to ask whether today’s data preservation technologies align with open scholarship’s values of access, preservation, privacy, and transparency. 
+</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://datproject.org" title="Dat Project homepage">
+            <img src="/content/images/2017/08/dat-hexagon.png" class=" dat-icon dib br-100" alt="Dat Project">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.datproject.org" title="Dat Project Blog">
+            Dat Blog
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://docs.datproject.org" title="Dat Project Documentation">
+            Dat Docs
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_project" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_project</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="http://chat.datproject.org" title="Join our Chat">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://donate.datproject.org" title="Donate to Code for Science & Society">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Public Data</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat project flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_project" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/datproject" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.datproject.org">Dat Project Blog</a> &copy; 2021.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /data-sharing-at-institutions-and-beyond-with-dat/ -->
+  </body>
+</html>
