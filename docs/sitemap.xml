@@ -327,72 +327,87 @@
   </url>
   
   <url>
+    <loc>https://blog.datproject.org/dat-ecosystem-relaunch/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.datproject.org/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/page-list/1/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/</loc>
-    <lastmod>2021-05-26</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.datproject.org/tags/releases/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/design/</loc>
-    <lastmod>2021-05-26</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.datproject.org/tags/announcement/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/decentralization/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.datproject.org/tags/science/</loc>
-    <lastmod>2021-05-26</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.datproject.org/tags/press/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <loc>https://blog.datproject.org/tags/releases/</loc>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/conferences/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.datproject.org/tags/science/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.datproject.org/tags/press/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.datproject.org/tags/announcement/</loc>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/recently/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/business/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/community/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
   </url>
   
   <url>
     <loc>https://blog.datproject.org/tags/newsletter/</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.datproject.org/tags/grant/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.datproject.org/tags/ecosystem/</loc>
+    <lastmod>2021-12-21</lastmod>
   </url>
 </urlset>

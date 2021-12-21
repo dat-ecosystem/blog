@@ -1,10 +1,10 @@
 {
-  "title": "Dat Project Blog",
+  "title": "Dat Ecosystem Blog",
   "url": "https://blog.datproject.org/",
   "language": "en",
-  "description": "New developments and ideas from the Dat team.",
+  "description": "New developments and ideas from the Dat Ecosystem.",
   "feed": {
-    "subtitle": "New developments and ideas from the Dat team.",
+    "subtitle": "New developments and ideas from the Dat Ecosystem.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://blog.datproject.org/"
