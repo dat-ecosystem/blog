@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Dat Project Blog</title>
-	<subtitle>New developments and ideas from the Dat team.</subtitle>
+	<title>Dat Ecosystem Blog</title>
+	<subtitle>New developments and ideas from the Dat Ecosystem.</subtitle>
 	
 	<link href="https://blog.datproject.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.datproject.org/"/>
-	<updated>2020-08-22T10:00:00Z</updated>
+	<updated>2021-12-21T10:00:00Z</updated>
 	<id>https://blog.datproject.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Dat Ecosystem Relaunch
+</title>
+		<link href="https://blog.datproject.org/dat-ecosystem-relaunch/"/>
+		<updated>2021-12-21T10:00:00Z</updated>
+		<id>https://blog.datproject.org/dat-ecosystem-relaunch/</id>
+		<content type="html">&lt;p&gt;On the 29th of September 2021, we received a grant from CS&amp;amp;S which will help us finish wrapping up organizational details involved in migrating to the new Dat Ecosystem (from the old Dat moniker) and generally bootstraping everything involved in that endeavour. This move will allow us to continue spreading the word about the hyper-* stack and other dat-based p2p projects.&lt;/p&gt;
+&lt;p&gt;Continue reading to learn more.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@mehdisepehri?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Mehdi Sepehri&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/birds?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;a-little-context&quot;&gt;A Little Context &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.datproject.org/dat-ecosystem-relaunch/#a-little-context&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Around mid 2019, the Dat protocol was renamed to the Hypercore Protocol, i.e: &lt;code&gt;hyper://&lt;/code&gt;. This was not only a technical change, but also affected the organizational structure (such as which Github organizations should hold which repositories, and with what responsibilities). Ultimately these changes helped communicate  boundaries and responsibilities: &lt;a href=&quot;https://hypercore-protocol.org/&quot;&gt;hypercore-protocol.org&lt;/a&gt; with (@mafintosh et al) will be in charge of all the core technical decisions.&lt;/p&gt;
+&lt;p&gt;Great! But, what about the community? A group of projects within the community moved to create the &lt;code&gt;dat ecosystem&lt;/code&gt; as a place to gather, discuss, and share projects built on Hypercore. This movement also spawned the &lt;code&gt;dat consortium&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you&#39;re looking for more information about this change, it&#39;s been written about in &lt;a href=&quot;https://blog.datproject.org/dat-protocol-renamed-hypercore-protocol/&quot;&gt;more detail&lt;/a&gt; &lt;a href=&quot;https://www.geutstudio.com/blog/hello-hyper/&quot;&gt;previously&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;relaunch&quot;&gt;Relaunch &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.datproject.org/dat-ecosystem-relaunch/#relaunch&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The protocol renaming was on one hand the event that set the kickoff for re-organizing the tech governance and the community side of Dat. The Dat ecosystem will grow more projects, organize events, and build interoperability and collaboration between the projects.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Dat Ecosystem&#39;s vision is to improve the society with decentralized tech&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Our mission has always been and will continue to be - to encourage people to experiment and innovate with peer-to-peer technology.&lt;/p&gt;
+&lt;p&gt;We would like to return control of digital information to the people. The primary focus of the old Dat was sharing in civic data and research, but Dat ecosystem has grown into something bigger.&lt;/p&gt;
+&lt;p&gt;Today’s hypercore protocol is not only fast and reliable, it’s focus on a secure, privacy-first model is why it has become a foundational software for building peer-to-peer applications.&lt;/p&gt;
+&lt;p&gt;Dat Ecosystem welcomes new projects and individuals that share and want to collaborate on our stated vision. We are here to help, to create a space where we can share ideas and grow the hyper-* decentralized space.&lt;/p&gt;
+&lt;h2 id=&quot;the-grant&quot;&gt;The Grant &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.datproject.org/dat-ecosystem-relaunch/#the-grant&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Thanks to the CS&amp;amp;S grant&lt;/strong&gt; and ongoing collaboration, we can continue bootstraping the new Dat Ecosystem - a garden of peer-to-peer projects! This work will include a new website that will help us communicate our mission better, which will link to different projects in the ecosystem and overall present a clear picture of what the hyper ecosystem looks like.&lt;/p&gt;
+&lt;p&gt;The grant work also includes archiving unmaintained projects in the Dat sphere. This should help us communicate where contributions from the new people are meaningful, and let people know where they can take their first steps into the hyper-* space.&lt;/p&gt;
+&lt;p&gt;All of these tasks have &lt;a href=&quot;https://github.com/dat-ecosystem/organization/issues/8&quot;&gt;been defined&lt;/a&gt; and they are open for the community to contribute and get paid for their time (see the estimated budget for under each task).&lt;/p&gt;
+&lt;p&gt;Yes, thanks to the CS&amp;amp;S grant, we&#39;ve allocated a budget that we can use to pay contributors for their hard work. We know first-hand how hard the difficult economics of Open Source projects can be. That&#39;s why we really appreciate the support from CS&amp;amp;S and all our contributors in general.&lt;/p&gt;
+&lt;p&gt;We encourage you to have a look at the &lt;a href=&quot;https://github.com/dat-ecosystem/organization/issues/8&quot;&gt;tasks&lt;/a&gt; that we&#39;ve prepared. Some require some amount of prior knowledge of the ecosystem, while others are more decoupled and easy to tackle by new contributors. If you&#39;d like to pick something up, feel free to comment on &lt;a href=&quot;https://github.com/dat-ecosystem/organization/issues/8&quot;&gt;the corresponding issue&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also &lt;a href=&quot;https://discord.gg/fZymdRfctR&quot;&gt;join the conversation&lt;/a&gt; on Dat Ecosystem discord.&lt;/p&gt;
+&lt;p&gt;Thank you for your time,&lt;/p&gt;
+&lt;p&gt;♥️ Dat Consortium.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;PS: Many thanks to cblgh and ninabreznik for their awesome editing and proofreading support!&lt;/em&gt; 🤗&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Dat Conference: The Summary
@@ -19,7 +55,7 @@
 		<updated>2020-08-22T10:00:00Z</updated>
 		<id>https://blog.datproject.org/dat-conference-the-summary/</id>
 		<content type="html">&lt;p&gt;On the 30th &amp;amp; 31st of July, we had the chance to converge the Dat Community online on a unique two-day event. All actors - from enthusiasts and the curious to core developers and multiple projects’ creators - came together to refresh the whole Dat ecosystem.&lt;/p&gt;
-&lt;p&gt;&lt;dpan&gt;Photo by &lt;a href=&quot;https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Kelly Sikkema&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/thank-you?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/dpan&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Kelly Sikkema&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/thank-you?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;day-1&quot;&gt;Day 1 &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.datproject.org/dat-conference-the-summary/#day-1&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;It started around 5 PM CEST, with &lt;a href=&quot;https://events.dat.foundation/2020/person/wjzl3x/&quot;&gt;Mathias Buus&lt;/a&gt; from &lt;a href=&quot;https://github.com/hyperdivision&quot;&gt;Hyperdivision&lt;/a&gt;, and core &lt;code&gt;hypercore-protocol&lt;/code&gt; developer, who was in charge of kicking off the event with his talk &lt;em&gt;&amp;quot;&lt;em&gt;State of Hyper&lt;/em&gt;&amp;quot;&lt;/em&gt;. Mathias shared a good overview of all &lt;code&gt;hyper-*&lt;/code&gt; related projects and what is coming, a highlight being &lt;a href=&quot;https://github.com/hyperspace-org/hyperspace&quot;&gt;&lt;code&gt;hyperspace&lt;/code&gt;&lt;/a&gt;. - (&lt;a href=&quot;https://youtu.be/Cm9fwxnXg9k&quot;&gt;Youtube&lt;/a&gt;)&lt;/p&gt;
