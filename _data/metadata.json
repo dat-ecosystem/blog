@@ -1,17 +1,17 @@
 {
   "title": "Dat Ecosystem Blog",
-  "url": "https://blog.datproject.org/",
+  "url": "https://blog.dat-ecosystem.org/",
   "language": "en",
   "description": "New developments and ideas from the Dat Ecosystem.",
   "feed": {
     "subtitle": "New developments and ideas from the Dat Ecosystem.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://blog.datproject.org/"
+    "id": "https://blog.dat-ecosystem.org/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://blog.datproject.org/feed/feed.json"
+    "url": "https://blog.dat-ecosystem.org/feed/feed.json"
   },
   "author": {
     "name": "Dat Consortium",
