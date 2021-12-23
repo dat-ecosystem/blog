@@ -28,7 +28,7 @@ Around mid 2019, the Dat protocol was renamed to the Hypercore Protocol, i.e: `h
 
 Great! But, what about the community? A group of projects within the community moved to create the `dat ecosystem` as a place to gather, discuss, and share projects built on Hypercore. This movement also spawned the `dat consortium`.
 
-If you're looking for more information about this change, it's been written about in [more detail](https://blog.datproject.org/dat-protocol-renamed-hypercore-protocol/) [previously](https://www.geutstudio.com/blog/hello-hyper/).
+If you're looking for more information about this change, it's been written about in [more detail](https://blog.dat-ecosystem.org/dat-protocol-renamed-hypercore-protocol/) [previously](https://www.geutstudio.com/blog/hello-hyper/).
 
 ## Relaunch
 

@@ -347,22 +347,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/announcement/</loc>
-    <lastmod>2021-12-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/releases/</loc>
-    <lastmod>2021-12-21</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.dat-ecosystem.org/tags/design/</loc>
-    <lastmod>2021-12-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2021-12-21</lastmod>
   </url>
   
@@ -373,6 +358,26 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/science/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/releases/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/announcement/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/press/</loc>
+    <lastmod>2021-12-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2021-12-21</lastmod>
   </url>
   
@@ -403,11 +408,6 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/ecosystem/</loc>
-    <lastmod>2021-12-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/press/</loc>
     <lastmod>2021-12-21</lastmod>
   </url>
 </urlset>
