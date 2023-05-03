@@ -22,15 +22,13 @@ We envision a new kind of internet that is in harmony with nature, just like a b
 
 We are excited to share our recent progress with the world. We will be publishing a series of interviews with the founders of projects in the Dat-ecosystem, giving everyone a glimpse into the exciting world of p2p technology.
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
-
 Stay tuned, dear reader, for the adventures have only just begun.
 
 <a href="https://youtu.be/L-TFWFfUk-0" target="_blank">
  <img src="https://i.imgur.com/V38fm8I.png" alt="Watch the video" style="width: 100%;" />
 </a>
 
----
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
 
 <div class="grid">
   <div class="name">Webpage</div>
