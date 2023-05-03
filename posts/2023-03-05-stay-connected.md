@@ -1,5 +1,5 @@
 ---
-slug: staying connected
+slug: staying-connected
 date: 2023-05-03T10:00
 tags:
   - Grant
