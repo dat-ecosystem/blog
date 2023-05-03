@@ -26,6 +26,10 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
 
 Stay tuned, dear reader, for the adventures have only just begun.
 
+<a href="https://youtu.be/L-TFWFfUk-0" target="_blank">
+ <img src="https://i.imgur.com/V38fm8I.png" alt="Watch the video" style="width: 100%;" />
+</a>
+
 ---
 
 <div class="grid">
