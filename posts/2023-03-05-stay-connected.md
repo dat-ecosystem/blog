@@ -7,7 +7,7 @@ tags:
   - Interviews
   - Mad Science
 excerpt: |
-  The Dat-ecosystem has received a grant from the Code for Science and Society and is renewing its commitment to creating a new kind of internet. We plan to publish interviews with project founders to share our recent progress and are inviting Mad Scientists to come experiment with building more resilient and sustainable systems.
+  The Dat-ecosystem has received a grant from the Code for Science and Society and is renewing its commitment to the Dat vision. We plan to publish interviews with project founders to share our recent progress so stay tuned.
 author:
   - ninabreznik
   - serapath
@@ -18,7 +18,7 @@ title: |
 
 We have some exciting news to share. With the help of a <a target="_blank" href="https://github.com/dat-ecosystem/organization/issues/8</">grant</a> from the <a target="_blank" href="https://www.codeforsociety.org/">Code for Science and Society</a>, the Dat-ecosystem was able to consolidate its efforts and renew its commitment to the Dat vision. Like a flourishing garden of innovation and creativity, we have not just one main, but many thriving projects. It's a grand adventure, and this time it's a call to all Mad Scientists to lead the charge together with their keyboards firmly in their hands.
 
-We envision a new kind of internet that is in harmony with nature, just like a beautiful garden with different species of plants and wildlife. Mad scientists of the <a target="_blank" href="https://dat-ecosystem.org/">Dat-ecosystem</a> take inspiration from the infinite wisdom of the natural world and experiment with ways to make their systems more resilient and sustainable.
+We envision a new kind of internet that is in harmony with nature, just like a beautiful garden with different species of plants and wildlife. Mad scientists of the <a target="_blank" href="https://dat-ecosystem.org/">Dat-ecosystem</a> take inspiration from the infinite wisdom of the natural world and experiment with ways to make their systems more resilient, local-first and sustainable.
 
 We are excited to share our recent progress with the world. We will be publishing a series of interviews with the founders of projects in the Dat-ecosystem, giving everyone a glimpse into the exciting world of p2p technology.
 
