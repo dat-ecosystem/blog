@@ -25,7 +25,7 @@ We are excited to share our recent progress with the world. We will be publishin
 Stay tuned, dear reader, for the adventures have only just begun.
 
 <a href="https://youtu.be/L-TFWFfUk-0" target="_blank">
- <img src="https://i.imgur.com/V38fm8I.png" alt="Watch the video" style="width: 100%;" />
+ <img src="/content/images/2023/05/kayla-iterview-video-preview.png" alt="Watch the video" style="width: 100%;" />
 </a>
 
 Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 

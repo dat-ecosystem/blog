@@ -5,12 +5,139 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-05-03T10:00:00Z</updated>
+	<updated>2023-05-09T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Meet Mauve and their Agregore Browser</title>
+		<link href="https://blog.dat-ecosystem.org/meet-mauve/"/>
+		<updated>2023-05-09T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/meet-mauve/</id>
+		<content type="html">&lt;style&gt;
+  .post-full-image {
+    background-position-y: -50%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+  }
+&lt;/style&gt;
+&lt;div&gt;
+Greetings fellow space travelers and superheroes, hold on to your keyboards because we have a remarkable founder to introduce you to! Mauve, a volunteer in the Dat-ecosystem, has risen through the ranks and founded their own project called Agregore.
+&lt;br /&gt;&lt;br /&gt;
+In this exclusive interview with Kayla, Mauve talks about their innovative web browser that integrates peer-to-peer protocols for local-first web apps. Agregore is not just any ordinary browser, it&#39;s a beacon of hope for off-grid communities and web programmers looking for a sustainable and secure alternative to traditional corporate browsers.
+  &lt;div class=&quot;image image-right&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/meet-mauve.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+&lt;br /&gt;
+&lt;p&gt;Agregore uses the powerful hypercore protocol to provide a community-oriented and decentralized approach to browsing. The project is mostly funded through grants and consulting work, showcasing their dedication to sustainability.&lt;/p&gt;
+&lt;p&gt;Agregore is just the beginning of Mauve&#39;s holistic approach to local-first software. They believe that technology should be utilized to address social issues and material needs. With Agregore leading the charge, we can promote sustainability and resilience in the digital world.&lt;/p&gt;
+&lt;p&gt;Hold on tight as we embark on this journey with Mauve and the Dat-ecosystem. Stay tuned for more exciting interviews and updates from our community.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.image-right { 
+  float:right;
+}
+.image-left { 
+  float:left;
+}
+.image {
+  width:30%; 
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+&lt;/style&gt;
+&lt;a href=&quot;https://youtu.be/qvjlfpIZiDY&quot; target=&quot;_blank&quot;&gt;
+ &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/agregore-video-preview.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;interview-summary&quot;&gt;Interview Summary &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#interview-summary&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=0&quot;&gt;00:00&lt;/a&gt; Agregore is a web browser that integrates peer-to-peer protocols for local first web apps.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=108&quot;&gt;01:48&lt;/a&gt; Agregore is a replacement for corporate web&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=199&quot;&gt;03:19&lt;/a&gt; Agregore uses the hypercore protocol&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=290&quot;&gt;04:50&lt;/a&gt; Agregore is mostly funded through grant funding and consulting work&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=377&quot;&gt;06:17&lt;/a&gt; Deploying mesh network with Agregore and Nimble technologies&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=467&quot;&gt;07:47&lt;/a&gt; Agregore project uses Matrix/Discord for live chat and GitHub issue tracking for new features and bug fixes&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=551&quot;&gt;09:11&lt;/a&gt; Agregore is a browser that is part of a larger holistic approach to local first software.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qvjlfpIZiDY&amp;amp;t=638&quot;&gt;10:38&lt;/a&gt; Technology should be used to address social issues and material needs.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;agregore-links&quot;&gt;Agregore Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#agregore-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;display: flex;&quot;&gt;
+  &lt;div class=&quot;image image-left&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/meet-mauve.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid&quot; style=&quot;flex-grow: 1;&quot;&gt;
+    &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/AgregoreWeb&quot;&gt;https://github.com/AgregoreWeb&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://mastodon.mauve.moe/@agregore&quot;&gt;https://mastodon.mauve.moe/@agregore&lt;/a&gt; or &lt;a target=&quot;_blank&quot; href=&quot;https://mastodon.mauve.moe/@mauve&quot;&gt;https://mastodon.mauve.moe/@mauve&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#agregore:mauve.moe&quot;&gt;https://matrix.to/#/#agregore:mauve.moe&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .link {
+    color: #337ab7;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .link:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+&lt;/style&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>Staying connected: Mad scientists cultivating a new Internet together
@@ -23,7 +150,7 @@
 &lt;p&gt;We are excited to share our recent progress with the world. We will be publishing a series of interviews with the founders of projects in the Dat-ecosystem, giving everyone a glimpse into the exciting world of p2p technology.&lt;/p&gt;
 &lt;p&gt;Stay tuned, dear reader, for the adventures have only just begun.&lt;/p&gt;
 &lt;a href=&quot;https://youtu.be/L-TFWFfUk-0&quot; target=&quot;_blank&quot;&gt;
- &lt;img src=&quot;https://i.imgur.com/V38fm8I.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+ &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/kayla-iterview-video-preview.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
 &lt;/a&gt;
 &lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
 &lt;div class=&quot;grid&quot;&gt;
