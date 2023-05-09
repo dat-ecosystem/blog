@@ -12,7 +12,7 @@ author:
   - ninabreznik
   - serapath
 banner: /content/images/2023/05/agregore-logo.svg
-cover: /content/images/2023/05/agregore-video-preview.png
+cover: https://blog.dat-ecosystem.org/content/images/2023/05/agregore-video-preview.png
 title:
   Meet Mauve and their Agregore Browser
 ---
