@@ -12,6 +12,7 @@ author:
   - ninabreznik
   - serapath
 banner: /content/images/2023/05/tree.svg
+cover: /content/images/2023/05/kayla-iterview-video-preview.png
 title: |
   Staying connected: Mad scientists cultivating a new Internet together
 ---
@@ -28,7 +29,7 @@ Stay tuned, dear reader, for the adventures have only just begun.
  <img src="/content/images/2023/05/kayla-iterview-video-preview.png" alt="Watch the video" style="width: 100%;" />
 </a>
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -52,7 +53,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;
