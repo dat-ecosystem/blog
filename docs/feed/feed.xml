@@ -39,14 +39,14 @@ In this exclusive interview with Kayla, Mauve talks about their innovative web b
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;style&gt;
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
