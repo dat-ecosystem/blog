@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+// const generateSocialImages = require("@manustays/eleventy-plugin-generate-social-images");
 
 module.exports = function(eleventyConfig) {
   // Add plugins
@@ -14,6 +15,23 @@ module.exports = function(eleventyConfig) {
 
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
+
+  // // Not in use, because instead of generic social preview picture generated with this plugin
+  // // we use the "cover picture" created manually for each blog post markdown file
+  // // and specified in it's front matter
+  // // https://abhi.page/notes/11ty-plugin-generate-social-images/
+  // // https://github.com/manustays/eleventy-plugin-generate-social-images
+  // // but instead see:
+  // // https://obsolete29.com/posts/2021/01/03/setup-social-sharing-previews-seo-and-favicons-on-eleventy/
+  // eleventyConfig.addPlugin(generateSocialImages, {
+  //   promoImage: "./src/img/dat-logo.svg",
+  //   outputDir: "./docs/img/preview",
+  //   urlPath: "/img/preview",
+  //   siteName: "blog.dat-ecosystem.org",
+  //   titleColor: "#cc87bb",
+  //   lineBreakAt: 30,
+  //   bgGradient: ['#4ab657', '#4ab657'],
+  // });
 
   // Alias `layout: post` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");

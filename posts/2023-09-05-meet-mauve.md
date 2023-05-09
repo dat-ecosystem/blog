@@ -12,7 +12,8 @@ author:
   - ninabreznik
   - serapath
 banner: /content/images/2023/05/agregore-logo.svg
-title: 
+cover: /content/images/2023/05/agregore-video-preview.png
+title:
   Meet Mauve and their Agregore Browser
 ---
 <style>
@@ -41,14 +42,14 @@ Hold on tight as we embark on this journey with Mauve and the Dat-ecosystem. Sta
   </div>
 </div>
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
@@ -109,7 +110,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -133,7 +134,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;
