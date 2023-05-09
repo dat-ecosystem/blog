@@ -12,7 +12,7 @@ author:
   - ninabreznik
   - serapath
 banner: /content/images/2023/05/tree.svg
-cover: /content/images/2023/05/kayla-iterview-video-preview.png
+cover: https://blog.dat-ecosystem.org/content/images/2023/05/kayla-iterview-video-preview.png
 title: |
   Staying connected: Mad scientists cultivating a new Internet together
 ---
