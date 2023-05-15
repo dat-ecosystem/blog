@@ -5,12 +5,140 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-05-09T10:00:00Z</updated>
+	<updated>2023-05-15T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Join the Cabal Expedition with Alexander Cobleigh</title>
+		<link href="https://blog.dat-ecosystem.org/meet-cabal/"/>
+		<updated>2023-05-15T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/meet-cabal/</id>
+		<content type="html">&lt;style&gt;
+  .post-full-image {
+    background-position-y: -50%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+  }
+&lt;/style&gt;
+&lt;div&gt;
+Greetings, wanderers and curious minds!  We have a treat for you today that will transport you to the outer reaches of the digital communication. Meet Cabal, the peer-to-peer chat platform that will redefine how we connect and collaborate across the universe.
+&lt;br /&gt;&lt;br /&gt;
+Cabal is not just another open-source chat application. It&#39;s an interstellar cooperative, where every member plays a vital role in a lean and harmonious community. Say goodbye to servers and logins! Cabal effortlessly brings together like-minded explorers, fostering a sense of camaraderie and adventure. 
+  &lt;div class=&quot;image image-right&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/meet-cabal.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+&lt;br /&gt;
+By harnessing the power of append-only log and DHT technologies, Cabal brings you a peer-to-peer group chat experience that&#39;s truly out of this world. No longer bound by the limitations of traditional servers, Cabal allows you to connect with fellow explorers, collaborators, and like-minded enthusiasts, even in the face of cosmic internet disruptions. Prepare to be amazed, for Cabal&#39;s resilience shines through, even during the darkest hours of an internet outage.
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+But wait, there&#39;s more! Cabal&#39;s intriguing design doesn&#39;t stop at revolutionizing group communication. In the depths of its core lies a unique subjective moderation system, shaping Cabal into a private chat group like no other.&lt;/p&gt;
+&lt;p&gt;Explore Cabal with Alexander Cobleigh and uncover a universe where diverse perspectives flourish and communities bloom!&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.image-right { 
+  float:right;
+}
+.image-left { 
+  float:left;
+}
+.image {
+  width:30%; 
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+&lt;/style&gt;
+&lt;a href=&quot;https://youtu.be/5s6IaF5Q3JI&quot; target=&quot;_blank&quot;&gt;
+ &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/cabal-video-preview.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;interview-summary&quot;&gt;Interview Summary &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#interview-summary&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=0&quot;&gt;00:00&lt;/a&gt; Cabal is a peer-to-peer open source group chat application and protocol.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=116&quot;&gt;01:56&lt;/a&gt; Cabal is a peer-to-peer chat platform with open-source code.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=242&quot;&gt;04:02&lt;/a&gt; Cabal uses hypercore and hyperswarm to create a peer-to-peer group chat&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=369&quot;&gt;06:09&lt;/a&gt; Open Collective is funding a rust implementation of a new version of Cabal protocol.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=491&quot;&gt;08:11&lt;/a&gt; Developing a protocol specification and a node.js implementation of the protocol&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=610&quot;&gt;10:10&lt;/a&gt; Join the public cabal to test things out and get in touch with developers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=723&quot;&gt;12:03&lt;/a&gt; Cabal is a community project for peer-to-peer communication&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Pyq-Ffsw9kA&amp;amp;t=837&quot;&gt;13:57&lt;/a&gt; Cabal is a private chat group with a unique subjective moderation system.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;cabal-links&quot;&gt;Cabal Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#cabal-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;display: flex;&quot;&gt;
+  &lt;div class=&quot;image image-left&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/meet-cabal.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid&quot; style=&quot;flex-grow: 1;&quot;&gt;
+    &lt;div class=&quot;name&quot;&gt;Website&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://cabal.chat/&quot;&gt;https://cabal.chat/&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/cabal-club&quot;&gt;https://github.com/cabal-club&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;IRC&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://kiwiirc.com/nextclient/irc.libera.chat#cabal.club&quot;&gt;https://kiwiirc.com/nextclient/irc.libera.chat#cabal.club&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .link {
+    color: #337ab7;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .link:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+&lt;/style&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>Meet Mauve and their Agregore Browser</title>

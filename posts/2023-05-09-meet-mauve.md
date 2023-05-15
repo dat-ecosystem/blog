@@ -2,9 +2,9 @@
 slug: meet-mauve
 date: 2023-05-09T10:00
 tags:
+  - Interview
   - Project
   - Ecosystem
-  - Interviews
   - Founders
 excerpt: |
   Get ready to explore a local-first web browser that targets off-grid communities and embraces decentralized protocols - meet Mauve, the founder of Agregore, an innovative web browser that uses peer-to-peer protocols for local-first web apps, offering a sustainable and secure alternative to corporate browsers. Agregore is just the start of Mauve's vision for local-first software, which focuses on addressing social issues and promoting sustainability and resilience in the digital world.
