@@ -12,6 +12,7 @@ author:
   - ninabreznik
   - serapath
 banner: /content/images/2023/05/cabal-logo.svg
+cover: https://blog.dat-ecosystem.org/content/images/2023/05/cabal-video-preview.png
 title: 
   Join the Cabal Expedition with Alexander Cobleigh
 ---
