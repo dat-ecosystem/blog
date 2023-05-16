@@ -64,21 +64,22 @@ Explore Cabal with Alexander Cobleigh and uncover a universe where diverse persp
 
 ## Interview Summary
 
-[00:00](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=0) Cabal is a peer-to-peer open source group chat application and protocol.
+[00:01](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=1) Cabal is a peer-to-peer open source group chat application and protocol.
 
-[01:56](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=116) Cabal is a peer-to-peer chat platform with open-source code.
+[02:05](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=125) Cabal is a peer-to-peer workspace with open-source code
 
-[04:02](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=242) Cabal uses hypercore and hyperswarm to create a peer-to-peer group chat
+[04:12](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=252) Cabal uses hypercore and hyperswarm to create a group chat
 
-[06:09](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=369) Open Collective is funding a rust implementation of a new version of Cabal protocol.
+[06:17](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=377) Open Collective funding used for Rust implementation of new Cabal protocol
 
-[08:11](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=491) Developing a protocol specification and a node.js implementation of the protocol
+[08:19](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=499) Developing a new protocol specification and node.js implementation for Cabal
 
-[10:10](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=610) Join the public cabal to test things out and get in touch with developers.
+[10:18](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=618) Join the public cabal to test things out and get in touch with developers.
 
-[12:03](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=723) Cabal is a community project for peer-to-peer communication
+[12:12](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=732) Cabal is a community project for peer-to-peer communication
 
-[13:57](https://www.youtube.com/watch?v=Pyq-Ffsw9kA&t=837) Cabal is a private chat group with a unique subjective moderation system.
+[14:04](https://www.youtube.com/watch?v=5s6IaF5Q3JI&t=844) Cabal has a unique subjective moderation system
+
 <br>
 
 ## Cabal Links
