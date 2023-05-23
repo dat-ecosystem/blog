@@ -5,12 +5,147 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-05-15T10:00:00Z</updated>
+	<updated>2023-05-23T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Unleashing a Web Development Adventure with Paolo Fragomeni</title>
+		<link href="https://blog.dat-ecosystem.org/meet-paolo/"/>
+		<updated>2023-05-23T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/meet-paolo/</id>
+		<content type="html">&lt;style&gt;
+  .post-full-image {
+    background-position-y: -50%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+  }
+&lt;/style&gt;
+&lt;div&gt;
+Ahoy, fellow explorers of the digital frontier! Prepare yourselves to be transported to the furthest reaches of technological innovation. Get ready to delve into the captivating world of Socket Supply and witness the birth of a project that promises to revolutionize web development as we know it.
+&lt;br /&gt;&lt;br /&gt;
+Like the intrepid explorers of old, Paolo Fragomeni and his team have set sail on a daring quest — a dream of a world without servers, where the reign of the digital landlords comes to an end.  
+  &lt;div class=&quot;image image-right&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/meet-paolo.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+&lt;br /&gt;
+Socket Supply is the manifestation of this audacious vision, empowering web developers to create native apps for any operating system using the familiar trio of HTML, CSS, and JavaScript. It&#39;s like discovering a hidden treasure trove that allows you to unlock the secrets of the app development universe.
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+But that&#39;s not all - the true magic lies in real-time, multi-user peer-to-peer interactions—no servers required. It&#39;s a bustling harbor where collaboration thrives and innovation flourishes.&lt;/p&gt;
+&lt;p&gt;So, fellow explorers, set your sights on Socket Supply and may your journey be filled with wonder and boundless inspiration!&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.image-right { 
+  float:right;
+}
+.image-left { 
+  float:left;
+}
+.image {
+  width:30%; 
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+&lt;/style&gt;
+&lt;a href=&quot;https://youtu.be/uqWa9yvXRXo&quot; target=&quot;_blank&quot;&gt;
+ &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/socket-video-preview.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;interview-summary&quot;&gt;Interview Summary &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-paolo/#interview-summary&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Socket Supply makes a project called Socket Runtime, which helps web developers create native apps for any OS using HTML, CSS, and JavaScript. It is an application runtime that emerged over the last few years and has been welcomed by web developers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=0&quot;&gt;00:00&lt;/a&gt; Socket Supply allows web developers to create native apps for any OS using just HTML, CSS, and JavaScript.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=170&quot;&gt;02:50&lt;/a&gt; Socket provides peer-to-peer capabilities and local file access to help developers build software that runs on any platform&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=345&quot;&gt;05:45&lt;/a&gt; Infrastructure controlled by for-profit companies is a bad idea.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=511&quot;&gt;08:31&lt;/a&gt; Create native peer-to-peer applications on any platform&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=652&quot;&gt;10:52&lt;/a&gt; Socket Supply provides a foundation for developers to build applications using Hypercore protocol and interesting libraries on top of it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=806&quot;&gt;13:26&lt;/a&gt; Socket Supply is focused on aligning with web standards and stability.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=946&quot;&gt;15:46&lt;/a&gt; Socket runtime provides multi-user real-time peer-to-peer interactions without the need for servers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uqWa9yvXRXo&amp;amp;t=1074&quot;&gt;17:54&lt;/a&gt; GitHub is the best place to interact with the community and track progress&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;socketsupply-links&quot;&gt;SocketSupply Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-paolo/#socketsupply-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;display: flex;&quot;&gt;
+  &lt;div class=&quot;image image-left&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/05/meet-paolo.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid&quot; style=&quot;flex-grow: 1;&quot;&gt;
+    &lt;div class=&quot;name&quot;&gt;Website&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://socketsupply.co/&quot;&gt;https://socketsupply.co&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/socketsupply/socket&quot;&gt;https://github.com/socketsupply/socket&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/socketsupply&quot;&gt;https://twitter.com/socketsupply&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/YPV32gKCsH&quot;&gt;https://discord.gg/YPV32gKCsH&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Linkedin&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.linkedin.com/company/socketsupply&quot;&gt;https://www.linkedin.com/company/socketsupply&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-paolo/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-paolo/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-paolo/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .link {
+    color: #337ab7;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .link:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+&lt;/style&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>Join the Cabal Expedition with Alexander Cobleigh</title>
@@ -101,6 +236,8 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
@@ -228,6 +365,8 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
   &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
