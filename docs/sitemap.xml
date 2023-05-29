@@ -362,17 +362,17 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
-    <lastmod>2023-05-02</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.dat-ecosystem.org/tags/conferences/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/science/</loc>
+    <lastmod>2023-05-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -454,5 +454,10 @@
   <url>
     <loc>https://blog.dat-ecosystem.org/meet-paolo/</loc>
     <lastmod>2023-05-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/meet-diego/</loc>
+    <lastmod>2023-05-30</lastmod>
   </url>
 </urlset>
