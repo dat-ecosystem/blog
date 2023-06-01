@@ -35,22 +35,17 @@ npm install
 ### 5. Run Eleventy
 
 ```
-npx eleventy
+npx @11ty/eleventy
 ```
 
-Or build and host locally for local development
+Or build and host locally for local development (includes watching)
 ```
-npx eleventy --serve
-```
-
-Or build automatically when a template changes:
-```
-npx eleventy --watch
+npx @11ty/eleventy --serve
 ```
 
 Or in debug mode:
 ```
-DEBUG=* npx eleventy
+DEBUG=* npx @11ty/eleventy
 ```
 
 ### Implementation Notes
