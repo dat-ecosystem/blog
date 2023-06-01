@@ -13,7 +13,7 @@ author:
   - serapath
 banner: /content/images/2023/05/sher-logo.svg
 cover: https://blog.dat-ecosystem.org/content/images/2023/05/sher-video-preview.png
-title: 
+title:
  The Decentralized Streaming Adventure with Sher!
 ---
 <style>
@@ -43,14 +43,14 @@ So there you have it, the guiding star of decentralized streaming, illuminating 
   </div>
 </div>
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
@@ -72,11 +72,11 @@ Sher is a decentralized streaming platform for content creators and streamers. I
 
 [02:53](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=173) A resilient peer-to-peer streaming platform with minimal costs.
 
-[05:35](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=335) Sher is a platform for podcasters to stream and monetize their content
+[05:35](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=335) Sher is a platform for podcasters and creators to stream and monetize their content
 
 [08:07](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=487) Sher as a tool for community building
 
-[10:45](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=645) Sher is using hypercore protocol and planning to use WebRTC.
+[10:45](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=645) Sher is using hypercore protocol in combination with WebRTC.
 
 [13:23](https://www.youtube.com/watch?v=a8dPEjY3JCc&t=803) Rebranding and communication focus in short term. Subscription model per creator planned in medium-long term.
 
@@ -93,8 +93,10 @@ Sher is a decentralized streaming platform for content creators and streamers. I
   </div>
 
   <div class="grid" style="flex-grow: 1;">
+    <div class="name">App</div>
+    <div class="link"><a target="_blank" href="https://sher.app">https://sher.app</a></div>
     <div class="name">Website</div>
-    <div class="link"><a target="_blank" href="https://sher.geutstudio.com/">https://sher.geutstudio.com/</a></div>
+    <div class="link"><a target="_blank" href="https://discover.sher.app">https://discover.sher.app</a></div>
     <div class="name">Github</div>
     <div class="link"><a target="_blank" href="https://github.com/geut">https://github.com/geut</a></div>
     <div class="name">Discord</div>
@@ -115,7 +117,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -141,7 +143,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;
