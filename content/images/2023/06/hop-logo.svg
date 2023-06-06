@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="hop-logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-305.76595"
+     inkscape:cy="611.55318"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1380"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3828"
+       transform="matrix(4.7924692,0,0,4.7924692,-4815.4658,-1681.9186)">
+      <polygon
+         id="polygon3826"
+         points="1046.343,391.843 1046.343,371.588 1046.343,370.583 1045.473,370.08 1027.933,359.954 1027.061,359.451 1026.19,359.954 1008.65,370.08 1007.78,370.583 1007.78,371.588 1007.78,391.843 1007.78,392.848 1008.65,393.35 1026.19,403.478 1027.061,403.98 1027.933,403.478 1045.473,393.35 1046.343,392.848 "
+         style="fill:#2a3747" />
+    </g>
+    <path
+       style="fill:#4ab657;stroke-width:4.79246902"
+       inkscape:connector-curvature="0"
+       d="M 176.60495,104.06693 109.29951,65.209594 c -1.61027,-0.929739 -3.60393,-0.929739 -5.2142,0 L 36.775076,104.06693 c -1.615062,0.93454 -2.607103,2.65024 -2.607103,4.51451 v 77.71947 c 0,1.86427 0.992041,3.58477 2.607103,4.51451 l 67.310234,38.85734 c 0.80513,0.46966 1.70132,0.69491 2.60231,0.69491 0.90098,0 1.80196,-0.22525 2.61189,-0.69491 l 67.30544,-38.85734 c 1.61506,-0.92974 2.59752,-2.65024 2.59752,-4.51451 v -77.71947 c 0,-1.86427 -0.98246,-3.57997 -2.59752,-4.51451 z"
+       id="path3830" />
+    <g
+       id="g3836"
+       transform="matrix(4.7924692,0,0,4.7924692,-4815.4658,-1681.9186)">
+      <path
+         id="path3834"
+         d="m 1046.559,369.704 -18.845,-10.881 c -0.405,-0.234 -0.901,-0.234 -1.306,0 l -18.847,10.881 c -0.403,0.232 -0.652,0.664 -0.652,1.13 v 21.762 c 0,0.467 0.249,0.898 0.652,1.132 l 18.847,10.879 c 0.201,0.117 0.428,0.176 0.652,0.176 0.227,0 0.452,-0.059 0.653,-0.176 l 18.845,-10.879 c 0.405,-0.234 0.655,-0.666 0.655,-1.132 v -21.762 c 10e-4,-0.466 -0.249,-0.897 -0.654,-1.13 z m -1.957,22.139 -17.541,10.126 -17.54,-10.126 v -20.255 l 17.54,-10.127 17.541,10.127 z"
+         inkscape:connector-curvature="0"
+         style="fill:#4ab657" />
+    </g>
+    <ellipse
+       style="opacity:1;fill:#2a3747;fill-opacity:0;stroke:#651150;stroke-width:3.54127431;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1536"
+       cx="106.65664"
+       cy="146.91653"
+       rx="31.534435"
+       ry="60.934086" />
+    <ellipse
+       style="opacity:1;fill:#2a3747;fill-opacity:0.03501946;stroke:#a62114;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647"
+       id="path1554"
+       cx="106.70998"
+       cy="132.34668"
+       rx="29.399649"
+       ry="34.210499" />
+  </g>
+  <style
+     id="style3875">
+  #outline {
+		stroke: #111;
+		stroke-width: 31.66235665441778;
+		fill: none;
+  }
+  .dot {
+		fill: #111;
+  }
+  .point {
+		fill: #111;
+  }
+  /*.point:nth-child(odd) {
+		fill: rgb(165, 24, 201);
+  }*/
+  .ray {
+		stroke: #111;
+		stroke-width: 31.66235665441778;
+  }
+  /*.ray:nth-child(even) {
+		stroke: rgb(165, 24, 201);
+  }*/
+  #background {
+		fill: #FCFCFC;
+		stroke: none;
+  }
+  #pupil {
+		fill: rgb(165, 24, 201);
+  }
+</style>
+</svg>
