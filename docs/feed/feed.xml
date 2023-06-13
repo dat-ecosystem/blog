@@ -5,12 +5,144 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-06-06T10:00:00Z</updated>
+	<updated>2023-06-13T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Exploring Maori Community Archiving with Mix Irving</title>
+		<link href="https://blog.dat-ecosystem.org/meet-mix/"/>
+		<updated>2023-06-13T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/meet-mix/</id>
+		<content type="html">&lt;style&gt;
+  .post-full-image {
+    background-position-y: -50%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+  }
+&lt;/style&gt;
+&lt;div&gt;
+Step into the enchanting world of Maori tribal archiving, dear readers, as we embark on a whimsical journey like no other. Today, we are absolutely delighted to announce our upcoming interview with the extraordinary Mix Irving from Ahau. Prepare to be mesmerized as we uncover the secrets of this ingenious Maori community archiving project, where peer-to-peer software breathes life into family trees and weaves captivating stories. With grants and partnerships with Maori collectives, this endeavor is a true testament to the fusion of tradition and technology.
+&lt;br /&gt;&lt;br /&gt;
+Get ready to witness the transformation of Maori communities as they transcend the dusty confines of historians&#39; libraries and emerge as the authors of their own narratives. In this digital age, the quest for identity becomes paramount, and Mix will unveil the empowering journey of Maori communities in establishing their digital presence. Brace yourself for a whirlwind of discovery, where ancient spirits and cutting-edge technology unite to create a vibrant tapestry of belonging.
+  &lt;div class=&quot;image image-right&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-mix.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+&lt;br /&gt;
+But hold on tight, for there&#39;s more excitement to come! Our fearless guide will unveil the captivating power of Ahau&#39;s employment of Hypercore technology. Prepare to be astonished as we plunge headfirst into the realm of encrypted streaming video sharing. It&#39;s a realm where privacy and connectivity entwine in a dazzling display of peer-to-peer magic. As Maori stories come to life through this remarkable technology, communities are bound together in a digital symphony of shared narratives.
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+Throughout our journey, Mix Irving expertly navigated the realms of peer-to-peer software, collective stewardship, encrypted streaming, and digital identity. Ahau&#39;s groundbreaking project invites us all to partake in the resplendent renaissance of Maori heritage. So stay tuned, dear readers, as we set sail on this extraordinary adventure. May the digital winds guide you to uncharted frontiers, where the past and the future harmoniously dance together!&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.image-right { 
+  float:right;
+}
+.image-left { 
+  float:left;
+}
+.image {
+  width:30%; 
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+&lt;/style&gt;
+&lt;a href=&quot;https://youtu.be/Eq5AEeQXj-A&quot; target=&quot;_blank&quot;&gt;
+ &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/ahau-video-preview.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;interview-summary&quot;&gt;Interview Summary &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#interview-summary&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A Maori tribal archiving project uses peer-to-peer software for family trees and stories. Funded by grants and partnerships with Maori collectives.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=0&quot;&gt;00:00&lt;/a&gt; A Maori community archiving project done using peer-to-peer software&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=127&quot;&gt;02:07&lt;/a&gt; Land trusts as Maori collectives managing traditional lands&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=242&quot;&gt;04:02&lt;/a&gt; Hypercore allows for encrypted streaming video sharing&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=359&quot;&gt;05:59&lt;/a&gt; Supporting communities to move from historians to community participation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=466&quot;&gt;07:46&lt;/a&gt; Exploring the use of digital identity for recognized tribes&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=569&quot;&gt;09:29&lt;/a&gt; Connecting Communities to Their Roots&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=668&quot;&gt;11:08&lt;/a&gt; Creating foundations to support people to reconnect with their heritage and coordinate tribal resources using digital identity&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=765&quot;&gt;12:45&lt;/a&gt; Using distributed tools owned by the community is the dream.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;sher-links&quot;&gt;Sher Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#sher-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;display: flex;&quot;&gt;
+  &lt;div class=&quot;image image-left&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-mix.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid&quot; style=&quot;flex-grow: 1;&quot;&gt;
+    &lt;div class=&quot;name&quot;&gt;Website&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://ahau.io/&quot;&gt;https://ahau.io/&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Docs&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://docs.ahau.io/&quot;&gt;https://docs.ahau.io/&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Chat&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://chat.ahau.io/&quot;&gt;https://chat.ahau.io/&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Linkedin&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.linkedin.com/company/%C4%81hau/&quot;&gt;https://www.linkedin.com/company/āhau/&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .link {
+    color: #337ab7;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .link:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+&lt;/style&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>Unveiling the HOP (Health Oracle Protocol)</title>

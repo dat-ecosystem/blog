@@ -347,6 +347,11 @@
   </url>
   
   <url>
+    <loc>https://blog.dat-ecosystem.org/tags/design/</loc>
+    <lastmod>2023-05-02</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.dat-ecosystem.org/tags/releases/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
@@ -357,7 +362,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/design/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -368,11 +373,6 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/science/</loc>
-    <lastmod>2023-05-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -464,5 +464,10 @@
   <url>
     <loc>https://blog.dat-ecosystem.org/meet-james/</loc>
     <lastmod>2023-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/meet-mix/</loc>
+    <lastmod>2023-06-13</lastmod>
   </url>
 </urlset>
