@@ -357,12 +357,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/conferences/</loc>
-    <lastmod>2023-05-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/science/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -372,7 +367,12 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/conferences/</loc>
+    <lastmod>2023-05-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/science/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -402,27 +402,12 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/interview/</loc>
-    <lastmod>2023-05-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/project/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/grant/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/ecosystem/</loc>
-    <lastmod>2023-05-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/founders/</loc>
-    <lastmod>2023-05-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/grant/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -433,6 +418,21 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/mad-science/</loc>
+    <lastmod>2023-05-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/interview/</loc>
+    <lastmod>2023-05-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/project/</loc>
+    <lastmod>2023-05-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/founders/</loc>
     <lastmod>2023-05-02</lastmod>
   </url>
   
@@ -473,6 +473,11 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/meet-hans/</loc>
+    <lastmod>2023-06-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/meet-nina-alex.svg/</loc>
     <lastmod>2023-06-13</lastmod>
   </url>
 </urlset>
