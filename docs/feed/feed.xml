@@ -13,6 +13,139 @@
 	</author>
 	
 	<entry>
+		<title>Unlocking Data Sovereignty with DatDot</title>
+		<link href="https://blog.dat-ecosystem.org/meet-nina-alex.svg/"/>
+		<updated>2023-06-13T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/meet-nina-alex.svg/</id>
+		<content type="html">&lt;style&gt;
+  .post-full-image {
+    background-position-y: -50%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+  }
+&lt;/style&gt;
+&lt;div&gt;
+Embark on a transformative journey as we delve into the revolutionary world of DatDot with Nina Breznik and Alexander Praetorius. Discover how this peer-to-peer project empowers users, safeguards privacy, and ensures data availability, all while reshaping the digital landscape.
+&lt;br /&gt;&lt;br /&gt;
+The team at DatDot, led by Nina Breznik and Alexander Praetorius, is building a secure, end-to-end encrypted system with multiple copies of data available at all times. Even when you&#39;re offline or on the move, your data will remain accessible. They utilize a sophisticated proof of storage and proof of performance algorithm to ensure data integrity and connect users with surplus storage to those in need.
+&lt;div class=&quot;image image-right&quot;&gt;
+  &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-nina-alex.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;br /&gt;
+Fueled by community support and grants, DatDot pioneers a finance model that rewards open-source initiatives. Their commitment extends to the development of a Data Vault, a one-stop solution adhering to peer-to-peer app standards. Seamlessly backup and switch between apps, empowering you to take control of your data effortlessly.
+  &lt;br /&gt;&lt;br /&gt;
+Join the DatDot movement today and embrace the journey towards data sovereignty. Let&#39;s reclaim control over our digital existence and usher in a new era of privacy, security, and empowerment. Together, we can redefine the rules of the digital universe.  
+&lt;br /&gt;&lt;br /&gt;
+So, dear wanderers of the digital realm, let&#39;s take the leap into a future where data sovereignty is within our grasp. &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.image-right { 
+  float:right;
+}
+.image-left { 
+  float:left;
+}
+.image {
+  width:30%; 
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+&lt;/style&gt;
+&lt;a href=&quot;https://youtu.be/LMgJi47PbQ4&quot; target=&quot;_blank&quot;&gt;
+ &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/datdot-video-preview.png&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;interview-summary&quot;&gt;Interview Summary &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-nina-alex.svg/#interview-summary&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The conversation discusses the problems with centralized servers and the benefits of peer-to-peer hosting for data control and sustainability.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=1&quot;&gt;00:01&lt;/a&gt; Data should be in the hands of users for sustainability and privacy&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=171&quot;&gt;02:51&lt;/a&gt; Building a secure, end-to-end encrypted system with multiple copies of data available.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=330&quot;&gt;05:30&lt;/a&gt; DatDot provides offline storage and backup for peer-to-peer apps.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=477&quot;&gt;07:57&lt;/a&gt; Data backup is crucial in a future with no servers&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=629&quot;&gt;10:29&lt;/a&gt; The project is financed by the community and peers, with some grants and individual donations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=777&quot;&gt;12:57&lt;/a&gt; DatDot is open source and the code is stored on GitHub for now&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=910&quot;&gt;15:10&lt;/a&gt; Current work focuses on updating to Hypercore version 10 and integration with Data Vault for better control over data&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LMgJi47PbQ4&amp;amp;t=1048&quot;&gt;17:28&lt;/a&gt; Goal is to build peer-to-peer infrastructure and encourage community contributions&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;datdot-links&quot;&gt;DatDot Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-nina-alex.svg/#datdot-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;display: flex;&quot;&gt;
+  &lt;div class=&quot;image image-left&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-nina-alex.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid&quot; style=&quot;flex-grow: 1;&quot;&gt;
+    &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/datdotorg&quot;&gt;https://github.com/datdotorg&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Website&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://datdot.org/&quot;&gt;https://datdot.org/&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.com/invite/j8qSHbtH&quot;&gt;https://discord.com/invite/j8qSHbtH&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/datdotorg&quot;&gt;https://twitter.com/datdotorg&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-nina-alex.svg/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-nina-alex.svg/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/meet-nina-alex.svg/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .link {
+    color: #337ab7;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .link:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+&lt;/style&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Decentralized Galaxy of Writing with Hans Degroote</title>
 		<link href="https://blog.dat-ecosystem.org/meet-hans/"/>
 		<updated>2023-06-13T10:00:00Z</updated>
@@ -70,7 +203,7 @@ Led by the visionary Hans Degroote, Hyperpubee is an open-source project that en
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=boo8FraTSSE&amp;amp;t=391&quot;&gt;06:31&lt;/a&gt; Experimenting with music integration&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=boo8FraTSSE&amp;amp;t=447&quot;&gt;07:27&lt;/a&gt; Hyperpubee is based on hyperbee data structure which enables publishing.&lt;/p&gt;
 &lt;br /&gt;
-&lt;h2 id=&quot;sher-links&quot;&gt;Sher Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-hans/#sher-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;hyperpubee-links&quot;&gt;Hyperpubee Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-hans/#hyperpubee-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div class=&quot;image image-left&quot;&gt;
     &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-hans.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
@@ -200,7 +333,7 @@ Throughout our journey, Mix Irving expertly navigated the realms of peer-to-peer
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=668&quot;&gt;11:08&lt;/a&gt; Creating foundations to support people to reconnect with their heritage and coordinate tribal resources using digital identity&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Eq5AEeQXj-A&amp;amp;t=765&quot;&gt;12:45&lt;/a&gt; Using distributed tools owned by the community is the dream.&lt;/p&gt;
 &lt;br /&gt;
-&lt;h2 id=&quot;sher-links&quot;&gt;Sher Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#sher-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;ahau-links&quot;&gt;Ahau Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#ahau-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div class=&quot;image image-left&quot;&gt;
     &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-mix.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;
@@ -335,7 +468,7 @@ With the Hypercore protocol, HOP ensures secure file uploads and proof of comput
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sMipaMUuIq4&amp;amp;t=744&quot;&gt;12:24&lt;/a&gt; Open Assistant can help with wearable data collaboration and machine learning algorithm control.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sMipaMUuIq4&amp;amp;t=860&quot;&gt;14:20&lt;/a&gt; Health Oracle protocol project needs better documentation&lt;/p&gt;
 &lt;br /&gt;
-&lt;h2 id=&quot;sher-links&quot;&gt;Sher Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-james/#sher-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;hop-links&quot;&gt;Hop Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-james/#hop-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div class=&quot;image image-left&quot;&gt;
     &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/06/meet-james.svg&quot; alt=&quot;Watch the video&quot; style=&quot;width: 100%;&quot; /&gt;

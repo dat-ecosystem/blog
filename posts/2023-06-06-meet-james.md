@@ -90,7 +90,7 @@ James talks about the Health Oracle Protocol, which combines data science, netwo
 
 <br>
 
-## Sher Links
+## Hop Links
 <div style="display: flex;">
   <div class="image image-left">
     <img src="/content/images/2023/06/meet-james.svg" alt="Watch the video" style="width: 100%;" />
