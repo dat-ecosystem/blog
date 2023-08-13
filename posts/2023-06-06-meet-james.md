@@ -13,17 +13,9 @@ author:
   - serapath
 banner: /content/images/2023/06/hop-logo.svg
 cover: https://blog.dat-ecosystem.org/content/images/2023/06/hop-video-preview.png
-title: 
+title:
  Unveiling the HOP (Health Oracle Protocol)
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Greetings, fellow pioneers of the digital realm! Today, we are thrilled to introduce you to the extraordinary Health Oracle Protocol (HOP) - a transformative journey into the frontiers of peer-to-peer technology. HOP empowers individuals to control and understand the data that shapes our health, communities, and the natural world, all through an open-source coherence and a non-coding graphical interface toolkit called Bento Box.
 <br><br>
@@ -42,20 +34,32 @@ Let the HOP guide you to new horizons, where data becomes a force for empowermen
 
   </div>
 </div>
+
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
     display:block;
     width:100%;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 
@@ -117,7 +121,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -143,7 +147,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;

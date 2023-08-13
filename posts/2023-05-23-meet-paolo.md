@@ -13,21 +13,13 @@ author:
   - serapath
 banner: /content/images/2023/05/socket-logo.svg
 cover: https://blog.dat-ecosystem.org/content/images/2023/05/socket-video-preview.png
-title: 
+title:
  Unleashing a Web Development Adventure with Paolo Fragomeni
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Ahoy, fellow explorers of the digital frontier! Prepare yourselves to be transported to the furthest reaches of technological innovation. Get ready to delve into the captivating world of Socket Supply and witness the birth of a project that promises to revolutionize web development as we know it.
 <br><br>
-Like the intrepid explorers of old, Paolo Fragomeni and his team have set sail on a daring quest — a dream of a world without servers, where the reign of the digital landlords comes to an end.  
+Like the intrepid explorers of old, Paolo Fragomeni and his team have set sail on a daring quest — a dream of a world without servers, where the reign of the digital landlords comes to an end.
   <div class="image image-right">
     <img src="/content/images/2023/05/meet-paolo.svg" alt="Watch the video" style="width: 100%;" />
   </div>
@@ -41,20 +33,32 @@ But that's not all - the true magic lies in real-time, multi-user peer-to-peer i
 So, fellow explorers, set your sights on Socket Supply and may your journey be filled with wonder and boundless inspiration!
   </div>
 </div>
+
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
     display:block;
     width:100%;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 
@@ -116,7 +120,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -142,7 +146,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;

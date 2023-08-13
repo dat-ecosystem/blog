@@ -9,17 +9,10 @@ excerpt: Discover PicoStack with Tony Ivanov. Have a quick walkthrough of the st
 author:
   - dpaez
   - ninabreznik
-banner: http://localhost:8080/content/images/2023/08/cover-picostack.svg
-cover:
+banner: /content/images/2023/08/cover-picostack.svg
+cover: /content/images/2023/07/video-preview-picostack.png
 title: "​​Demo Session #1: First Steps With PicoStack"
 ---
-<style>
-  .post-full-image {
-    background-size: 75%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Welcome to our first demo session! We are opening this new space to founders to introduce their projects. It’s a great opportunity to have a quick view into that new project you just heard of and see how it works and how it can be used.
 <br/><br/>
@@ -48,9 +41,10 @@ PicoStack is at an <u>early state</u> in active development. This means lots of 
 </div>
 
 Without further ado, let’s jump to the session! 🎥
-<a href="https://youtu.be/iHgskRYQPMg" target="_blank">
- <img src="/content/images/2023/07/keet-video-preview.png" alt="Watch the picostack demo session" style="width: 100%;" />
-</a>
+<!-- <a href="https://youtu.be/zReA_icw5d0" target="_blank">
+ <img src="/content/images/2023/08/video-preview-picostack.png" alt="Watch the picostack demo session" style="width: 100%;" />
+</a> -->
+<iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;" src="https://www.youtube.com/embed/zReA_icw5d0" title="Watch the picostack demo session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 💡 **You can help PicoStack**. All feedback is welcomed. Just visit [picostack repo](https://github.com/telamon/picostack), open an issue and leave your thoughts/ideas. You can also engage with Tony on its own project channel at dat ecosystem discord: https://discord.gg/BqcRNKDV6X
 
@@ -84,7 +78,15 @@ Hasta la proxima! 👋
   text-transform: uppercase;
 }
 
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 
   .container {
     flex-direction: row;

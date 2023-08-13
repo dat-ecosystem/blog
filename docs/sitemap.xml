@@ -412,12 +412,12 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/business/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/community/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/community/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/business/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
@@ -437,6 +437,16 @@
   </url>
   
   <url>
+    <loc>https://blog.dat-ecosystem.org/tags/interviews/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/mad-science/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.dat-ecosystem.org/tags/interview/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
@@ -448,16 +458,6 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/founders/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/interviews/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/mad-science/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
@@ -482,7 +482,7 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/meet-nina-alex.svg/</loc>
+    <loc>https://blog.dat-ecosystem.org/meet-nina-alex/</loc>
     <lastmod>2023-06-13</lastmod>
   </url>
   
