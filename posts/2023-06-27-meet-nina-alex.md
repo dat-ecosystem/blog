@@ -1,5 +1,5 @@
 ---
-slug: meet-nina-alex.svg
+slug: meet-nina-alex
 
 date: 2023-06-13T10:00
 tags:
@@ -13,16 +13,9 @@ author:
   - serapath
 banner: /content/images/2023/06/datdot-logo.svg
 cover: https://blog.dat-ecosystem.org/content/images/2023/06/datdot-video-preview.png
-title: 
+title:
   Unlocking Data Sovereignty with DatDot
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
 
 <div>
 Embark on a transformative journey as we delve into the revolutionary world of DatDot with Nina Breznik and Alexander Praetorius. Discover how this peer-to-peer project empowers users, safeguards privacy, and ensures data availability, all while reshaping the digital landscape.
@@ -35,24 +28,36 @@ The team at DatDot, led by Nina Breznik and Alexander Praetorius, is building a 
   <br>
 Fueled by community support and grants, DatDot pioneers a finance model that rewards open-source initiatives. Their commitment extends to the development of a Data Vault, a one-stop solution adhering to peer-to-peer app standards. Seamlessly backup and switch between apps, empowering you to take control of your data effortlessly.
   <br><br>
-Join the DatDot movement today and embrace the journey towards data sovereignty. Let's reclaim control over our digital existence and usher in a new era of privacy, security, and empowerment. Together, we can redefine the rules of the digital universe.  
+Join the DatDot movement today and embrace the journey towards data sovereignty. Let's reclaim control over our digital existence and usher in a new era of privacy, security, and empowerment. Together, we can redefine the rules of the digital universe.
 <br><br>
 So, dear wanderers of the digital realm, let's take the leap into a future where data sovereignty is within our grasp. </div>
 </div>
+
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
     display:block;
     width:100%;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 
@@ -111,7 +116,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -137,7 +142,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;

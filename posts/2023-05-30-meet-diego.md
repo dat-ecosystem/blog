@@ -16,14 +16,6 @@ cover: https://blog.dat-ecosystem.org/content/images/2023/05/sher-video-preview.
 title:
  The Decentralized Streaming Adventure with Sher!
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Hola, creative wanderers! Hold on tight to your hyperspace belts as we take you on a mind-bending journey through the cosmos of Sher, the decentralized streaming platform that's turning the entertainment galaxy on its head. We had the pleasure of interviewing Diego from Geut Studio, one of the brilliant minds behind this project!
 <br><br>
@@ -42,6 +34,7 @@ So there you have it, the guiding star of decentralized streaming, illuminating 
 
   </div>
 </div>
+
 <style>
 .image-right {
   float:right;
@@ -56,6 +49,17 @@ So there you have it, the guiding star of decentralized streaming, illuminating 
 .image img {
     display:block;
     width:100%;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 

@@ -56,14 +56,7 @@
       <figure class="post-full-image" style="background-image: url(/content/images/2023/06/datdot-logo.svg)">
       </figure>
 
-      <section class="post-full-content"><style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-<div>
+      <section class="post-full-content"><div>
 Embark on a transformative journey as we delve into the revolutionary world of DatDot with Nina Breznik and Alexander Praetorius. Discover how this peer-to-peer project empowers users, safeguards privacy, and ensures data availability, all while reshaping the digital landscape.
 <br><br>
 The team at DatDot, led by Nina Breznik and Alexander Praetorius, is building a secure, end-to-end encrypted system with multiple copies of data available at all times. Even when you're offline or on the move, your data will remain accessible. They utilize a sophisticated proof of storage and proof of performance algorithm to ensure data integrity and connect users with surplus storage to those in need.
@@ -74,26 +67,35 @@ The team at DatDot, led by Nina Breznik and Alexander Praetorius, is building a 
   <br>
 Fueled by community support and grants, DatDot pioneers a finance model that rewards open-source initiatives. Their commitment extends to the development of a Data Vault, a one-stop solution adhering to peer-to-peer app standards. Seamlessly backup and switch between apps, empowering you to take control of your data effortlessly.
   <br><br>
-Join the DatDot movement today and embrace the journey towards data sovereignty. Let's reclaim control over our digital existence and usher in a new era of privacy, security, and empowerment. Together, we can redefine the rules of the digital universe.  
+Join the DatDot movement today and embrace the journey towards data sovereignty. Let's reclaim control over our digital existence and usher in a new era of privacy, security, and empowerment. Together, we can redefine the rules of the digital universe.
 <br><br>
 So, dear wanderers of the digital realm, let's take the leap into a future where data sovereignty is within our grasp. </div>
 </div>
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
     display:block;
     width:100%;
 }
-</style>
+<p>.post-full-image {<br>
+background-size: 75%;<br>
+background-repeat: no-repeat;<br>
+}</p>
+<p>@media only screen and (min-width: 1024px) {<br>
+.post-full-image {<br>
+background-size: 50%;<br>
+}<br>
+}<br>
+</style></p>
 <a href="https://youtu.be/LMgJi47PbQ4" target="_blank">
  <img src="/content/images/2023/06/datdot-video-preview.png" alt="Watch the video" style="width: 100%;" />
 </a>
@@ -181,7 +183,8 @@ Open Collective: <a href="https://opencollective.com/dat">https://opencollective
     color: #23527c;
     text-decoration: underline;
   }
-</style></section>
+</style>
+</section>
     </article>
   </div>
 </main>

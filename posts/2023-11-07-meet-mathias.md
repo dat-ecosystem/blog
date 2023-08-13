@@ -12,17 +12,9 @@ author:
   - serapath
 banner: /content/images/2023/07/keet-logo.svg
 cover: https://blog.dat-ecosystem.org/content/images/2023/07/keet-video-preview.png
-title: 
+title:
  From Hypercore to Keet, Mathias Buus on the Future of Peer-to-Peer Communication
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Greetings, interstellar explorers and seekers of cutting-edge knowledge! Prepare your babel fish and fasten your hyperspace belts as we embark on an exhilarating journey through the cosmos of peer-to-peer technology with the renowned Mathias Buus, core maintainer of the Hypercore protocol and Co-Founder of Holepunch.
 
@@ -42,20 +34,32 @@ So, fellow seekers of knowledge and pioneers of the unknown, strap on your jetpa
 
   </div>
 </div>
+
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
     display:block;
     width:100%;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 
@@ -119,7 +123,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -145,7 +149,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;

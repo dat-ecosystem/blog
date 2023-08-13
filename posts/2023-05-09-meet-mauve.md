@@ -16,14 +16,6 @@ cover: https://blog.dat-ecosystem.org/content/images/2023/05/agregore-video-prev
 title:
   Meet Mauve and their Agregore Browser
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Greetings fellow space travelers and superheroes, hold on to your keyboards because we have a remarkable founder to introduce you to! Mauve, a volunteer in the Dat-ecosystem, has risen through the ranks and founded their own project called Agregore.
 <br><br>
@@ -41,7 +33,13 @@ Agregore is just the beginning of Mauve's holistic approach to local-first softw
 Hold on tight as we embark on this journey with Mauve and the Dat-ecosystem. Stay tuned for more exciting interviews and updates from our community.
   </div>
 </div>
+
 <style>
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
 .image-right {
   float:right;
 }
@@ -55,6 +53,12 @@ Hold on tight as we embark on this journey with Mauve and the Dat-ecosystem. Sta
 .image img {
     display:block;
     width:100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 

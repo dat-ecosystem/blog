@@ -13,21 +13,13 @@ author:
   - serapath
 banner: /content/images/2023/05/cabal-logo.svg
 cover: https://blog.dat-ecosystem.org/content/images/2023/05/cabal-video-preview.png
-title: 
+title:
   Join the Cabal Expedition with Alexander Cobleigh
 ---
-<style>
-  .post-full-image {
-    background-position-y: -50%;
-    background-size: 35%;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div>
 Greetings, wanderers and curious minds!  We have a treat for you today that will transport you to the outer reaches of the digital communication. Meet Cabal, the peer-to-peer chat platform that will redefine how we connect and collaborate across the universe.
 <br><br>
-Cabal is not just another open-source chat application. It's an interstellar cooperative, where every member plays a vital role in a lean and harmonious community. Say goodbye to servers and logins! Cabal effortlessly brings together like-minded explorers, fostering a sense of camaraderie and adventure. 
+Cabal is not just another open-source chat application. It's an interstellar cooperative, where every member plays a vital role in a lean and harmonious community. Say goodbye to servers and logins! Cabal effortlessly brings together like-minded explorers, fostering a sense of camaraderie and adventure.
   <div class="image image-right">
     <img src="/content/images/2023/05/meet-cabal.svg" alt="Watch the video" style="width: 100%;" />
   </div>
@@ -36,25 +28,37 @@ Cabal is not just another open-source chat application. It's an interstellar coo
 By harnessing the power of append-only log and DHT technologies, Cabal brings you a peer-to-peer group chat experience that's truly out of this world. No longer bound by the limitations of traditional servers, Cabal allows you to connect with fellow explorers, collaborators, and like-minded enthusiasts, even in the face of cosmic internet disruptions. Prepare to be amazed, for Cabal's resilience shines through, even during the darkest hours of an internet outage.
 
 <br><br>
-But wait, there's more! Cabal's intriguing design doesn't stop at revolutionizing group communication. In the depths of its core lies a unique subjective moderation system, shaping Cabal into a private chat group like no other. 
+But wait, there's more! Cabal's intriguing design doesn't stop at revolutionizing group communication. In the depths of its core lies a unique subjective moderation system, shaping Cabal into a private chat group like no other.
 
 Explore Cabal with Alexander Cobleigh and uncover a universe where diverse perspectives flourish and communities bloom!
   </div>
 </div>
+
 <style>
-.image-right { 
+.image-right {
   float:right;
 }
-.image-left { 
+.image-left {
   float:left;
 }
 .image {
-  width:30%; 
+  width:30%;
   margin-right:10px;
 }
 .image img {
     display:block;
     width:100%;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
 }
 </style>
 
@@ -110,7 +114,7 @@ This interview was conducted as part of the **[Code for Science & society](https
 **Donate to support volunteers & our independent work at Dat Ecosystem
 Open Collective: https://opencollective.com/dat**
 
-Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places. 
+Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.
 
 <div class="grid">
   <div class="name">Webpage</div>
@@ -136,7 +140,7 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-  
+
 <style>
   .grid {
     display: grid;
