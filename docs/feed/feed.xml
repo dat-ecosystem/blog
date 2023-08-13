@@ -30,10 +30,10 @@ The demo is a minimal &lt;em&gt;to-do&lt;/em&gt; app. You can try it here: &lt;a
   &lt;div&gt;
   &lt;h2&gt;Main takeaways&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.dat-ecosystem.org/demo-session-picostack/&quot;&gt;00:18&lt;/a&gt; PicoStack to-do app intro&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.dat-ecosystem.org/demo-session-picostack/&quot;&gt;1:40&lt;/a&gt; Data Replication between multiple peers&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.dat-ecosystem.org/demo-session-picostack/&quot;&gt;2:10&lt;/a&gt; Creating pick blocks (data units)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.dat-ecosystem.org/demo-session-picostack/&quot;&gt;3:00&lt;/a&gt; Consensus Model (simple model, all blocks are accepted)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=25&quot;&gt;00:25&lt;/a&gt; PicoStack to-do app intro&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=126&quot;&gt;2:06&lt;/a&gt; Data Replication between multiple peers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=137&quot;&gt;2:17&lt;/a&gt; Creating pico-blocks (data units)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=210&quot;&gt;3:30&lt;/a&gt; Consensus Model (simple model, all blocks are accepted)&lt;/li&gt;
 &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -83,6 +83,33 @@ PicoStack is at an &lt;u&gt;early state&lt;/u&gt; in active development. This me
   background-repeat: no-repeat;
 }
 
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+/* .image {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 30%;
+} */
+.image img {
+  display:block;
+  width:100%;
+}
+
+.container {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 30%;
+}
+
 @media only screen and (min-width: 1024px) {
   .post-full-image {
     background-size: 50%;
@@ -90,38 +117,21 @@ PicoStack is at an &lt;u&gt;early state&lt;/u&gt; in active development. This me
 
   .container {
     flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
-    align-items: center;
   }
 
   .image {
-    flex-basis: 30%;
+    flex-basis: 25%;
   }
 
   .note {
     padding: 16px 32px;
   }
 }
-
-.image-right {
-  float:right;
-}
-.image-left {
-  float:left;
-}
-.image {
-  flex-grow: 1;
-  margin-left: 30px;
-  max-width: 80%;
-}
-.image img {
-  display:block;
-  width:100%;
-}
 &lt;/style&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-picostack/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This demo session was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -151,32 +161,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -260,7 +245,7 @@ So, fellow seekers of knowledge and pioneers of the unknown, strap on your jetpa
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mathias/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -290,32 +275,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -397,7 +357,7 @@ Catch a Front-Row Seat to the Interview where we delve deeper into the mysteries
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-tony/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -427,32 +387,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -535,7 +470,7 @@ So, dear wanderers of the digital realm, let&#39;s take the leap into a future w
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-nina-alex/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -565,32 +500,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -671,7 +581,7 @@ Led by the visionary Hans Degroote, Hyperpubee is an open-source project that en
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-hans/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -701,32 +611,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -808,7 +693,7 @@ Throughout our journey, Mix Irving expertly navigated the realms of peer-to-peer
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mix/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -838,32 +723,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -946,7 +806,7 @@ With the Hypercore protocol, HOP ensures secure file uploads and proof of comput
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-james/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -976,32 +836,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -1086,7 +921,7 @@ At the heart of Sher lies the spirit of community building. Diego emphasized the
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-diego/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -1116,32 +951,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -1226,7 +1036,7 @@ But that&#39;s not all - the true magic lies in real-time, multi-user peer-to-pe
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-paolo/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -1256,32 +1066,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -1361,7 +1146,7 @@ But wait, there&#39;s more! Cabal&#39;s intriguing design doesn&#39;t stop at re
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-cabal/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -1391,32 +1176,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	
@@ -1495,7 +1255,7 @@ In this exclusive interview with Kayla, Mauve talks about their innovative web b
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;br /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
 &lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/meet-mauve/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This interview was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
@@ -1525,32 +1285,7 @@ Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https:
   &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
   &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;style&gt;
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-&lt;/style&gt;
+&lt;/div&gt;
 </content>
 	</entry>
 	

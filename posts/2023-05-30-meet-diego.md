@@ -112,7 +112,7 @@ Sher is a decentralized streaming platform for content creators and streamers. I
 
 ------
 
-<br>
+<div class="about-ecosystem">
 
 ### Dat Ecosystem
 
@@ -147,30 +147,4 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-
-<style>
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-</style>
+</div>

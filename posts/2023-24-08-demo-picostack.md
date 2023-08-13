@@ -28,10 +28,10 @@ The demo is a minimal _to-do_ app. You can try it here: https://pico-todo.surge.
   <div>
   <h2>Main takeaways</h2>
 
-  - [00:18]() PicoStack to-do app intro
-  - [1:40]() Data Replication between multiple peers
-  - [2:10]() Creating pick blocks (data units)
-  - [3:00]() Consensus Model (simple model, all blocks are accepted)
+  - [00:25](https://youtu.be/zReA_icw5d0?t=25) PicoStack to-do app intro
+  - [2:06](https://youtu.be/zReA_icw5d0?t=126) Data Replication between multiple peers
+  - [2:17](https://youtu.be/zReA_icw5d0?t=137) Creating pico-blocks (data units)
+  - [3:30](https://youtu.be/zReA_icw5d0?t=210) Consensus Model (simple model, all blocks are accepted)
 
   </div>
 </div>
@@ -83,6 +83,33 @@ Hasta la proxima! 👋
   background-repeat: no-repeat;
 }
 
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+/* .image {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 30%;
+} */
+.image img {
+  display:block;
+  width:100%;
+}
+
+.container {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 30%;
+}
+
 @media only screen and (min-width: 1024px) {
   .post-full-image {
     background-size: 50%;
@@ -90,39 +117,22 @@ Hasta la proxima! 👋
 
   .container {
     flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
-    align-items: center;
   }
 
   .image {
-    flex-basis: 30%;
+    flex-basis: 25%;
   }
 
   .note {
     padding: 16px 32px;
   }
 }
-
-.image-right {
-  float:right;
-}
-.image-left {
-  float:left;
-}
-.image {
-  flex-grow: 1;
-  margin-left: 30px;
-  max-width: 80%;
-}
-.image img {
-  display:block;
-  width:100%;
-}
 </style>
 </div>
 
 ------
+<div class="about-ecosystem">
 
 ### Dat Ecosystem
 
@@ -157,30 +167,4 @@ Stay connected in this jungle of confusion that we call the internet. With so ma
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-
-<style>
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-</style>
+</div>

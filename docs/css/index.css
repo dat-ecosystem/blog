@@ -9824,6 +9824,46 @@ body {
   position: relative
 }
 
+.about-ecosystem {
+  font-size: 1.25rem;
+  font-family: monospace;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #666;
+  border-style: solid;
+  padding: 16px;
+  background-color: #E7E5E4;
+}
+
+.about-ecosystem .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(50px, auto);
+  gap: 2px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  color: #333;
+}
+.about-ecosystem .name {
+  font-weight: bold;
+}
+
+.about-ecosystem .link {
+  color: #337ab7;
+  text-decoration: none;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.about-ecosystem .link:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
 .post-card-image {
   width: auto;
   height: 200px;
