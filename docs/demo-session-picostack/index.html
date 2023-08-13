@@ -69,10 +69,10 @@ The demo is a minimal <em>to-do</em> app. You can try it here: <a href="https://
   <div>
   <h2>Main takeaways</h2>
 <ul>
-<li><a href="">00:18</a> PicoStack to-do app intro</li>
-<li><a href="">1:40</a> Data Replication between multiple peers</li>
-<li><a href="">2:10</a> Creating pick blocks (data units)</li>
-<li><a href="">3:00</a> Consensus Model (simple model, all blocks are accepted)</li>
+<li><a href="https://youtu.be/zReA_icw5d0?t=25">00:25</a> PicoStack to-do app intro</li>
+<li><a href="https://youtu.be/zReA_icw5d0?t=126">2:06</a> Data Replication between multiple peers</li>
+<li><a href="https://youtu.be/zReA_icw5d0?t=137">2:17</a> Creating pico-blocks (data units)</li>
+<li><a href="https://youtu.be/zReA_icw5d0?t=210">3:30</a> Consensus Model (simple model, all blocks are accepted)</li>
 </ul>
   </div>
 </div>
@@ -122,6 +122,33 @@ PicoStack is at an <u>early state</u> in active development. This means lots of 
   background-repeat: no-repeat;
 }
 
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+/* .image {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 30%;
+} */
+.image img {
+  display:block;
+  width:100%;
+}
+
+.container {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 30%;
+}
+
 @media only screen and (min-width: 1024px) {
   .post-full-image {
     background-size: 50%;
@@ -129,38 +156,21 @@ PicoStack is at an <u>early state</u> in active development. This means lots of 
 
   .container {
     flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
-    align-items: center;
   }
 
   .image {
-    flex-basis: 30%;
+    flex-basis: 25%;
   }
 
   .note {
     padding: 16px 32px;
   }
 }
-
-.image-right {
-  float:right;
-}
-.image-left {
-  float:left;
-}
-.image {
-  flex-grow: 1;
-  margin-left: 30px;
-  max-width: 80%;
-}
-.image img {
-  display:block;
-  width:100%;
-}
 </style>
 </div>
 <hr>
+<div class="about-ecosystem">
 <h3 id="dat-ecosystem">Dat Ecosystem <a class="direct-link" href="#dat-ecosystem">#</a></h3>
 <p>This demo session was conducted as part of the <strong><a href="https://www.codeforsociety.org/">Code for Science &amp; society</a></strong> grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.</p>
 <p><strong>Donate to support volunteers &amp; our independent work at Dat Ecosystem<br>
@@ -190,32 +200,7 @@ Open Collective: <a href="https://opencollective.com/dat">https://opencollective
   <div class="name">Youtube</div>
   <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
 </div>
-<style>
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-  }
-  .name {
-    font-weight: bold;
-  }
-  .link {
-    color: #337ab7;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-break: break-all;
-  }
-  .link:hover {
-    color: #23527c;
-    text-decoration: underline;
-  }
-</style>
+</div>
 </section>
     </article>
   </div>
