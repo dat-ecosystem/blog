@@ -5,12 +5,167 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-08-27T10:00:00Z</updated>
+	<updated>2023-09-03T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>​​Demo Session #2: Decentralized Data Science</title>
+		<link href="https://blog.dat-ecosystem.org/demo-session-hop/"/>
+		<updated>2023-09-03T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/demo-session-hop/</id>
+		<content type="html">&lt;div&gt;
+Would you like to be in control of your &lt;i&gt;own&lt;/i&gt; data? To track your own bio stats? We are constantly producing all these metrics and now we can be in control or at least that’s what HOP, short for Health Oracle Protocol is for. &lt;br /&gt;
+&lt;a href=&quot;https://www.healthscience.network/&quot;&gt;Hop Project&lt;/a&gt; empowers bio-data ownership, control &amp; agency. All of this on top of a P2P distribution model. Learn more on this new demo session.
+&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;His author, James Littlejhon, firts introduces us to the BentoBox DS, a graphical toolkit used to consume the HOP protocol.&lt;br /&gt;
+BentoBox has some key concepts, such as &lt;code&gt;spaces&lt;/code&gt; and &lt;code&gt;boards&lt;/code&gt;. Spaces can be used to organize all your different data units using a simple drag and drop interface. Boards, instead represent a single container that holds some particular data unit.&lt;/p&gt;
+&lt;p&gt;In the demo session you will see three different wearable devices sending data to a bento space. James will also show how to filter the metrics and even apply some queries.&lt;/p&gt;
+&lt;p&gt;One of the plans James has for the future is the addition of an AI assistant (called &lt;em&gt;BeeBee&lt;/em&gt;). The assistant could help us create better queries that extract the most from our data using plain english.&lt;/p&gt;
+&lt;p&gt;Finally, all these &lt;code&gt;spaces&lt;/code&gt; and &lt;code&gt;boards&lt;/code&gt; can be shared with other peers using the hypercore protocol.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/09/demo-hop.svg&quot; alt=&quot;hop logo and dat robot&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+  &lt;h2&gt;Main takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=25&quot;&gt;00:25&lt;/a&gt; PicoStack to-do app intro&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=126&quot;&gt;2:06&lt;/a&gt; Data Replication between multiple peers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=137&quot;&gt;2:17&lt;/a&gt; Creating pico-blocks (data units)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zReA_icw5d0?t=210&quot;&gt;3:30&lt;/a&gt; Consensus Model (simple model, all blocks are accepted)&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Discover BentoBox DS and Hop with James ▶️&lt;/p&gt;
+&lt;iframe style=&quot;width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;&quot; src=&quot;https://www.youtube.com/embed/zReA_icw5d0&quot; title=&quot;Watch the picostack demo session&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;note&quot;&gt;
+ℹ️ &lt;b&gt;Project status&lt;/b&gt; &lt;br /&gt;
+BentoBox is going through a layout redesign these days. James is looking for feedback on this aspect. BentoBox has a new codebase (it has been rewritten using Vue3) and now includes support for desktop and mobile devices. BeeBee assistant has a more important role now, where every new query/chart start as a chat with the assistant. Learn more &lt;a href=&quot;https://diyhslab.medium.com/driving-towards-beta-alpha-next-steps-e30ae12dbf60&quot;&gt;here&lt;/a&gt;.
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;h2 id=&quot;demo-links%3A&quot;&gt;Demo Links: &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-hop/#demo-links%3A&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;BentoBox DS Site: &lt;a href=&quot;https://bentoboxds.org/&quot;&gt;https://bentoboxds.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BentoBox Repo: &lt;a href=&quot;https://github.com/healthscience/bentoboxds&quot;&gt;https://github.com/healthscience/bentoboxds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HealthScience Website: &lt;a href=&quot;https://www.healthscience.network/&quot;&gt;https://www.healthscience.network/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HealthScience Github Org: &lt;a href=&quot;https://github.com/healthscience&quot;&gt;https://github.com/healthscience&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hasta la proxima! 👋&lt;/p&gt;
+&lt;style&gt;
+  /* mobile first */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  width: 100%;
+  background-color: rgb(226 232 240);
+  padding: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border: 2px solid rgb(148 163 184);
+  border-radius: 0.5rem;
+  margin: 16px 0;
+  text-align: justify;
+}
+
+.note b {
+  display: inline-block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+/* .image {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 30%;
+} */
+.image img {
+  display:block;
+  width:100%;
+}
+
+.container {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 30%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .image {
+    flex-basis: 25%;
+  }
+
+  .note {
+    padding: 16px 32px;
+  }
+}
+&lt;/style&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-hop/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This demo session was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-hop/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-hop/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>​​Demo Session #1: First Steps With PicoStack</title>
