@@ -1,6 +1,6 @@
 ---
 slug: demo-session-picostack
-date: 2023-08-24T10:00
+date: 2023-08-27T10:00
 tags:
   - Demo
   - Ecosystem
