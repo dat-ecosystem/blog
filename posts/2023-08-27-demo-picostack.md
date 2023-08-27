@@ -10,7 +10,7 @@ author:
   - dpaez
   - ninabreznik
 banner: /content/images/2023/08/cover-picostack.svg
-cover: /content/images/2023/07/video-preview-picostack.png
+cover: https://blog.dat-ecosystem.org/content/images/2023/08/video-preview-picostack.png
 title: "​​Demo Session #1: First Steps With PicoStack"
 ---
 <div>
