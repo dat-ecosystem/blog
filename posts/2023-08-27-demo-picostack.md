@@ -19,7 +19,7 @@ Welcome to our first demo session! We are opening this new space to founders to 
 
 <div class="ama">
   <b>🎥 AMA Session with Tony</b>
-We will have an AMA session with PicoStack creator on Thursday 31, 6PM GMT+1 on Dat Ecosystem Discord. <a href='https://discord.gg/rRXD2nakX4'>Join us.</a>
+We will have an AMA session with PicoStack creator on Thursday 7th, 6PM GMT+1 on Dat Ecosystem Discord. <a href='https://discord.gg/rRXD2nakX4'>Join us!</a>
 </div>
 
 Our first founder is Tony Ivanov from [PicoStack](https://github.com/telamon/picostack). PicoStack is a modular P2P development kit, it allows you to build progressive web apps without any servers.
@@ -48,7 +48,7 @@ PicoStack is at an <u>early state</u> in active development. This means lots of 
 Without further ado, let’s jump to the session! ▶️
 <iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;" src="https://www.youtube.com/embed/zReA_icw5d0" title="Watch the picostack demo session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-🎥 **AMA Session with Tony**. We will have an AMA session with PicoStack creator on Thursday 31, 6PM GMT+1 on Dat Ecosystem Discord. [Join today](https://discord.gg/rRXD2nakX4).
+🎥 **AMA Session with Tony**. We will have an AMA session with PicoStack creator on Thursday 7th, 6PM GMT+1 on Dat Ecosystem Discord. [Join today](https://discord.gg/rRXD2nakX4).
 
 💡 **You can help PicoStack**. All feedback is welcomed. Just visit [picostack repo](https://github.com/telamon/picostack), open an issue and leave your thoughts/ideas. You can also engage with Tony on its own project channel at dat ecosystem discord: https://discord.gg/BqcRNKDV6X
 
