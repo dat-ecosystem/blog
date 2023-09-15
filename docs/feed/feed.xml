@@ -5,12 +5,169 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-09-03T10:00:00Z</updated>
+	<updated>2023-09-17T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Demo Session #3: P2P Streaming</title>
+		<link href="https://blog.dat-ecosystem.org/demo-session-sher/"/>
+		<updated>2023-09-17T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/demo-session-sher/</id>
+		<content type="html">&lt;div&gt;
+1,2 Check Check. Let&#39;s explore the combination between P2P and audio streaming with Sher. GEUT&#39;s first solo project became an audio streaming platform that lives right on your browser. No install required. No messy setups. Multiple remote streamers all in one place. Continue reading to see Sher in action.
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In this demo session, Diego, one of Sher co-founders introduces us to the platform, how to create your first show and start streaming in a couple of clicks. No install required.&lt;/p&gt;
+&lt;p&gt;It also covers some of the challenges they faced trying to balance a the user experience of a non-technical user with the complexity that arises in any P2P project. The team always had this in mind, they were creating a P2P platform for general users (creators and their fans).&lt;/p&gt;
+&lt;p&gt;They also directed the platform to the LATAM market first. Since most of they was based in Argentina 🇦🇷 this was almost a natural decision. They were talking with local creators and their fans-base.&lt;/p&gt;
+&lt;p&gt;All these things made from Sher a quite unique development experience and product.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/09/demo-sher.svg&quot; alt=&quot;sher logo and dat robot&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+  &lt;h2&gt;Main takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=20&quot;&gt;00:20&lt;/a&gt; Platform Intro (sher.app)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=50&quot;&gt;00:50&lt;/a&gt; My Shows and your browser is the user (private key)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=264&quot;&gt;4:25&lt;/a&gt; Streamer View / Edit your show&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=418&quot;&gt;6:58&lt;/a&gt; Publish your show and have a friendly name on sher.app&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=418&quot;&gt;6:58&lt;/a&gt; Streaming options (ie: add other sources)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=418&quot;&gt;6:58&lt;/a&gt; Go live and share your show link&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=418&quot;&gt;6:58&lt;/a&gt; Basic stats &amp;amp; help with creators anxiety&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=418&quot;&gt;6:58&lt;/a&gt; Invite a friend and stream together&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/hMf2ui2uVWs?t=418&quot;&gt;6:58&lt;/a&gt; Interact with your audience&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Discover Sher with Diego ▶️&lt;/p&gt;
+&lt;iframe style=&quot;width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;&quot; src=&quot;https://www.youtube.com/embed/hMf2ui2uVWs?si=rHoHLm_92uTH5_go&quot; title=&quot;Sher Demo Session&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;note&quot;&gt;
+ℹ️ &lt;b&gt;Project Status&lt;/b&gt; &lt;br /&gt;
+Sher is currently paused. The platform is usable, anyone can create new shows and start streaming right from their browser. But the team is back to consultancy, so we have the focus on other paid projects at the moment. Hopefully, one day soon we can come back to the platform and improve the life of creators and their audiences.
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;p&gt;🎥 &lt;strong&gt;AMA Session with Diego&lt;/strong&gt;. We&#39;ll host an AMA session with Sher co-founder on Thursday 21th, 6PM GMT+1 on Dat Ecosystem Discord. &lt;a href=&quot;https://discord.gg/rRXD2nakX4&quot;&gt;Join today&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;demo-links%3A&quot;&gt;Demo Links: &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-sher/#demo-links%3A&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sher Platform: &lt;a href=&quot;https://sher.app/&quot;&gt;https://sher.app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sher Site: &lt;a href=&quot;https://discover.sher.app/&quot;&gt;https://discover.sher.app&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hasta la proxima! 👋&lt;/p&gt;
+&lt;style&gt;
+  /* mobile first */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  width: 100%;
+  background-color: rgb(226 232 240);
+  padding: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border: 2px solid rgb(148 163 184);
+  border-radius: 0.5rem;
+  margin: 16px 0;
+  text-align: justify;
+}
+
+.note b {
+  display: inline-block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+/* .image {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 30%;
+} */
+.image img {
+  display:block;
+  width:100%;
+}
+
+.container {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 30%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .image {
+    flex-basis: 25%;
+  }
+
+  .note {
+    padding: 16px 32px;
+  }
+}
+&lt;/style&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-sher/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This demo session was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-sher/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-sher/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Demo Session #2: Decentralized Data Science</title>
