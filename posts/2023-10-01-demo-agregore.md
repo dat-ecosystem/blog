@@ -57,7 +57,7 @@ Agregore is under active development. The project counts with 16 contributors an
 </div>
 <br/>
 
-🎥 **AMA Session with Mauve**. We'll host an AMA session with Mauve on Thursday 5th, 6PM GMT+1 on Dat Ecosystem Discord. [Join today](https://discord.gg/rRXD2nakX4).
+🎥 **AMA Session with Mauve**. We'll host an AMA session with Mauve on Thursday 5th, 6PM GMT+1 on Dat Ecosystem Discord. [RSVP now](https://discord.gg/yzyqv6x5?event=1158108698896510997).
 
 ## Demo Links:
 - Agregore Browser Repo: https://github.com/AgregoreWeb/agregore-browser
