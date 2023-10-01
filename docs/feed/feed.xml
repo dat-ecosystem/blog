@@ -5,12 +5,175 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2023-09-17T10:00:00Z</updated>
+	<updated>2023-10-01T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Demo Session #4: Explore the distributed web</title>
+		<link href="https://blog.dat-ecosystem.org/demo-session-agregore/"/>
+		<updated>2023-10-01T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/demo-session-agregore/</id>
+		<content type="html">&lt;div&gt;
+Let&#39;s unveil the browser for the P2P era with Agregore. With a minimal API surface approach and extentions-oriented, aggregore offers a solid approach to surf the distributed web and create local first apps &amp; sites. Agregore supports hyper, ipfs and bittorent.
+Don&#39;t miss the demo to see how easy you can start creating local-first content.
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;A new demo session appeared! This time is all about the distributed web. Mauve, a prolific P2P developer will introduce us to creating local-first apps using Agregore browser. This new browser has a small but super capable and flexible API that makes it easy to create local-first content and even apps.&lt;/p&gt;
+&lt;p&gt;With agregore you can navigate to &lt;code&gt;hyper://&lt;/code&gt; and &lt;code&gt;ipfs://&lt;/code&gt; like any other site on the regular web. Every site you visit is locally saved and reshared. This offers 2 direct benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content resiliency, every site is a local-first site.&lt;/li&gt;
+&lt;li&gt;Populates the distributed web.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the demo, Mauve also mentions that agregore is compatible with other publishing tools like &lt;a href=&quot;https://docs.distributed.press/deployment&quot;&gt;Distributed Press&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Outside of loading data, agregore offers a way to author data using its own P2P-compatible version of &lt;a href=&quot;https://github.com/AgregoreWeb/agregore-browser/tree/master/docs&quot;&gt;&lt;code&gt;fetch&lt;/code&gt; API&lt;/a&gt;. Mauve made something really interesting extending the fetch API functionality. This way we can use a regular POST method to create new content, like a new site, right from the browser 🆒.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://agregore.mauve.moe/docs/&quot;&gt;Their docs&lt;/a&gt; are a great entry place to learn more about agregore internals and the fetch API.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2023/10/demo-agregore.svg&quot; alt=&quot;agregore logo with dat robot&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+  &lt;h2&gt;Main takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=30&quot;&gt;00:30&lt;/a&gt; Agregore Intro / Main Interface&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=68&quot;&gt;01:10&lt;/a&gt; Agregore can Surf the Distributed Web&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=122&quot;&gt;02:02&lt;/a&gt; Local-first Navigation &amp;amp; Resharing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=163&quot;&gt;02:46&lt;/a&gt; Using Distributed Press as a Publishing Tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=226&quot;&gt;03:46&lt;/a&gt; Interact with the Distributed Web with the P2P Fetch API&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=287&quot;&gt;04:47&lt;/a&gt; Creating a new P2P Website&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/BtAtgLWzyXU?t=526&quot;&gt;08:46&lt;/a&gt; Agregore Extensions and Web Archiving&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Discover Agregore with Mauve ▶️&lt;/p&gt;
+&lt;iframe style=&quot;width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;&quot; src=&quot;https://www.youtube.com/embed/BtAtgLWzyXU?si=Mh_TJw7w1ScpSevP&quot; title=&quot;Agregore Demo Session&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;note&quot;&gt;
+ℹ️ &lt;b&gt;Project Status&lt;/b&gt; &lt;br /&gt;
+Agregore is under active development. The project counts with 16 contributors and last release was made last month (~August). Check out the Agregore Org on GitHub (https://github.com/AgregoreWeb) to see the latest &amp; related projects.
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;p&gt;🎥 &lt;strong&gt;AMA Session with Mauve&lt;/strong&gt;. We&#39;ll host an AMA session with Mauve on Thursday 5th, 6PM GMT+1 on Dat Ecosystem Discord. &lt;a href=&quot;https://discord.gg/rRXD2nakX4&quot;&gt;Join today&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;demo-links%3A&quot;&gt;Demo Links: &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-agregore/#demo-links%3A&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Agregore Browser Repo: &lt;a href=&quot;https://github.com/AgregoreWeb/agregore-browser&quot;&gt;https://github.com/AgregoreWeb/agregore-browser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Agregore Browser Site: &lt;a href=&quot;https://agregore.mauve.moe/&quot;&gt;https://agregore.mauve.moe/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Agregore Github Org: &lt;a href=&quot;https://github.com/AgregoreWeb&quot;&gt;https://github.com/AgregoreWeb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Distributed Press: &lt;a href=&quot;https://docs.distributed.press/&quot;&gt;https://docs.distributed.press/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hasta la próxima! 👋&lt;/p&gt;
+&lt;style&gt;
+  /* mobile first */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  width: 100%;
+  background-color: rgb(226 232 240);
+  padding: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border: 2px solid rgb(148 163 184);
+  border-radius: 0.5rem;
+  margin: 16px 0;
+  text-align: justify;
+}
+
+.note b {
+  display: inline-block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.post-full-image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+/* .image {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 30%;
+} */
+.image img {
+  display:block;
+  width:100%;
+}
+
+.container {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 30%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-full-image {
+    background-size: 50%;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .image {
+    flex-basis: 25%;
+  }
+
+  .note {
+    padding: 16px 32px;
+  }
+}
+&lt;/style&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-agregore/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This demo session was conducted as part of the &lt;strong&gt;&lt;a href=&quot;https://www.codeforsociety.org/&quot;&gt;Code for Science &amp;amp; society&lt;/a&gt;&lt;/strong&gt; grant, awarded to enhance interoperability between the various projects within the Dat ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Open Collective: &lt;a href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Open collective&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://opencollective.com/dat&quot;&gt;https://opencollective.com/dat&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-agregore/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/demo-session-agregore/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Demo Session #3: P2P Streaming</title>
