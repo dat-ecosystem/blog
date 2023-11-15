@@ -15,16 +15,16 @@ title: "Demo Session #5: Cabal, the P2P Chat Platform"
 ---
 
 <div>
-One of the most fundamentals human needs is to communicate. It allows us to organize and leverage communities. In the internet era, chat apps are a commodity. These apps are so inherent to us, we use them daily without even notice. Most of the time, we are using centralized chat. These apps have become one of the main data collection points, real privacy is never a priority.
-Cabal, offers an alternative take. Built upon the hyper-stack and with an offline-first approach --no servers needed. It becomes a very interesting option community-based.
+One of the most fundamental human needs is to communicate. It allows us to organize and lever up communities. In the internet era, chat apps have become a commodity. These kind of apps, are so important to us. We use them daily without even noticing. Most of the time, we are using centralized chat. These apps have become one of the main data collection points, real privacy is never a priority.
+Cabal, offers an alternative take. Built upon the hyper-stack and with an offline-first approach --no servers needed. It becomes a very interesting community-based option.
 <br/><br/>
 
-Cool! A new demo session. This time Alex breaks down [`cabal-cli`](https://github.com/cabal-club/cabal-cli). With an IRC-like aspect, cabal-cli allows us to connect and chat with other friends directly.
+Cool! A new demo session arrived. This time Alex breaks down [`cabal-cli`](https://github.com/cabal-club/cabal-cli). With an IRC-like aspect, cabal-cli allows us to connect and chat with other friends directly.
 
-Besides been tagged as an experimental chat platform, Cabal has been battle-tested since day 1 (around 2018).
+Whilst, Cabal can be tagged as an experimental chat platform, we can not ignore the fact that has been battle-tested since day 1 (around 2018).
 
 With Cabal you can list, create, archive and join channels. You can also create topics and you can even **moderate** them by sharing a cabal link with an special admin key. This way we are sharing a filtered/protected view of a cabal (eg: filtering out bad actors).
-These are powerful features for a P2P communication platform and a sign that indicates how the Cabal Community takes care about building a safe and secure place.
+These are powerful features for a P2P communication platform and a sign that indicates how the Cabal Community cares about building a safe and secure place.
 
 In the demo, Alex guides us through the different commands that you can use on Cabal to have a rich communication experience.
 
