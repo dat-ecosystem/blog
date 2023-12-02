@@ -31,17 +31,16 @@ The platform works using the hyperswarm network and it can be used (partially) o
   &lt;div&gt;
   &lt;h2&gt;Main takeaways&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/0NeCCONtsoM?t=43&quot;&gt;00:43&lt;/a&gt; Cabal CLI Intro&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/0NeCCONtsoM?t=132&quot;&gt;02:12&lt;/a&gt; Name Yourself&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/0NeCCONtsoM?t=164&quot;&gt;02:44&lt;/a&gt; The Cabal Key 🔑&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/0NeCCONtsoM?t=197&quot;&gt;03:17&lt;/a&gt; The Admin Portion 🔑&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/0NeCCONtsoM?t=380&quot;&gt;06:20&lt;/a&gt; Offline-first Capabilities / Sync History from other peers&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/0NeCCONtsoM?t=570&quot;&gt;09:30&lt;/a&gt; Moderators and Admins / Layers of Trust&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/he5rdbyfGKg?t=38&quot;&gt;00:38&lt;/a&gt; Dcent Reads Intro (readers)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/he5rdbyfGKg?t=165&quot;&gt;02:46&lt;/a&gt; Embedding Content&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/he5rdbyfGKg?t=327&quot;&gt;05:26&lt;/a&gt; Creating Content (writers)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/he5rdbyfGKg?t=382&quot;&gt;06:20&lt;/a&gt; Publishing Content&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/he5rdbyfGKg?t=459&quot;&gt;07:39&lt;/a&gt; Creating Embeddings / UI Challenges&lt;/li&gt;
 &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Discover Dcent Reads with Hans ▶️&lt;/p&gt;
-&lt;iframe style=&quot;width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;&quot; src=&quot;https://www.youtube.com/embed/0NeCCONtsoM?si=OlCH0iu7gJJ8OZUq&quot; title=&quot;Cabal Demo Session&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe style=&quot;width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;&quot; src=&quot;https://www.youtube.com/embed/he5rdbyfGKg?si=TdvbOXG7ZkGMsJih&quot; title=&quot;Dcent Reads demo session&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;div class=&quot;note&quot;&gt;
 ℹ️ &lt;b&gt;Project Status&lt;/b&gt; &lt;br /&gt;
 Dcent Reads (previously known as HyperPubee) is an early state project. The stack is hyperbee for the &quot;backend&quot;, the network is hyperswarm and the app is mostly vue + quasar + electron (web &amp; desktop). These days, Hans is working on a proper re-release.
