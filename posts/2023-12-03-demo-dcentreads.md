@@ -34,17 +34,17 @@ In this demo session, Hans will guide us through the creation process, how to em
   <div>
   <h2>Main takeaways</h2>
 
-  - [00:43](https://youtu.be/0NeCCONtsoM?t=43) Cabal CLI Intro
-  - [02:12](https://youtu.be/0NeCCONtsoM?t=132) Name Yourself
-  - [02:44](https://youtu.be/0NeCCONtsoM?t=164) The Cabal Key 🔑
-  - [03:17](https://youtu.be/0NeCCONtsoM?t=197) The Admin Portion 🔑
-  - [06:20](https://youtu.be/0NeCCONtsoM?t=380) Offline-first Capabilities / Sync History from other peers
-  - [09:30](https://youtu.be/0NeCCONtsoM?t=570) Moderators and Admins / Layers of Trust
+  - [00:38](https://youtu.be/he5rdbyfGKg?t=38) Dcent Reads Intro (readers)
+  - [02:46](https://youtu.be/he5rdbyfGKg?t=165) Embedding Content
+  - [05:26](https://youtu.be/he5rdbyfGKg?t=327) Creating Content (writers)
+  - [06:20](https://youtu.be/he5rdbyfGKg?t=382) Publishing Content
+  - [07:39](https://youtu.be/he5rdbyfGKg?t=459) Creating Embeddings / UI Challenges
+
   </div>
 </div>
 
 Discover Dcent Reads with Hans ▶️
-<iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;" src="https://www.youtube.com/embed/0NeCCONtsoM?si=OlCH0iu7gJJ8OZUq" title="Cabal Demo Session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem;" src="https://www.youtube.com/embed/he5rdbyfGKg?si=TdvbOXG7ZkGMsJih" title="Dcent Reads demo session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <div class="note">
 ℹ️ <b>Project Status</b> <br/>
