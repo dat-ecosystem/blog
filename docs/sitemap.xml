@@ -372,17 +372,22 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/design/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.dat-ecosystem.org/tags/releases/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
   <url>
+    <loc>https://blog.dat-ecosystem.org/tags/design/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/announcement/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
@@ -397,22 +402,17 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/press/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/announcement/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.dat-ecosystem.org/tags/recently/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/business/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/press/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
@@ -437,6 +437,16 @@
   </url>
   
   <url>
+    <loc>https://blog.dat-ecosystem.org/tags/interviews/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/mad-science/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.dat-ecosystem.org/tags/interview/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
@@ -448,16 +458,6 @@
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/founders/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/interviews/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/mad-science/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
