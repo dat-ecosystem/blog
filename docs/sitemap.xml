@@ -372,22 +372,22 @@
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/releases/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.dat-ecosystem.org/tags/design/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/announcement/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.dat-ecosystem.org/tags/announcement/</loc>
+    <loc>https://blog.dat-ecosystem.org/tags/releases/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/tags/decentralization/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
@@ -402,17 +402,17 @@
   </url>
   
   <url>
+    <loc>https://blog.dat-ecosystem.org/tags/press/</loc>
+    <lastmod>2023-06-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.dat-ecosystem.org/tags/recently/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
   <url>
     <loc>https://blog.dat-ecosystem.org/tags/business/</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.dat-ecosystem.org/tags/press/</loc>
     <lastmod>2023-06-01</lastmod>
   </url>
   
@@ -524,5 +524,10 @@
   <url>
     <loc>https://blog.dat-ecosystem.org/demo-session-dcentreads/</loc>
     <lastmod>2023-12-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.dat-ecosystem.org/demo-session-ahau/</loc>
+    <lastmod>2023-12-17</lastmod>
   </url>
 </urlset>
