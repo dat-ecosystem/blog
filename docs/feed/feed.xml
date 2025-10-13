@@ -5,12 +5,129 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2024-01-26T10:00:00Z</updated>
+	<updated>2024-10-01T00:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Dat Ecosystem Joins Apereo Foundation as a Fiscal Sponsored Project</title>
+		<link href="https://blog.dat-ecosystem.org/dat-ecosystem-joins-apereo/"/>
+		<updated>2024-10-01T00:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/dat-ecosystem-joins-apereo/</id>
+		<content type="html">&lt;div&gt;
+&lt;p&gt;We’re thrilled to share that &lt;strong&gt;Dat Ecosystem&lt;/strong&gt; has officially joined the &lt;a href=&quot;https://www.apereo.org/&quot;&gt;Apereo Foundation&lt;/a&gt; as a &lt;strong&gt;fiscally sponsored project&lt;/strong&gt;. 🎉&lt;/p&gt;
+&lt;p&gt;This marks a significant milestone in our journey to build and maintain &lt;strong&gt;open peer-to-peer infrastructure&lt;/strong&gt; for a more decentralized and resilient web. By becoming part of Apereo, the Dat Ecosystem gains a trusted nonprofit home — allowing us to strengthen governance, receive tax-deductible donations, and focus our collective energy on building technology and community.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“This collaboration gives the Dat community the stability and support it needs to keep pushing forward open, peer-to-peer infrastructure for the web,” said members of the Dat Ecosystem.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Apereo has a long history of supporting impactful open-source projects in education and beyond. Through this partnership, Dat Ecosystem will be better positioned to collaborate across communities, grow sustainably, and ensure the long-term stewardship of the protocols and tools that power our shared infrastructure.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2024/10/apereo-join.jpg&quot; alt=&quot;Apereo and Dat Ecosystem logos&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;h2&gt;Main Takeaways&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;✅ Dat Ecosystem joins &lt;a href=&quot;https://www.apereo.org/&quot;&gt;Apereo Foundation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;🧭 Fiscal sponsorship ensures legal and financial stability&lt;/li&gt;
+      &lt;li&gt;🤝 Strengthening the bridge between decentralized technology and open knowledge communities&lt;/li&gt;
+      &lt;li&gt;🌱 Supporting a sustainable and transparent future for Dat tools and protocols&lt;/li&gt;
+      &lt;li&gt;💬 Open invitation for collaboration and contribution&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Why Apereo?&lt;/h2&gt;
+&lt;p&gt;Apereo is a respected nonprofit foundation supporting a range of open-source projects in education and technology. Their fiscal sponsorship model allows projects like Dat Ecosystem to operate under a shared nonprofit umbrella, while retaining their autonomy and community-driven values.&lt;/p&gt;
+&lt;p&gt;With Apereo as our fiscal sponsor, the Dat Ecosystem can:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Receive and manage funds transparently&lt;/li&gt;
+  &lt;li&gt;Ensure organizational resilience&lt;/li&gt;
+  &lt;li&gt;Foster collaboration across open-source communities&lt;/li&gt;
+  &lt;li&gt;Focus on building tools instead of bureaucracy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;note&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;About the Dat Ecosystem&lt;/strong&gt;&lt;br /&gt;
+  Dat Ecosystem is a community of people and projects building open peer-to-peer protocols and tools that make data sharing more decentralized, secure, and resilient.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://dat-ecosystem.org/&quot;&gt;Visit our website&lt;/a&gt; to learn more and get involved.&lt;/p&gt;
+  &lt;p&gt;ℹ️ &lt;strong&gt;Funds for dat-ecosystem&lt;/strong&gt;&lt;br /&gt;
+  Want to financially support dat-ecosystem? &lt;a href=&quot;https://apereo.civicrm.org/civicrm/contribute/transact?reset=1&amp;id=1&quot;&gt;Donate to Apereo Foundation today&lt;/a&gt; and help build more community driven technology.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2&gt;Useful Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apereo Foundation: &lt;a href=&quot;https://www.apereo.org/&quot; target=&quot;_blank&quot;&gt;https://www.apereo.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dat Ecosystem: &lt;a href=&quot;https://dat-ecosystem.org/&quot; target=&quot;_blank&quot;&gt;https://dat-ecosystem.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Donate / Support Dat Ecosystem: &lt;a href=&quot;https://www.apereo.org/programs/software/dat-ecosystem&quot; target=&quot;_blank&quot;&gt;https://www.apereo.org/programs/software/dat-ecosystem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cabal P2P Chat: &lt;code&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Keet P2P Hangout: &lt;a href=&quot;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&quot; target=&quot;_blank&quot;&gt;punch://…[full link]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mastodon: &lt;a href=&quot;https://fosstodon.org/@dat_ecosystem&quot; target=&quot;_blank&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Matrix: &lt;a href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot; target=&quot;_blank&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Reddit: &lt;a href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot; target=&quot;_blank&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;GitHub: &lt;a href=&quot;https://github.com/dat-ecosystem/&quot; target=&quot;_blank&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Twitter: &lt;a href=&quot;https://twitter.com/dat_ecosystem&quot; target=&quot;_blank&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Discord: &lt;a href=&quot;https://discord.gg/jukapbdep5&quot; target=&quot;_blank&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;YouTube: &lt;a href=&quot;https://www.youtube.com/@DatEcosystem&quot; target=&quot;_blank&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* more spacing between image and text blocks */
+  margin-bottom: 40px;
+}
+
+.note {
+  width: 100%;
+  background-color: rgb(226 232 240);
+  padding: 20px 24px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border: 2px solid rgb(148 163 184);
+  border-radius: 0.5rem;
+  margin: 32px 0;
+  text-align: justify;
+}
+
+.note b {
+  display: inline-block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p, ul {
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .image {
+    flex-basis: 30%;
+  }
+}
+&lt;/style&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Demo Session #8: P2P video &amp; text chat</title>
