@@ -1,6 +1,6 @@
 ---
 slug: dat-ecosystem-joins-apereo
-date: 2024-10-01
+date: 2024-10-01T10:00
 tags:
   - Announcement
   - Ecosystem
