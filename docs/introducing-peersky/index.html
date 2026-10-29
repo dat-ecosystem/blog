@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing PeerSky: Let&#39;s Save the Internet, One Peer at a Time</title>
+    <meta name="description" content="New developments and ideas from the Dat Ecosystem.">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="icon" type="image/svg" href="/img/dat-logo.svg"/>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Dat Ecosystem Blog">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Dat Ecosystem Blog">
+    
+
+    <!-- Open graph -->
+    <meta property="og:title" content="Introducing PeerSky: Let&#39;s Save the Internet, One Peer at a Time">
+    <meta property="og:description" content="Meet PeerSky, the newest project in the Dat ecosystem: a browser that turns your phone and your computer into peers. Write notes together, chat, share music and files straight from your own device, and keep going when the internet goes down. Let&#39;s save the internet, one peer at a time!
+">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.dat-ecosystem.org/content/images/2026/10/peersky-cover.jpg"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Introducing PeerSky: Let&#39;s Save the Internet, One Peer at a Time">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dat_ecosystem">
+    <meta name="twitter:description" content="Meet PeerSky, the newest project in the Dat ecosystem: a browser that turns your phone and your computer into peers. Write notes together, chat, share music and files straight from your own device, and keep going when the internet goes down. Let&#39;s save the internet, one peer at a time!
+">
+    <meta name="twitter:image" content="https://blog.dat-ecosystem.org/content/images/2026/10/peersky-cover.jpg">
+    <meta name="twitter:creator" content="@dat_ecosystem">
+
+  </head>
+  <body class="post-template">
+    <nav class="bb bg-white b--dat-neutral-10 dt w-100 w-100 border-box pa3 ph5-l">
+      <div class="dtc v-mid w-25 pt2">
+        <a href="/" class="link dim" title="Dat Blog Home">
+          <div class="dib v-mid link mr2 pb1"><img src="/content/images/2023/05/logo.png" class="dat-icon dib w2 h2" alt="Dat Ecosystem"></div>
+          <div class="dat-neutral b f3 f2-ns dib-l dn">Dat Ecosystem<span class="dat-neutral-60">&nbsp;Blog</span></div>
+        </a>
+      </div>
+
+      <div class="dtc v-mid w-75 tr pt2">
+        <a class="link dim dat-neutral ttu tracked f3 dib mr3 mr4-ns" href="https://dat-ecosystem.org" title="dat-ecosystem.org homepage">Home</a>
+      </div>
+    </nav>
+
+    
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <article class="post-full post ">
+      <header class="post-full-header">
+        <section class="post-full-meta">
+          <time class="post-full-meta-date" datetime="2026-10-31">31 October 2026</time><span class="date-divider">/</span> <a href="/tags/announcement/" class="post-tag">Announcement</a><span class="date-divider">/</span> <a href="/tags/project/" class="post-tag">Project</a><span class="date-divider">/</span> <a href="/tags/ecosystem/" class="post-tag">Ecosystem</a>
+        </section>
+        <h1 class="f1 mv2 lh-title post-full-title">Introducing PeerSky: Let&#39;s Save the Internet, One Peer at a Time</h1>
+      </header>
+      <figure class="post-full-image" style="background-image: url(/content/images/2026/10/peersky-banner.svg)">
+      </figure>
+
+      <section class="post-full-content"><div>
+<p>Greetings, fellow peers! We've added a new project to the Dat ecosystem, and this one fits in your pocket. <strong>Let's welcome PeerSky!</strong> It's a browser for your computer and your phone that opens the web and <code>hyper://</code> sites alike, built on Hypercore by P2P Labs. Every device running it is a peer: what you make stays on your own devices and goes straight to the people you choose, with no server in the middle.</p>
+  <div class="image image-right">
+    <img src="/content/images/2026/10/meet-peersky.svg" alt="PeerSky logo with dat ecosystem robot" style="width: 100%;" />
+  </div>
+  <div>
+<br>
+<p>PeerSky comes with built-in P2P apps: <strong>PeerChat</strong> for messages, <strong>P2PMD</strong> for notes you write together, <strong>PeerTunes</strong> for music and <strong>Hyperdrive</strong> for files. And <a href="https://github.com/p2plabsxyz/peersky-browser/blob/main/docs/P2P.md">anyone can build more</a>. A P2P app is just HTML, CSS and JavaScript. On the desktop, drop a folder onto <code>peersky://p2p/</code> and it sits right next to the built-in apps, or publish it to <code>hyper://</code> with a plain <code>fetch()</code> call and it opens in PeerSky on any computer or phone.</p>
+<p>And it's not just for laptops. PeerSky runs on Android and iOS too, with a full Hypercore node tucked right inside the app. Under the hood it's Holepunch's <a href="https://github.com/holepunchto/bare">Bare</a> runtime, a <a href="https://github.com/holepunchto/corestore">Corestore</a> holding your data and <a href="https://github.com/holepunchto/hyperswarm">Hyperswarm</a> finding other peers over the <a href="https://github.com/holepunchto/hyperdht">HyperDHT</a>. So your phone isn't stuck asking a server for things. It can host a note, share a playlist or keep the group chat going, just like your laptop. And on the desktop, PeerSky speaks a whole bunch of protocols side by side: Hypercore (<code>hyper://</code>), IPFS (<code>ipfs://</code> and <code>ipns://</code>), BitTorrent (<code>bt://</code> and magnet links), Holesail (<code>hs://</code>) and <code>web3://</code>.</p>
+  </div>
+</div>
+<style>
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+.image {
+  width:30%;
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+.link {
+  overflow-wrap: anywhere;
+}
+</style>
+<img src="/content/images/2026/10/peersky-home.jpg" alt="PeerSky on a laptop and on a phone, with the built-in P2P apps on the home page" style="width: 100%;" />
+<br>
+<p>Now let's see what that feels like in real life. Below, we'll follow two friends, Alice and Sam, as they plan a weekend away, and show you how PeerSky helps them make things together, share them straight from their own devices, and keep going when the signal drops.</p>
+<h2 id="make-something-together">Make something together <a class="direct-link" href="#make-something-together">#</a></h2>
+<p>Alice plans on a laptop and Sam on a phone. They're off to Granite Lake, where the signal gives up long before the trail does, so the plan has to come together before they leave.</p>
+<p>In P2PMD, Alice starts a note and the laptop becomes its host. Sam pastes the note's <code>hs://</code> key on the phone, or scans it as a QR code, and they write together, live, with every line marked with who wrote it. Underneath sits a <a href="https://holesail.io/">Holesail</a> tunnel over the HyperDHT and one shared <a href="https://yjs.dev/">Yjs</a> document, so a laptop and a phone can type at once without losing a word.</p>
+<img src="/content/images/2026/10/peersky-p2pmd.jpg" alt="A P2PMD note hosted on PeerSky Desktop and open on a phone, with the lines each person wrote marked in the margin" style="width: 100%;" />
+<h2 id="share-it-straight-from-your-device">Share it straight from your device <a class="direct-link" href="#share-it-straight-from-your-device">#</a></h2>
+<p>Every PeerSky link carries a key. Open one, and PeerSky finds a device that has the data on the HyperDHT, connects to it directly and checks what arrives against that key. Nothing has to be uploaded anywhere first.</p>
+<p>Alice publishes a playlist from PeerTunes to a <code>hyper://</code> drive on the laptop, and Sam's phone plays it straight from there, or imports it.</p>
+<img src="/content/images/2026/10/peersky-peertunes.jpg" alt="PeerTunes on PeerSky Desktop showing a playlist link, and PeerTunes on a phone asking whether to import it or play it only" style="width: 100%;" />
+<p>Photos from the summit go into Hyperdrive: public for anyone with the link, or private and encrypted, so only your own devices can open them.</p>
+<img src="/content/images/2026/10/peersky-hyperdrive.jpg" alt="Hyperdrive on PeerSky Desktop and on a phone, each listing private files from the other device" style="width: 100%;" />
+<p>And PeerChat ties the group together. Every message is encrypted, signed by whoever wrote it and passed from device to device, so the conversation stays with the people in it.</p>
+<img src="/content/images/2026/10/peersky-peerchat.jpg" alt="A PeerChat group open on PeerSky Desktop and on a phone" style="width: 100%;" />
+<h2 id="keep-going-offline">Keep going offline <a class="direct-link" href="#keep-going-offline">#</a></h2>
+<p>Phones and computers on the same Wi-Fi find each other with <a href="https://github.com/p2plabsxyz/hyperdht-mdns">hyperdht-mdns</a>, a module P2P Labs wrote for exactly this. Each device announces itself over mDNS, and together they run a small DHT of their own on the local network. Every built-in app uses it. The team tested it the honest way, by unplugging the cable from their modem, and chats, notes and files kept flowing between a laptop and phones in the same room. Whatever you've already opened, hosted or kept offline opens with nothing connected at all.</p>
+<img src="/content/images/2026/10/peersky-offline.jpg" alt="The Offline page in PeerSky on a phone, listing the PeerSky devices it found on the same network" style="width: 100%;" />
+<h2 id="why-it-matters">Why it matters <a class="direct-link" href="#why-it-matters">#</a></h2>
+<p>Picture a classroom where the internet costs too much, a family far from the nearest tower, a neighbourhood after a storm takes the network down, or friends who'd simply rather their conversations stayed theirs. A browser that works between the devices people already carry can help every one of them. That's the internet PeerSky wants to help save: one where your tools, your data and your connections belong to you.</p>
+<p>PeerSky stands on years of work from across the Dat ecosystem, from Hypercore and Hyperswarm to Bare, Holesail and Agregore. If you build on Hypercore, try your app in PeerSky and come say hi on PeerChat. Let's save the internet, one peer at a time! 👋</p>
+<h2 id="peersky-links">PeerSky Links <a class="direct-link" href="#peersky-links">#</a></h2>
+<div style="display: flex;">
+  <div class="image image-left">
+    <img src="/content/images/2026/10/meet-peersky.svg" alt="PeerSky logo with dat ecosystem robot" style="width: 100%;" />
+  </div>
+  <div class="grid" style="flex-grow: 1;">
+    <div class="name">Website</div>
+    <div class="link"><a target="_blank" href="https://peersky.p2plabs.xyz/">https://peersky.p2plabs.xyz/</a></div>
+    <div class="name">Desktop source</div>
+    <div class="link"><a target="_blank" href="https://github.com/p2plabsxyz/peersky-browser">https://github.com/p2plabsxyz/peersky-browser</a></div>
+    <div class="name">Mobile source</div>
+    <div class="link"><a target="_blank" href="https://github.com/p2plabsxyz/peersky-mobile">https://github.com/p2plabsxyz/peersky-mobile</a></div>
+    <div class="name">Mastodon</div>
+    <div class="link"><a target="_blank" href="https://mastodon.social/@peersky">https://mastodon.social/@peersky</a></div>
+    <div class="name">Bluesky</div>
+    <div class="link"><a target="_blank" href="https://bsky.app/profile/peersky.mastodon.social.ap.brid.gy">https://bsky.app/profile/<wbr>peersky.mastodon.social.ap.brid.gy</a></div>
+    <div class="name">Matrix</div>
+    <div class="link"><a target="_blank" href="https://matrix.to/#/#peersky:matrix.org">https://matrix.to/#/#peersky:matrix.org</a></div>
+    <div class="name">Discord</div>
+    <div class="link"><a target="_blank" href="https://discord.gg/9kUqxjbEx6">https://discord.gg/9kUqxjbEx6</a></div>
+  </div>
+</div>
+<hr>
+<div class="about-ecosystem">
+<h3 id="dat-ecosystem">Dat Ecosystem <a class="direct-link" href="#dat-ecosystem">#</a></h3>
+<p><strong>Donate to support volunteers &amp; our independent work at Dat Ecosystem<br>
+Apereo Foundation: <a href="https://www.apereo.org/programs/software/dat-ecosystem">https://www.apereo.org/programs/software/dat-ecosystem</a></strong></p>
+<p>Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it's important to have outposts in various places.</p>
+<div class="grid">
+  <div class="name">Webpage</div>
+  <div class="link"><a target="_blank" href="https://dat-ecosystem.org/">https://dat-ecosystem.org/</a></div>
+  <div class="name">Donate</div>
+  <div class="link"><a target="_blank" href="https://www.apereo.org/programs/software/dat-ecosystem">https://www.apereo.org/programs/software/dat-ecosystem</a></div>
+  <div class="name">Cabal p2p chat</div>
+  <div class="link"><a target="_blank" href="#">cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4</a></div>
+  <div class="name">Keet p2p hangout</div>
+  <div class="link"><a target="_blank" href="#">punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba</a></div>
+  <div class="name">Mastodon</div>
+  <div class="link"><a target="_blank" href="https://fosstodon.org/@dat_ecosystem">https://fosstodon.org/@dat_ecosystem</a></div>
+  <div class="name">Matrix</div>
+  <div class="link"><a target="_blank" href="https://matrix.to/#/#datproject_discussions:gitter.im">https://matrix.to/#/#datproject_discussions:gitter.im</a></div>
+  <div class="name">Reddit</div>
+  <div class="link"><a target="_blank" href="https://www.reddit.com/r/dat_ecosystem/">https://www.reddit.com/r/dat_ecosystem/</a></div>
+  <div class="name">Github</div>
+  <div class="link"><a target="_blank" href="https://github.com/dat-ecosystem/">https://github.com/dat-ecosystem/</a></div>
+  <div class="name">Twitter</div>
+  <div class="link"><a target="_blank" href="https://twitter.com/dat_ecosystem">https://twitter.com/dat_ecosystem</a></div>
+  <div class="name">Discord</div>
+  <div class="link"><a target="_blank" href="https://discord.gg/jukapbdep5">https://discord.gg/jukapbdep5</a></div>
+  <div class="name">Youtube</div>
+  <div class="link"><a target="_blank" href="https://www.youtube.com/@DatEcosystem">https://www.youtube.com/@DatEcosystem</a></div>
+</div>
+</div>
+</section>
+    </article>
+  </div>
+</main>
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+        
+      
+  <article class="post-card post ">
+    <a class="post-card-image-link" href="/dat-ecosystem-joins-apereo/">
+      <div class="post-card-image" style="background-image: url(/content/images/2024/10/apereo-join.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/dat-ecosystem-joins-apereo/">
+        <header class="post-card-header">
+          <span class="post-card-tags">Announcement</span>
+          <h2 class="post-card-title">Dat Ecosystem Joins Apereo Foundation as a Fiscal Sponsored Project</h2>
+        </header>
+        <section class="post-card-excerpt">
+          <p>Dat Ecosystem joins Apereo Foundation as a fiscally sponsored project, ensuring long-term sustainability for open peer-to-peer infrastructure.</p>
+        </section>
+      </a>
+    </div>
+  </article>
+
+
+    </div>
+  </div>
+</aside>
+
+
+    <footer class="bg-white ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+      <div class="mw9 center">
+        <div class="mb5 lh-copy">
+          <a class="dib v-mid link dim mr3 mt1" href="https://dat-ecosystem.org" title="Dat Ecosystem homepage">
+            <img src="/content/images/2023/05/logo.png" class=" dat-icon dib br-100" alt="Dat Ecosystem">
+          </a>
+          <a class="f3 link dat-neutral dim b dib mr3 mb3" href="https://blog.dat-ecosystem.org/" title="Dat Ecosystem Blog">
+            Dat Ecosystem Blog
+          </a>
+        </div>
+        <div class="mt4">
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://twitter.com/dat_ecosystem" title="Follow us on Twitter">
+            <div class="dib dat-icon pr2 pt1">
+            <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-happy-dat'>
+    <title>happy dat</title><path d="M120 240a9 9 0 0 1-4.5-1.21l-96-55.5a9 9 0 0 1-4.5-7.79v-111a9 9 0 0 1 4.5-7.79l96-55.5a9 9 0 0 1 9 0l96 55.5a9 9 0 0 1 4.5 7.79v111a9 9 0 0 1-4.5 7.79l-96 55.5A9 9 0 0 1 120 240zm-87-69.69l87 50.3 87-50.3V69.69L120 19.4 33 69.69z"></path><path d="M120.43 166.34a70.72 70.72 0 0 1-50.33-20.86 9 9 0 0 1 12.73-12.73 53.14 53.14 0 0 0 75.2 0 9 9 0 0 1 12.73 12.73 70.72 70.72 0 0 1-50.33 20.86zm-47-58.73a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9zm94 0a9 9 0 0 1-9-9V81.39a9 9 0 0 1 18 0v17.22a9 9 0 0 1-9 9z"></path>
+  </svg></div>
+            <span>Follow @dat_ecosystem</span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mr3 mb3 pv3 ph4" href="https://discord.com/invite/dPEKwfrv2D" title="Join our Chat with Discord">
+              <div class="dib dat-icon pr2 pt1"><svg viewBox="0 0 240 240" fill="currentColor" id='daticon-hexagon-outlines' id='daticon-question'>
+    <title>question</title><path d="M221 56.71l-96-55.5a9 9 0 0 0-9 0l-96 55.5a9 9 0 0 0-4.5 7.79v111a9 9 0 0 0 4.5 7.79l96 55.5a9 9 0 0 0 9 0l96-55.5a9 9 0 0 0 4.5-7.79v-111a9 9 0 0 0-4.5-7.79zM117.44 188.24c-10 0-17.31-7.87-17.31-18.09 0-10.42 7.28-18.29 17.31-18.29s17.5 7.87 17.5 18.29c.01 10.23-7.47 18.09-17.5 18.09zM130.23 140h-25.37c-3.93-26 24.78-37.93 24.78-52.68 0-8.06-5.31-12.28-13.18-12.28-7.28 0-12.59 3.79-17.9 9.1L82.63 69.63c8.85-10.63 21.24-17.89 35.8-17.89 22.22 0 38.94 10.2 38.94 33.41 0 24.39-29.5 31.85-27.14 54.85z"></path>
+  </svg></div>
+              <span>
+                Curious? Join Our Chat with Discord
+              </span>
+          </a>
+          <a class="f3 ba dat-neutral b--dat-neutral no-underline grow b inline-flex items-center mb3 pv3 ph4" href="https://opencollective.com/dat" title="Donate through open Collective">
+            <div class="dib dat-icon pt1 pr2">
+              <svg viewBox="0 0 240 240" fill="currentColor" id='daticon-star-dat'>
+    <title>star-dat</title><path d="M238.34 56.07a10 10 0 0 0-8.07-6.81l-32.88-4.78-14.71-29.8a10 10 0 0 0-17.94 0L150 44.48l-32.88 4.78a10 10 0 0 0-5.54 17.06l23.79 23.19-5.62 32.75a10 10 0 0 0 14.51 10.54l29.41-15.46 29.41 15.46a10 10 0 0 0 14.51-10.54L212 89.51l23.79-23.19a10 10 0 0 0 2.55-10.25z"></path><path d="M199.91 148a9.79 9.79 0 0 0-10 9.74v11l-84.4 48.67-84.34-48.66.06-97.35 84.4-48.74 9.63 5.55a10 10 0 0 0 10-17.33l-14.64-8.43a10 10 0 0 0-10 0L6.23 57a10 10 0 0 0-5 8.65l-.06 108.84a10 10 0 0 0 5 8.67l94.33 54.39a10 10 0 0 0 10 0L204.89 183a10 10 0 0 0 5-8.65v-16.59a9.79 9.79 0 0 0-9.98-9.76z"></path>
+  </svg>                </div>
+            <span>Donate to Support Data Sovereignity</span>
+          </a>
+        </div>
+        <p class="mt4 f3 measure copy lh-copy">
+          Dat Ecosystem flourishes because of you, thank you!
+          You made it all the way to the bottom.
+          Did you count the number of hexagons?
+          <br><br>
+          Have questions? Join our chat or ask on <a href="https://twitter.com/dat_ecosystem" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/dat-ecosystem" class="no-underline underline-hover dat-green">Github</a>.
+          <br><br>
+          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2026.
+          Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Current page: /introducing-peersky/ -->
+  </body>
+</html>
