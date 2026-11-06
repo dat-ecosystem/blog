@@ -1,6 +1,6 @@
 ---
 slug: introducing-peersky
-date: 2026-10-31T10:00
+date: 2026-11-06T10:00
 tags:
   - Announcement
   - Project

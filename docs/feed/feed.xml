@@ -5,7 +5,7 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2026-10-31T10:00:00Z</updated>
+	<updated>2026-11-06T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
@@ -15,7 +15,7 @@
 	<entry>
 		<title>Introducing PeerSky: Let&#39;s Save the Internet, One Peer at a Time</title>
 		<link href="https://blog.dat-ecosystem.org/introducing-peersky/"/>
-		<updated>2026-10-31T10:00:00Z</updated>
+		<updated>2026-11-06T10:00:00Z</updated>
 		<id>https://blog.dat-ecosystem.org/introducing-peersky/</id>
 		<content type="html">&lt;div&gt;
 &lt;p&gt;Greetings, fellow peers! We&#39;ve added a new project to the Dat ecosystem, and this one fits in your pocket. &lt;strong&gt;Let&#39;s welcome PeerSky!&lt;/strong&gt; It&#39;s a browser for your computer and your phone that opens the web and &lt;code&gt;hyper://&lt;/code&gt; sites alike, built on Hypercore by P2P Labs. Every device running it is a peer: what you make stays on your own devices and goes straight to the people you choose, with no server in the middle.&lt;/p&gt;
