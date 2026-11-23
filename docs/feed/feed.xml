@@ -5,12 +5,74 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2024-10-01T10:00:00Z</updated>
+	<updated>2026-11-23T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>From a Peer-to-Peer Data-Sharing Project in 2013 to a Decentralised Ecosystem</title>
+		<link href="https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/"/>
+		<updated>2026-11-23T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;From combining Git and BitTorrent for open data science to building a decentralised ecosystem for software development, collaboration and funding.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;origins&quot; tabindex=&quot;-1&quot;&gt;Origins &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#origins&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dat started in 2013 with a simple idea: &lt;strong&gt;combine Git and BitTorrent to make open data science possible.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The idea was to make any dataset easy to version control, publish, share, synchronise and verify, without relying on centralised infrastructure. Researchers could collaborate on data while maintaining its integrity and history to ensure reproducibility.&lt;/p&gt;
+&lt;h2 id=&quot;from-a-project-to-an-ecosystem&quot; tabindex=&quot;-1&quot;&gt;From a project to an ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#from-a-project-to-an-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The first Dat prototype focused on tabular data. Dat Alpha followed in 2014, adding support for large files and directory synchronisation. Dat Beta arrived in 2015 with Hyperlog, a decentralised, graph-based data model that enabled collaborative workflows and cryptographically verifiable history.&lt;/p&gt;
+&lt;p&gt;As the project evolved, experience with research users revealed that supporting both tabular data and files through separate workflows made Dat unnecessarily complex. In 2016, the team therefore redesigned it around a files-first approach: treating files as the common foundation while leaving more specialised data workflows to be built on top. This simplified the user experience and laid the groundwork for Hypercore and the modular peer-to-peer stack that followed.&lt;/p&gt;
+&lt;p&gt;As adoption grew, so did the community and its independent projects and contributors. Code for Science &amp;amp; Society was established as a nonprofit in 2017 to provide organisational support, followed by the transition from the Dat Project to the Dat Protocol Foundation in 2019, reflecting the growing role of independent development.&lt;/p&gt;
+&lt;p&gt;Between 2013 and 2021, Dat evolved from a data-sharing protocol into a collection of reusable peer-to-peer modules for distributed storage, networking, databases, replication and communication. In 2021, following extensive community discussions and a vote, the decision was made to decentralise responsibility for the Dat Stack to protect against organisational capture and single points of failure, while ensuring continued development. Rather than concentrating control and maintenance within one foundation, responsibility would be distributed across existing and future ecosystem projects.&lt;/p&gt;
+&lt;p&gt;Supported by a dedicated grant, the transition took 12–18 months: Foundation-maintained projects moved to willing ecosystem maintainers, while those without maintainers were preserved in the &lt;a href=&quot;https://github.com/dat-ecosystem-archive&quot;&gt;dat-ecosystem-archive&lt;/a&gt; GitHub organisation for anyone to explore or revive.&lt;/p&gt;
+&lt;h3 id=&quot;a-decentralised-approach-to-the-dat-stack&quot; tabindex=&quot;-1&quot;&gt;A decentralised approach to the Dat Stack &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#a-decentralised-approach-to-the-dat-stack&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Rather than centrally developing and prescribing an official stack, the Dat Ecosystem consortium maintains a curated list of foundational modules, initially reflecting the stack as it had evolved by 2021. Published in &lt;code&gt;blessed.json&lt;/code&gt;, this list seeds an open-source crawler that discovers dependencies and dependents across projects, making adoption and relationships between modules visible.&lt;/p&gt;
+&lt;p&gt;It evolves as projects and organisations adopt, develop and depend on different modules. The result is a continuously updated picture of what the ecosystem actually uses and maintains: shared adoption and industry practice shaping the Dat Stack rather than a centrally prescribed standard.&lt;/p&gt;
+&lt;h2 id=&quot;the-dat-stack&quot; tabindex=&quot;-1&quot;&gt;The Dat Stack &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#the-dat-stack&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The Dat Stack consists of interconnected, independently maintained modules for creating peer-to-peer applications and infrastructure and is built on the principles of Free Software as defined by the Free Software Foundation (FSF): software that respects users&#39; freedom to run, study, modify and redistribute it. These four essential freedoms ensure that users retain control over the technology and can adapt, share and improve it.&lt;/p&gt;
+&lt;p&gt;The following modules form the foundation of the stack and are released under free and open-source software licences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/b4a&quot;&gt;b4a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/protomux&quot;&gt;protomux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/compact-encoding&quot;&gt;compact-encoding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/blind-pairing&quot;&gt;blind-pairing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/blind-peering&quot;&gt;blind-peering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/blind-relay&quot;&gt;blind-relay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lukks/hyper-webrtc&quot;&gt;hyper-webrtc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/sodium-universal&quot;&gt;sodium-universal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperswarm-dht-relay&quot;&gt;hyperswarm-dht-relay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mafintosh/streamx&quot;&gt;streamx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/mirror-drive&quot;&gt;mirror-drive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperswarm-secret-stream&quot;&gt;hyperswarm-secret-stream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/bip39-mnemonic&quot;&gt;bip39-mnemonic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mafintosh/abstract-encoding&quot;&gt;abstract-encoding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperschema&quot;&gt;hyperschema&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperdb&quot;&gt;hyperdb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/corestore&quot;&gt;corestore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperblobs&quot;&gt;hyperblobs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperdrive&quot;&gt;hyperdrive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperswarm&quot;&gt;hyperswarm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperdht&quot;&gt;hyperdht&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hyperbee&quot;&gt;hyperbee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/hypercore&quot;&gt;hypercore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/autobee&quot;&gt;autobee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/holepunchto/autobase&quot;&gt;autobase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a curated starting point, not an exhaustive inventory or an official whitelist. The stack continues to evolve as projects introduce, maintain and adopt new modules.&lt;/p&gt;
+&lt;h3 id=&quot;the-next-chapter&quot; tabindex=&quot;-1&quot;&gt;The next chapter &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#the-next-chapter&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In 2024, Dat Ecosystem entered a new chapter in its organisational development by becoming a fiscally sponsored project of the &lt;a href=&quot;https://www.apereo.org/&quot;&gt;Apereo Foundation&lt;/a&gt;. This provides a supportive institutional home, access to an established international network and decades of experience supporting open-source communities, particularly in higher education. It strengthens the organisational foundations for collaboration, outreach and long-term sustainability, while the community continues to guide the development of its technology.&lt;/p&gt;
+&lt;h2 id=&quot;where-dat-is-heading&quot; tabindex=&quot;-1&quot;&gt;Where Dat is heading &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#where-dat-is-heading&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dat began by decentralising data sharing, then extended those principles to the development and maintenance of its technology. Now, they are being applied to the economic and organisational infrastructure needed to sustain the ecosystem.&lt;/p&gt;
+&lt;p&gt;The curent focus is on bringing Dat to the web and applying its peer-to-peer principles to the way the ecosystem operates and sustains itself. First steps will focus on creating a robust prototyping environment, but the long-term vision is an open, collaborative network of projects and people, where development, contributions and funding flow without dependence on centralised platforms or institutions. This means decentralising the entire software supply network: the modules and their dependencies, the projects that use them, and the people who develop and maintain them. The challenge is to build peer-to-peer alternatives for the whole development lifecycle, including repositories, pull requests, issues, discussions, project coordination and funding.&lt;/p&gt;
+&lt;h3 id=&quot;decentralised-collaboration-and-development&quot; tabindex=&quot;-1&quot;&gt;Decentralised collaboration and development &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#decentralised-collaboration-and-development&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;All contributions — from commits and reviews to discussions and other forms of participation — are captured in standardised, machine-readable JSON files for each project. Together with standardised dependency information, this creates a continuously updated record of the ecosystem&#39;s projects, relationships and contributions.&lt;/p&gt;
+&lt;p&gt;The underlying Task Management methodology brings collaboration, coordination and contribution attribution into one unified peer-to-peer process.&lt;/p&gt;
+&lt;h3 id=&quot;decentralised-funding&quot; tabindex=&quot;-1&quot;&gt;Decentralised funding &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/from-a-peer-to-peer-data-sharing-project-in-2013-to-a-decentralised-ecosystem/#decentralised-funding&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The vision is to distribute funding automatically throughout the software supply network, allocating it to projects and individual contributors according to their recorded contributions. Funding an application or library should ultimately support the entire network of projects and people that make it possible, potentially involving thousands of projects and individual contributors receiving payments. This requires open monetary infrastructure capable of supporting real-time micropayments and automated distribution.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Dat Ecosystem Joins Apereo Foundation as a Fiscal Sponsored Project</title>
