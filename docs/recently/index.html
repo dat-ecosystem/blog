@@ -67,29 +67,29 @@
 <li><a href="http://chat.datproject.org">Dat Chat</a> via hyperirc</li>
 <li>Updated blog &amp; style</li>
 </ul>
-<h3 id="selective-sync">Selective Sync <a class="direct-link" href="#selective-sync">#</a></h3>
+<h3 id="selective-sync" tabindex="-1">Selective Sync <a class="direct-link" href="#selective-sync">#</a></h3>
 <p>Dat's design means each user only downloads the data they request but it was not possible to do this in the CLI, until now. This powerful feature allows users to download only the files they want, even from a massive Dat.</p>
 <p>The new <a href="https://github.com/datproject/dat/releases/tag/v13.8.0">Dat CLI release</a> adds selective sync along with key backup and importing. Selective sync allows you to specify which files you want to download either with an argument or using the <code>.datdownload</code> file. <code>dat sync</code> will download and keep updated on the selected files. This means you can put large datasets into Dat but have control over what files you download where.</p>
-<h3 id="dat-http-storage">Dat HTTP Storage <a class="direct-link" href="#dat-http-storage">#</a></h3>
+<h3 id="dat-http-storage" tabindex="-1">Dat HTTP Storage <a class="direct-link" href="#dat-http-storage">#</a></h3>
 <p>We are very excited about leverging Dat's agnostic storage capabilities. This means you can store your files where ever and retrieve them with whatever protocol you want.*</p>
 <p>With <a href="https://github.com/datproject/dat-http">Dat HTTP Storage</a>, files can be stored on regular http servers and downloaded via Dat. We're only starting to consider the feature possibilities of this, but it means we can start hosting Dats on any static file server, such as S3. Next up is integrating this into our dat-node library.</p>
 <p>*<em>As long it supports random access</em></p>
-<h3 id="node-on-android">Node on Android <a class="direct-link" href="#node-on-android">#</a></h3>
+<h3 id="node-on-android" tabindex="-1">Node on Android <a class="direct-link" href="#node-on-android">#</a></h3>
 <p>We get asked a lot if Dat can run on mobile and always thought it'd be a long road of implementation in Java or Objective-C. When some community members showed us they could run Dat on <a href="http://termux.com">Termux</a>, a terminal emulator for Android, @mafintosh realized the possibilities and started coding!</p>
 <p><a href="https://github.com/node-on-mobile/node-on-android">node-on-android</a> provides a simple way to create and build Javascript applications that run as Android apps. The approach is similar to that of Github's <a href="https://github.com/electron/electron">Electron</a>. We still have some work to do to get Dat integrated into an app but it is much closer than we thought.</p>
-<h3 id="dat-chat-via-hyperirc">Dat Chat via hyperirc <a class="direct-link" href="#dat-chat-via-hyperirc">#</a></h3>
+<h3 id="dat-chat-via-hyperirc" tabindex="-1">Dat Chat via hyperirc <a class="direct-link" href="#dat-chat-via-hyperirc">#</a></h3>
 <p>Hypercore, the foundational technology for Dat provides easy distributed streaming tools that can move data anywhere. In this case, we have a single server logging our IRC chat. Then the logs can be viewed anywhere via <a href="https://github.com/mafintosh/hyperirc">hyperirc</a> or even downloaded as a regular file via <a href="https://github.com/mafintosh/hyperpipe">hyperpipe</a>.</p>
 <p><a href="http://chat.datproject.org/">chat.datproject.org</a> shows how you can integrate hypercore into user facing web applications, by leveraging streaming websockets. In the future we hope to also connect users peer-to-peer over WebRTC and allow users to join and send message on that page.</p>
-<h3 id="updated-blog">Updated Blog <a class="direct-link" href="#updated-blog">#</a></h3>
+<h3 id="updated-blog" tabindex="-1">Updated Blog <a class="direct-link" href="#updated-blog">#</a></h3>
 <p>Shoutout to <a href="http://ghost.org">Ghost</a> for making the 1.0 upgrade process seamless &amp; well documented. We also took the opportunity to also add some custom Dat style to the default Casper theme. Of course, we <a href="https://datproject.org/dat://5796f6dfde2364adaea41a5f7974627f69f5a2f18f16400b0f008156c632075e/contents/">used Dat</a> to transfer the theme to our server. Let us know what you think.</p>
-<h2 id="interesting-happenings-in-the-community">Interesting Happenings in the Community <a class="direct-link" href="#interesting-happenings-in-the-community">#</a></h2>
+<h2 id="interesting-happenings-in-the-community" tabindex="-1">Interesting Happenings in the Community <a class="direct-link" href="#interesting-happenings-in-the-community">#</a></h2>
 <ul>
 <li><a href="https://macwright.org/2017/07/20/decentralize-your-website.html">So you want to decentralize your website</a> by Tom MacWright</li>
 <li>And a response from the Beaker Browser team: <a href="https://medium.com/blue-link-labs/so-you-want-your-decentralized-browser-to-work-correctly-c06c4038ab12">So you want your decentralized browser to work correctly</a></li>
 <li><a href="https://beakerbrowser.com/releases/0-7-5/">Beaker Browser 0.7.5 released</a>, with a continued effort to improve dat connections and network debugging!</li>
 </ul>
 <p>Also, thanks to <a href="https://macwright.org/2017/08/01/recently.html">Tom MacWright</a> for the idea of recently posts.</p>
-<h2 id="random-cool-things">Random Cool Things <a class="direct-link" href="#random-cool-things">#</a></h2>
+<h2 id="random-cool-things" tabindex="-1">Random Cool Things <a class="direct-link" href="#random-cool-things">#</a></h2>
 <ul>
 <li><a href="https://opencollective.com/beaker">Beaker Browser on OpenCollective</a> - Support our friends building a peer to peer browsering using Dat!</li>
 <li><a href="https://gist.github.com/mafintosh/460904e61a09269d619f720233e57e48"><strong>Prototype</strong>: Remote debugging via hypercore</a> - @mafintosh had a great idea that we can stream logs using hypercore. Our command line logging module, <a href="https://github.com/joehand/neat-log">neat-log</a>, is especially great because we can use the state to reconstruct more detailed debugging information in a separate UI from the user. Coming soon to a Dat CLI near you!</li>
@@ -187,7 +187,7 @@
           <br><br>
           Have questions? Join our chat or ask on <a href="https://twitter.com/dat_ecosystem" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/dat-ecosystem" class="no-underline underline-hover dat-green">Github</a>.
           <br><br>
-          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2025.
+          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2026.
           Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
         </p>
       </div>

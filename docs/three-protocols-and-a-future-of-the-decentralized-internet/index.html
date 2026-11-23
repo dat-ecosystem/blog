@@ -59,12 +59,12 @@
       <section class="post-full-content"><p>Hi, I'm Darius Kazemi and I'm Code for Science &amp; Society's <a href="https://blog.mozilla.org/blog/2018/08/21/mozilla-announces-25-new-fellows-in-openness-science-and-tech-policy/">Mozilla Fellow</a>. I'm halfway through my fellowship and we thought now would be a good time for me to share some of the things that I've been researching, building, and planning.</p>
 <p>I knew coming into this fellowship that I wanted my work to be about the decentralized web as a whole, and not just Dat. CS&amp;S was totally receptive to that and so I've been spending time learning about Dat, but also about <a href="https://www.scuttlebutt.nz/">Secure ScuttleButt</a> and <a href="https://activitypub.rocks/">ActivityPub</a>.</p>
 <p>If what we broadly want is for power to be redistributed from the hands of large centralized corporate interests and back into the hands of individual people and small groups, then we already have the technical protocols to do this. No one protocol will enable this shift in power; each protocol has its strengths and weaknesses. What is needed is software that utilizes these protocols for their strengths, which is to say what is needed is developers and designers who are willing to act as bridges between the communities of practice surrounding the protocols.</p>
-<h2 id="complementary-protocols%2C-working-together">Complementary protocols, working together <a class="direct-link" href="#complementary-protocols%2C-working-together">#</a></h2>
+<h2 id="complementary-protocols%2C-working-together" tabindex="-1">Complementary protocols, working together <a class="direct-link" href="#complementary-protocols%2C-working-together">#</a></h2>
 <p>I recently attended ScuttleCamp outside of Wellington, New Zealand. A bunch of Secure ScuttleButt community members met up in order to talk about what works and what doesn't with SSB, and where the community would like it to go in the future. It was a great event that I would estimate consisted of equal parts core SSB project team, active users of SSB, and interested outsiders (like me). It was in &quot;unconference&quot; format, so the attendees came up with the schedule on the fly. I was pleasantly surprised to see two Dat sessions pop up, including one on &quot;Bridging Dat and SSB&quot;. There seemed to be a lot of understanding from the SSB team and even users that SSB has its strengths and weaknesses, and it would make sense to use multiple decentralized/distributed protocols to provide great, useful, people-powered software.</p>
 <p>In addition to working with and meeting people from the Dat and SSB community, I've been <a href="https://github.com/dariusk/express-activitypub">developing</a> <a href="https://github.com/dariusk/rss-to-activitypub/">software</a> that uses ActivityPub. ActivityPub is yet another protocol that tries to reduce our reliance on tech giants to do the kind of things we want to do with the internet. I <a href="https://hacks.mozilla.org/2018/11/decentralizing-social-interactions-with-activitypub/">wrote an introduction to ActivityPub for the Mozilla Hacks blog</a> that might be a helpful read.</p>
 <p>In the course of learning about these three protocols and being inspired by conversations with the people that use them, I've come to see them as fulfilling different, complementary roles.</p>
 <p>I'll try and sketch them out here <em>extremely</em> briefly and broadly, and conclude with my thoughts on how we can design better software by bridging these technologies. (I know there are more technologies out there than these three, but these are the three that I know best.)</p>
-<h3 id="dat">Dat <a class="direct-link" href="#dat">#</a></h3>
+<h3 id="dat" tabindex="-1">Dat <a class="direct-link" href="#dat">#</a></h3>
 <p>If you're reading this blog, chances are you already know about Dat. Dat was invented to allow researchers to share very large data sets with each other. It's a protocol that powers software like <a href="https://beakerbrowser.com/">Beaker Browser</a>, a web browser that lets you create and publish your own websites without needing a web hosting service.</p>
 <p>My basic bullet points:</p>
 <ul>
@@ -74,7 +74,7 @@
 <li>Sends blobs of unstructured data around (you can add your own structure)</li>
 <li>Discovering new stuff requires manually sharing links</li>
 </ul>
-<h3 id="secure-scuttlebutt">Secure ScuttleButt <a class="direct-link" href="#secure-scuttlebutt">#</a></h3>
+<h3 id="secure-scuttlebutt" tabindex="-1">Secure ScuttleButt <a class="direct-link" href="#secure-scuttlebutt">#</a></h3>
 <p>Secure ScuttleButt (SSB) was invented, at least in part, to remove distinctions between frontend and backend software, enabling the &quot;backend&quot; to be carried around by a user, who then owns their own data. SSB is a protocol that, like Dat, powers <a href="https://www.scuttlebutt.nz/applications">a bunch of different decentralized applications</a>. Chief among them is <a href="https://www.scuttlebutt.nz/getting-started">Patchwork</a>, which is a kind of decentralized forum software that lets people have and follow conversations about different topics. SSB is also used for things like <a href="https://github.com/Happy0/ssb-chess-mithril/blob/master/README.md">decentralized chess</a> and <a href="https://github.com/noffle/git-ssb-intro">decentralized GitHub-style code collaboration</a>.</p>
 <p>My basic bullet points:</p>
 <ul>
@@ -84,7 +84,7 @@
 <li>Sends blobs of unstructured data around (you can add your own structure)</li>
 <li>Discovering new stuff is somewhat automatic; once you are initially connected to a network then you can find friends-of-friends and keep connecting to more people</li>
 </ul>
-<h3 id="activitypub">ActivityPub <a class="direct-link" href="#activitypub">#</a></h3>
+<h3 id="activitypub" tabindex="-1">ActivityPub <a class="direct-link" href="#activitypub">#</a></h3>
 <p>ActivityPub was designed to solve the problem of &quot;walled gardens&quot; on the internet by providing a common language for websites and apps to speak to each other. Quoting <a href="https://hacks.mozilla.org/2018/11/decentralizing-social-interactions-with-activitypub/">my previous writing on the topic</a>, ActivityPub is a protocol that &quot;enables a decentralized social web, where a network of servers interact with each other on behalf of individual users/clients, very much like email operates at a macro level.&quot; It enables Twitter-style services like <a href="https://joinmastodon.org">Mastodon</a> to talk to Instagram-style services like <a href="https://pixelfed.social/">PixelFed</a> and YouTube-style services like <a href="https://joinpeertube.org/en/">PeerTube</a>. (Brief nerd note: I am referring to the server-to-server portion of the protocol here.)</p>
 <p>My basic bullet points:</p>
 <ul>
@@ -94,7 +94,7 @@
 <li>Designed around sending highly structured data</li>
 <li>Discovering new stuff can be pretty easy, it's not too different from existing centralized services that way</li>
 </ul>
-<h2 id="what-this-means">What this means <a class="direct-link" href="#what-this-means">#</a></h2>
+<h2 id="what-this-means" tabindex="-1">What this means <a class="direct-link" href="#what-this-means">#</a></h2>
 <p>I've started thinking of these three protocols as each solving certain problems in the universe of software design, and when we understand where the protocols fit into the design space, we can start to think of solutions to seemingly intractable problems.</p>
 <ul>
 <li>
@@ -109,7 +109,7 @@
 </ul>
 <p>Looking at the software this way gives us a framework to design complex decentralized services.</p>
 <p>For example: how can we have a Google Drive style system where a bunch of people can just connect to each other's computers and share files that way, removing the giant tech company in the middle? Maybe we serve the files over Dat, we have a small network of always-on Dat pinning servers that coordinate with each other over ActivityPub to share file serving responsibilities, and perhaps discovery of what files my friends have been posting happens over Secure ScuttleButt. Maybe every pinning server is also a SSB pub, and <em>these</em> coordinate over ActivityPub so there is robust delivery of social data to every user too. That's a very rough example and of course there are lots of problems that would need to be solved but it gives us a starting point for thinking about how to make this thing happen.</p>
-<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion">#</a></h2>
+<h2 id="conclusion" tabindex="-1">Conclusion <a class="direct-link" href="#conclusion">#</a></h2>
 <p>All of this points to two major recommendations that I can make.</p>
 <p>First, that software developers should not be afraid to mix, match, and layer protocols. There is no rule that says you can't do this, yet I've noticed people picking one protocol and sticking to it out of some kind of loyalty. When really, as a developer, your loyalty should be to your values of an open, decentralized internet, whatever those are. If we view these protocols as tools in a toolbox rather than monolithic solutions or ecosystems, we can build decentralized software that rivals and surpasses in utility anything the big centralized tech giants have to offer.</p>
 <p>Second, communities that build and support these protocols need to keep their specific strengths and weaknesses in mind. Instead of trying to make a &quot;kitchen sink&quot; protocol that solves a wide variety of problems, we should acknowledge the limitations of our protocols (and our own resources) and instead support and foster interoperability and collaboration between our communities.</p>
@@ -204,7 +204,7 @@
           <br><br>
           Have questions? Join our chat or ask on <a href="https://twitter.com/dat_ecosystem" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/dat-ecosystem" class="no-underline underline-hover dat-green">Github</a>.
           <br><br>
-          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2025.
+          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2026.
           Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
         </p>
       </div>

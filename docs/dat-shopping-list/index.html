@@ -66,7 +66,7 @@
 <p><small>*<em>wild claims may not be accurate</em></small></p>
 <p><img src="/content/images/2018/05/decentralised-dog.png" alt="decentralised-dog"> <small>Dat works without centralized servers. (Credit: @mafintosh)</small></p>
 <p>Dat is a purpose-built tool to allow sharing of research data in a way that enables effective collaboration and reproducibility. Out-of-the-box, it gives you a distributed network, data history, and security. With the development of HyperDB, we are excited to see Dat growing to the foundation for other community collaboration tools.</p>
-<h2 id="dat-is-growing-and-evolving">Dat is growing and evolving <a class="direct-link" href="#dat-is-growing-and-evolving">#</a></h2>
+<h2 id="dat-is-growing-and-evolving" tabindex="-1">Dat is growing and evolving <a class="direct-link" href="#dat-is-growing-and-evolving">#</a></h2>
 <p>Since its initial release, Dat has attracted an enthusiastic developer community with ideas and use cases that extend beyond its original mission. Dat has evolved into a whole ecosystem of related open source tools, libraries, and services. Some examples:</p>
 <ul>
 <li>the <code>dat</code> <a href="https://docs.datproject.org/install#in-the-terminal">command line tool</a> for sharing data (<a href="https://try-dat.com/">online tutorial</a>)</li>
@@ -79,10 +79,10 @@
 <p><img src="/content/images/2018/05/peer-to-peer-web-la-tara.jpg" alt="peer-to-peer-web-la-tara"><br>
 <small>Tara Vancil giving a talk at Peer-to-Peer Web L.A. (Credit: @jimpick)</small></p>
 <p>Dat is designed to evolve. The initial version of Dat was designed to allow a single researcher to publish a set of files to the world, and to be able to update the files over time ... all while preserving history for reproducibility. But quickly, Dat caught on with other use in a variety of communities.</p>
-<h2 id="hyperdb%3A-dat-multiwriter">HyperDB: Dat Multiwriter <a class="direct-link" href="#hyperdb%3A-dat-multiwriter">#</a></h2>
+<h2 id="hyperdb%3A-dat-multiwriter" tabindex="-1">HyperDB: Dat Multiwriter <a class="direct-link" href="#hyperdb%3A-dat-multiwriter">#</a></h2>
 <p>One of the most desired features for Dat is collaboration between multiple users, known as <em>multiwriter</em> (as opposed to <em>singlewriter</em>, which Dat is currently). We especially heard this need in the <a href="/dat-in-the-lab-ucdavis-1/">feedback from the research community</a>. Led by Mathias Buus (<a href="https://github.com/mafintosh">@mafintosh</a>), we have spent more than a year developing HyperDB, a distributed key-value database. Alongside this, we are upgrading the core internal libraries of Dat to use HyperDB and support improved collaboration. HyperDB is working today, but we are continuing to test and integrate into hyperdrive and other Dat tools.</p>
 <p>Multiwriter support is a major change. To ensure a smooth roll out, we are working with the <a href="http://github.com/datprotocol/">Dat Protocol Working Group</a> to define backwards compatibility requirements. This process, and work on integration will be a priority in the coming months.</p>
-<h2 id="dat-shopping-list-demo"><em>Dat Shopping List</em> Demo <a class="direct-link" href="#dat-shopping-list-demo">#</a></h2>
+<h2 id="dat-shopping-list-demo" tabindex="-1"><em>Dat Shopping List</em> Demo <a class="direct-link" href="#dat-shopping-list-demo">#</a></h2>
 <p>The <em>Dat Shopping List</em> application demonstrates how to use HyperDB to collaborate with other users on a single database. We built this to showcase multiwriter support and guide others on its use. <a href="https://codeforscience.org/">Code for Science &amp; Society</a>, the non-profit organization sponsoring Dat, contracted me (<a href="https://jimpick.com/">Jim Pick</a>) to demonstrate how HyperDB works, improve any API peculiarities, and surface any remaining bugs.</p>
 <p>You can launch the demo in any web browser:</p>
 <ul>
@@ -91,20 +91,20 @@
 <p><img src="/content/images/2018/05/dat-shopping-list-basic.gif" alt="dat-shopping-list-basic"><br>
 <small>A quick preview of what you can do with the app</small></p>
 <p>The demo is a simple to do list app, in the spirit of the <a href="http://todomvc.com/">TodoMVC</a> project.</p>
-<h3 id="video-walkthrough">Video Walkthrough <a class="direct-link" href="#video-walkthrough">#</a></h3>
+<h3 id="video-walkthrough" tabindex="-1">Video Walkthrough <a class="direct-link" href="#video-walkthrough">#</a></h3>
 <p>Here is a short (2.5 minute) walkthrough of the demo.</p>
 <p><video src="https://dat-shopping-list-video-jimpick.hashbase.io/dat-shopping-list-1.mp4" controls></video></p>
-<h3 id="mobile-phone-support">Mobile phone support <a class="direct-link" href="#mobile-phone-support">#</a></h3>
+<h3 id="mobile-phone-support" tabindex="-1">Mobile phone support <a class="direct-link" href="#mobile-phone-support">#</a></h3>
 <p>Where the demo really shines is on your mobile phone. The demo is built using some <a href="https://developers.google.com/web/progressive-web-apps/">cutting-edge</a> web browser features, so you can use <em>Add to Home Screen</em> on your phone, and you can use it just like you would use any other app.</p>
 <p><img src="/content/images/2018/05/dat-shopping-list-pwa.jpg" alt="dat-shopping-list-pwa"></p>
-<h3 id="offline-support">Offline support <a class="direct-link" href="#offline-support">#</a></h3>
+<h3 id="offline-support" tabindex="-1">Offline support <a class="direct-link" href="#offline-support">#</a></h3>
 <p>When you create a shopping list, under the covers, you are actually creating a multiwriter Dat archive. Each shopping list is a separate Dat archive, and each shopping list item is just a tiny little file inside a directory.</p>
 <p><img src="/content/images/2018/05/dat-next-under-the-covers.png" alt="dat-next-under-the-covers"></p>
 <p>The master copy is stored in the storage of your web browser, along with the secret key which ensures that you are the only one that can modify it.</p>
 <p>Having the master copy inside your web browser is great, because that lets you make changes to the document, even when you aren't connected to the internet. So you can put your phone in airplane mode, and still use the app.</p>
 <p><img src="/content/images/2018/05/online-offline.gif" alt="online-offline"><br>
 <small>Making changes anytime is okay, even when offline. Changes sync when going back online.</small></p>
-<h3 id="synchronizing-and-keys">Synchronizing and Keys <a class="direct-link" href="#synchronizing-and-keys">#</a></h3>
+<h3 id="synchronizing-and-keys" tabindex="-1">Synchronizing and Keys <a class="direct-link" href="#synchronizing-and-keys">#</a></h3>
 <p>Of course, a multiwriter demo would be boring if it only ran on one device. Dat has always had great support for replicating data across the internet.</p>
 <p>Dat has been single writer up until now, and it's identity model was essentially a single <em>key pair</em>, a set of keys — one public key and one private key. With the new support for multiple writers, each writer will have its own key pair, and users exchange keys to grant access to new writers.</p>
 <p>In this demo, the user shares their keys to the shopping list owners to get authorized.</p>
@@ -113,13 +113,13 @@
 <p><img src="/content/images/2018/05/authorization-2.png" alt="authorization-2"><br>
 <small>Once authorized, other users can update the shopping list.</small></p>
 <p>A truly user-friendly application might hide the keys and key exchange details from the end users by incorporating some sort of identity-based account and login system. But, for this demo, we wanted to illustrate the core authorization mechanism that multiwriter Dat uses. Asking people to understand and do the key exchange manually is not very friendly, but it is flexible and powerful.</p>
-<h3 id="node.js-gateway">Node.js Gateway <a class="direct-link" href="#node.js-gateway">#</a></h3>
+<h3 id="node.js-gateway" tabindex="-1">Node.js Gateway <a class="direct-link" href="#node.js-gateway">#</a></h3>
 <p>This demo works in any modern browser. It has been tested in Chrome, Firefox, Safari and Microsoft Edge, as well as Mobile Safari and Chrome on Android.</p>
 <p>If the demo had been written for <a href="https://beakerbrowser.com/">Beaker Browser</a>, which speaks the Dat protocol natively to the internet, there would be no need for a gateway. But in order to allow the demo to work across many browsers, the app replicates the shopping list data across a websocket connection to the server from which it was loaded. The Node.js server will then talk to the rest of the peer-to-peer swarm on behalf of the client.</p>
 <p>By necessity, the data is shared with the gateway, so if you want to share data privately, you will need to run your own private gateway. It is not as scary as it sounds though... all the code is on <a href="https://github.com/jimpick/dat-shopping-list">GitHub</a>, and you can <a href="https://glitch.com/edit/#!/remix/dat-shopping-list">remix</a> the demo on Glitch with a single click.</p>
-<h3 id="podcast-interview-with-mathias-buus">Podcast Interview with Mathias Buus <a class="direct-link" href="#podcast-interview-with-mathias-buus">#</a></h3>
+<h3 id="podcast-interview-with-mathias-buus" tabindex="-1">Podcast Interview with Mathias Buus <a class="direct-link" href="#podcast-interview-with-mathias-buus">#</a></h3>
 <p>If you would like to learn a bit more, Mathias was a recent guest on the <a href="https://dat-cast.hashbase.io/">DatCast podcast</a> and talked a bit about the origins of the Dat project and how multiwriter and hyperdb came to be.</p>
-<h2 id="support-the-dat-project!!!">Support the Dat Project!!! <a class="direct-link" href="#support-the-dat-project!!!">#</a></h2>
+<h2 id="support-the-dat-project!!!" tabindex="-1">Support the Dat Project!!! <a class="direct-link" href="#support-the-dat-project!!!">#</a></h2>
 <p>Thank you to <a href="https://codeforscience.org/">Code for Science &amp; Society</a> for hiring me to build the demo. They are a non-profit and depend on contributions to continue running. <a href="https://donate.datproject.org/">Donations</a> are greatly appreciated.</p>
 </section>
     </article>
@@ -213,7 +213,7 @@
           <br><br>
           Have questions? Join our chat or ask on <a href="https://twitter.com/dat_ecosystem" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/dat-ecosystem" class="no-underline underline-hover dat-green">Github</a>.
           <br><br>
-          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2025.
+          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2026.
           Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
         </p>
       </div>

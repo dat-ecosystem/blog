@@ -67,10 +67,10 @@ rm -rf .dat
 dat share
 </code></pre>
 <p>You'll notice that the data is imported much faster than before.</p>
-<h3 id="so-what-changed-exactly%3F">So what changed exactly? <a class="direct-link" href="#so-what-changed-exactly%3F">#</a></h3>
+<h3 id="so-what-changed-exactly%3F" tabindex="-1">So what changed exactly? <a class="direct-link" href="#so-what-changed-exactly%3F">#</a></h3>
 <p>There has been a lot of work in the past few months to make Hyperdrive and Hypercore, the underlying building blocks of Dat, more efficient.</p>
 <p>The most important and breaking change is the removal of leveldb as a dependency in Dat. Instead, Dat is now using a file format called <a href="https://docs.datproject.org/terms#sleep">SLEEP</a> to save the metadata directly on the filesystem. Since Dat no longer needs a database, you can now host a Dat by simply putting the SLEEP files on a static file server, such as Amazon S3. Removing this dependency on leveldb also means that Dat will install much faster than before.</p>
-<h3 id="preview-a-dat-link-in-the-browser!">Preview a dat link in the browser! <a class="direct-link" href="#preview-a-dat-link-in-the-browser!">#</a></h3>
+<h3 id="preview-a-dat-link-in-the-browser!" tabindex="-1">Preview a dat link in the browser! <a class="direct-link" href="#preview-a-dat-link-in-the-browser!">#</a></h3>
 <p>Give it a spin today! Send a link to your friend and they can view files inside the dat without even downloading the desktop application or command line tool.</p>
 <p>After you create a dat, you can take the link and put it at the end of <code>datproject.org</code>, for example: <code>https://datproject.org/637574bec555a748615244417aa525ab0d49baa7aec7b86164a259fdc6f310db</code>. Once you visit it, we save the metadata on our server. This means that you can close your laptop and it will still show a preview of your dat. Cool! <a href="/a-public-dat-peer/">Read more about how that works</a>.</p>
 </section>
@@ -165,7 +165,7 @@ dat share
           <br><br>
           Have questions? Join our chat or ask on <a href="https://twitter.com/dat_ecosystem" class="no-underline underline-hover dat-green">Twitter</a> or <a href="https://github.com/dat-ecosystem" class="no-underline underline-hover dat-green">Github</a>.
           <br><br>
-          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2025.
+          <a href="https://blog.dat-ecosystem.org/">Dat Ecosystem Blog</a> &copy; 2026.
           Blogging via <a href="https://www.11ty.dev/" target="_blank">11ty</a>, hosted on <a href="https://github.com/dat-ecosystem/blog" target="_blank">Github</a>.
         </p>
       </div>
