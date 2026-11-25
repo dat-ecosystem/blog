@@ -5,12 +5,125 @@
 	
 	<link href="https://blog.dat-ecosystem.org/feed/feed.xml" rel="self"/>
 	<link href="https://blog.dat-ecosystem.org/"/>
-	<updated>2026-11-23T10:00:00Z</updated>
+	<updated>2026-11-25T10:00:00Z</updated>
 	<id>https://blog.dat-ecosystem.org/</id>
 	<author>
 		<name>Dat Consortium</name>
 		<email>dat-consortium@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Introducing PeerSky: Let&#39;s Save the Internet, One Peer at a Time</title>
+		<link href="https://blog.dat-ecosystem.org/introducing-peersky/"/>
+		<updated>2026-11-25T10:00:00Z</updated>
+		<id>https://blog.dat-ecosystem.org/introducing-peersky/</id>
+		<content type="html">&lt;div&gt;
+&lt;p&gt;Greetings, fellow peers! We&#39;ve added a new project to the Dat ecosystem, and this one fits in your pocket. &lt;strong&gt;Let&#39;s welcome PeerSky!&lt;/strong&gt; It&#39;s a browser for your computer and your phone that opens the web and &lt;code&gt;hyper://&lt;/code&gt; sites alike, built on Hypercore by P2P Labs. Every device running it is a peer: what you make stays on your own devices and goes straight to the people you choose, with no server in the middle.&lt;/p&gt;
+  &lt;div class=&quot;image image-right&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/meet-peersky.svg&quot; alt=&quot;PeerSky logo with dat ecosystem robot&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+&lt;br /&gt;
+&lt;p&gt;PeerSky comes with built-in P2P apps: &lt;strong&gt;PeerChat&lt;/strong&gt; for messages, &lt;strong&gt;P2PMD&lt;/strong&gt; for notes you write together, &lt;strong&gt;PeerTunes&lt;/strong&gt; for music and &lt;strong&gt;Hyperdrive&lt;/strong&gt; for files. And &lt;a href=&quot;https://github.com/p2plabsxyz/peersky-browser/blob/main/docs/P2P.md&quot;&gt;anyone can build more&lt;/a&gt;. A P2P app is just HTML, CSS and JavaScript. On the desktop, drop a folder onto &lt;code&gt;peersky://p2p/&lt;/code&gt; and it sits right next to the built-in apps, or publish it to &lt;code&gt;hyper://&lt;/code&gt; with a plain &lt;code&gt;fetch()&lt;/code&gt; call and it opens in PeerSky on any computer or phone.&lt;/p&gt;
+&lt;p&gt;And it&#39;s not just for laptops. PeerSky runs on Android and iOS too, with a full Hypercore node tucked right inside the app. Under the hood it&#39;s Holepunch&#39;s &lt;a href=&quot;https://github.com/holepunchto/bare&quot;&gt;Bare&lt;/a&gt; runtime, a &lt;a href=&quot;https://github.com/holepunchto/corestore&quot;&gt;Corestore&lt;/a&gt; holding your data and &lt;a href=&quot;https://github.com/holepunchto/hyperswarm&quot;&gt;Hyperswarm&lt;/a&gt; finding other peers over the &lt;a href=&quot;https://github.com/holepunchto/hyperdht&quot;&gt;HyperDHT&lt;/a&gt;. So your phone isn&#39;t stuck asking a server for things. It can host a note, share a playlist or keep the group chat going, just like your laptop. And on the desktop, PeerSky speaks a whole bunch of protocols side by side: Hypercore (&lt;code&gt;hyper://&lt;/code&gt;), IPFS (&lt;code&gt;ipfs://&lt;/code&gt; and &lt;code&gt;ipns://&lt;/code&gt;), BitTorrent (&lt;code&gt;bt://&lt;/code&gt; and magnet links), Holesail (&lt;code&gt;hs://&lt;/code&gt;) and &lt;code&gt;web3://&lt;/code&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.image-right {
+  float:right;
+}
+.image-left {
+  float:left;
+}
+.image {
+  width:30%;
+  margin-right:10px;
+}
+.image img {
+    display:block;
+    width:100%;
+}
+.link {
+  overflow-wrap: anywhere;
+}
+&lt;/style&gt;
+&lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/peersky-home.jpg&quot; alt=&quot;PeerSky on a laptop and on a phone, with the built-in P2P apps on the home page&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;br /&gt;
+&lt;p&gt;Now let&#39;s see what that feels like in real life. Below, we&#39;ll follow two friends, Alice and Sam, as they plan a weekend away, and show you how PeerSky helps them make things together, share them straight from their own devices, and keep going when the signal drops.&lt;/p&gt;
+&lt;h2 id=&quot;make-something-together&quot; tabindex=&quot;-1&quot;&gt;Make something together &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#make-something-together&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Alice plans on a laptop and Sam on a phone. They&#39;re off to Granite Lake, where the signal gives up long before the trail does, so the plan has to come together before they leave.&lt;/p&gt;
+&lt;p&gt;In P2PMD, Alice starts a note and the laptop becomes its host. Sam pastes the note&#39;s &lt;code&gt;hs://&lt;/code&gt; key on the phone, or scans it as a QR code, and they write together, live, with every line marked with who wrote it. Underneath sits a &lt;a href=&quot;https://holesail.io/&quot;&gt;Holesail&lt;/a&gt; tunnel over the HyperDHT and one shared &lt;a href=&quot;https://yjs.dev/&quot;&gt;Yjs&lt;/a&gt; document, so a laptop and a phone can type at once without losing a word.&lt;/p&gt;
+&lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/peersky-p2pmd.jpg&quot; alt=&quot;A P2PMD note hosted on PeerSky Desktop and open on a phone, with the lines each person wrote marked in the margin&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;h2 id=&quot;share-it-straight-from-your-device&quot; tabindex=&quot;-1&quot;&gt;Share it straight from your device &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#share-it-straight-from-your-device&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every PeerSky link carries a key. Open one, and PeerSky finds a device that has the data on the HyperDHT, connects to it directly and checks what arrives against that key. Nothing has to be uploaded anywhere first.&lt;/p&gt;
+&lt;p&gt;Alice publishes a playlist from PeerTunes to a &lt;code&gt;hyper://&lt;/code&gt; drive on the laptop, and Sam&#39;s phone plays it straight from there, or imports it.&lt;/p&gt;
+&lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/peersky-peertunes.jpg&quot; alt=&quot;PeerTunes on PeerSky Desktop showing a playlist link, and PeerTunes on a phone asking whether to import it or play it only&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;p&gt;Photos from the summit go into Hyperdrive: public for anyone with the link, or private and encrypted, so only your own devices can open them.&lt;/p&gt;
+&lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/peersky-hyperdrive.jpg&quot; alt=&quot;Hyperdrive on PeerSky Desktop and on a phone, each listing private files from the other device&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;p&gt;And PeerChat ties the group together. Every message is encrypted, signed by whoever wrote it and passed from device to device, so the conversation stays with the people in it.&lt;/p&gt;
+&lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/peersky-peerchat.jpg&quot; alt=&quot;A PeerChat group open on PeerSky Desktop and on a phone&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;h2 id=&quot;keep-going-offline&quot; tabindex=&quot;-1&quot;&gt;Keep going offline &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#keep-going-offline&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Phones and computers on the same Wi-Fi find each other with &lt;a href=&quot;https://github.com/p2plabsxyz/hyperdht-mdns&quot;&gt;hyperdht-mdns&lt;/a&gt;, a module P2P Labs wrote for exactly this. Each device announces itself over mDNS, and together they run a small DHT of their own on the local network. Every built-in app uses it. The team tested it the honest way, by unplugging the cable from their modem, and chats, notes and files kept flowing between a laptop and phones in the same room. Whatever you&#39;ve already opened, hosted or kept offline opens with nothing connected at all.&lt;/p&gt;
+&lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/peersky-offline.jpg&quot; alt=&quot;The Offline page in PeerSky on a phone, listing the PeerSky devices it found on the same network&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;h2 id=&quot;why-it-matters&quot; tabindex=&quot;-1&quot;&gt;Why it matters &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#why-it-matters&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Picture a classroom where the internet costs too much, a family far from the nearest tower, a neighbourhood after a storm takes the network down, or friends who&#39;d simply rather their conversations stayed theirs. A browser that works between the devices people already carry can help every one of them. That&#39;s the internet PeerSky wants to help save: one where your tools, your data and your connections belong to you.&lt;/p&gt;
+&lt;p&gt;And there&#39;s more on the way. The PeerSky team is working on an AI mesh, which lets your own devices share memory and compute to run AI models together, privately and even offline. Stay tuned!&lt;/p&gt;
+&lt;p&gt;PeerSky stands on years of work from across the Dat ecosystem, from Hypercore and Hyperswarm to Bare, Holesail and Agregore. If you build on Hypercore, try your app in PeerSky and come say hi on PeerChat. Let&#39;s save the internet, one peer at a time! 👋&lt;/p&gt;
+&lt;h2 id=&quot;peersky-links&quot; tabindex=&quot;-1&quot;&gt;PeerSky Links &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#peersky-links&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;display: flex;&quot;&gt;
+  &lt;div class=&quot;image image-left&quot;&gt;
+    &lt;img src=&quot;https://blog.dat-ecosystem.org/content/images/2026/10/meet-peersky.svg&quot; alt=&quot;PeerSky logo with dat ecosystem robot&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid&quot; style=&quot;flex-grow: 1;&quot;&gt;
+    &lt;div class=&quot;name&quot;&gt;Website&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://peersky.p2plabs.xyz/&quot;&gt;https://peersky.p2plabs.xyz/&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Desktop source&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/p2plabsxyz/peersky-browser&quot;&gt;https://github.com/p2plabsxyz/peersky-browser&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Mobile source&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/p2plabsxyz/peersky-mobile&quot;&gt;https://github.com/p2plabsxyz/peersky-mobile&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://mastodon.social/@peersky&quot;&gt;https://mastodon.social/@peersky&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Bluesky&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://bsky.app/profile/peersky.mastodon.social.ap.brid.gy&quot;&gt;https://bsky.app/profile/&lt;wbr /&gt;peersky.mastodon.social.ap.brid.gy&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#peersky:matrix.org&quot;&gt;https://matrix.to/#/#peersky:matrix.org&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+    &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/9kUqxjbEx6&quot;&gt;https://discord.gg/9kUqxjbEx6&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;about-ecosystem&quot;&gt;
+&lt;h3 id=&quot;dat-ecosystem&quot; tabindex=&quot;-1&quot;&gt;Dat Ecosystem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#dat-ecosystem&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Donate to support volunteers &amp;amp; our independent work at Dat Ecosystem&lt;br /&gt;
+Apereo Foundation: &lt;a href=&quot;https://www.apereo.org/programs/software/dat-ecosystem&quot;&gt;https://www.apereo.org/programs/software/dat-ecosystem&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stay connected in this jungle of confusion that we call the internet. With so many changes happening, it&#39;s important to have outposts in various places.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;name&quot;&gt;Webpage&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://dat-ecosystem.org/&quot;&gt;https://dat-ecosystem.org/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Donate&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.apereo.org/programs/software/dat-ecosystem&quot;&gt;https://www.apereo.org/programs/software/dat-ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Cabal p2p chat&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#&quot;&gt;cabal://ebdbcf8cd9c704844ca47b88fe7526a3c9f865be998486ca16ae3431e019d0cc?admin=728192b47c8077d34534b20e25693edc1e7ece1ea7054e3bf1ad86434682a4f4&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Keet p2p hangout&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://blog.dat-ecosystem.org/introducing-peersky/#&quot;&gt;punch://jc38t9nr7fasay4nqfxwfaawywfd3y14krnsitj67ymoubiezqdy/ymfwqg59ihu9b7c1fbw147gpubta7g4kj8ximkdy1tu3689b15qbzafzzqxx4dqwcdxfon7fu68hefytnrxztx8uty15whjubs1f9661yry968du9rqeoyeyybycwxwt1wu1qa5f9uwph4h694sc6ubien6fs5js1dqy9ahr6io5hntwsr9mj3tx19higq55dhkqzoy9cpnp8h3w75bqg94hbmpcdoqgba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Mastodon&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://fosstodon.org/@dat_ecosystem&quot;&gt;https://fosstodon.org/@dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Matrix&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://matrix.to/#/#datproject_discussions:gitter.im&quot;&gt;https://matrix.to/#/#datproject_discussions:gitter.im&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Reddit&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.reddit.com/r/dat_ecosystem/&quot;&gt;https://www.reddit.com/r/dat_ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Github&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dat-ecosystem/&quot;&gt;https://github.com/dat-ecosystem/&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Twitter&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/dat_ecosystem&quot;&gt;https://twitter.com/dat_ecosystem&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Discord&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://discord.gg/jukapbdep5&quot;&gt;https://discord.gg/jukapbdep5&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;name&quot;&gt;Youtube&lt;/div&gt;
+  &lt;div class=&quot;link&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/@DatEcosystem&quot;&gt;https://www.youtube.com/@DatEcosystem&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>From a Peer-to-Peer Data-Sharing Project in 2013 to a Decentralised Ecosystem</title>
